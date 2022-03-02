@@ -105,9 +105,6 @@ namespace Network
             }
         }
 
-        /// <summary>
-        /// 判断是否正连接着
-        /// </summary>
         public bool Connected
         {
             get
@@ -298,10 +295,7 @@ namespace Network
             }
             this.connecting = false;
         }
-        /// <summary>
-        /// 是否保持连接，如果没有连接则尝试重连
-        /// </summary>
-        /// <returns></returns>
+
         bool KeepConnect()
         {
             if (this.connecting)
@@ -322,10 +316,7 @@ namespace Network
             }
             return false;
         }
-        /// <summary>
-        /// 是否有数据被收到，如果有则处理收到的数据，类似linux中的处理
-        /// </summary>
-        /// <returns></returns>
+
         bool ProcessRecv()
         {
             bool ret = false;
@@ -366,10 +357,6 @@ namespace Network
             return true;
         }
 
-        /// <summary>
-        /// 发送消息
-        /// </summary>
-        /// <returns></returns>
         bool ProcessSend()
         {
             bool ret = false;
@@ -429,9 +416,6 @@ namespace Network
             return true;
         }
 
-        /// <summary>
-        /// 处理消息
-        /// </summary>
         void ProceeMessage()
         {
             MessageDistributer.Instance.Distribute();
