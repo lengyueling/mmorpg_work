@@ -3,8 +3,17 @@ using Common;
 
 namespace Network
 {
+    /// <summary>
+    /// 服务端、客户端的消息分配处理，决定将消息分配给谁，再用分发器处理，也可以用反射来完成
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class MessageDispatch<T> : Singleton<MessageDispatch<T>>
     {
+        /// <summary>
+        /// 给客户端进行分发响应
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
         public void Dispatch(T sender, SkillBridge.Message.NetMessageResponse message)
         {
             if (message.userRegister != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.userRegister); }
@@ -16,7 +25,11 @@ namespace Network
             if (message.mapCharacterLeave != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.mapCharacterLeave); }
             if (message.mapEntitySync != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.mapEntitySync); }   
         }
-
+        /// <summary>
+        /// 给服务端进行分发请求
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
         public void Dispatch(T sender, SkillBridge.Message.NetMessageRequest message)
         {
             if (message.userRegister != null) { MessageDistributer<T>.Instance.RaiseEvent(sender,message.userRegister); }

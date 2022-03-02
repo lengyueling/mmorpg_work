@@ -97,7 +97,7 @@ namespace Network
         }
 
         /// <summary>
-        /// 提取消息
+        /// 提取消息，解包
         /// </summary>
         /// <param name="packet"></param>
         /// <param name="offset"></param>
@@ -114,7 +114,7 @@ namespace Network
         }
 
         /// <summary>
-        /// 数据包解析
+        /// 数据包解析，解决粘包问题
         /// </summary>
         /// <returns></returns>
         bool ParsePackage()
