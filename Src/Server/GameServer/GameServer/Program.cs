@@ -14,11 +14,13 @@ namespace GameServer
     {
         static void Main(string[] args)
         {
+            //日志的初始化，引入日志组件
             FileInfo fi = new System.IO.FileInfo("log4net.xml");
             log4net.Config.XmlConfigurator.ConfigureAndWatch(fi);
             Log.Init("GameServer");
             Log.Info("Game Server Init");
 
+            //服务器初始化
             GameServer server = new GameServer();
             server.Init();
             server.Start();

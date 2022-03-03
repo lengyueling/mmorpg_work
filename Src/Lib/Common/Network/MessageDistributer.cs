@@ -73,6 +73,11 @@ namespace Network
         {
         }
 
+        /// <summary>
+        /// 订阅
+        /// </summary>
+        /// <typeparam name="Tm"></typeparam>
+        /// <param name="messageHandler"></param>
         public void Subscribe<Tm>(MessageHandler<Tm> messageHandler)
         {
             string type = typeof(Tm).Name;
@@ -82,6 +87,12 @@ namespace Network
             }
             messageHandlers[type] = (MessageHandler<Tm>)messageHandlers[type] + messageHandler;
         }
+
+        /// <summary>
+        /// 取消订阅
+        /// </summary>
+        /// <typeparam name="Tm"></typeparam>
+        /// <param name="messageHandler"></param>
         public void Unsubscribe<Tm>(MessageHandler<Tm> messageHandler)
         {
             string type = typeof(Tm).Name;
@@ -151,7 +162,7 @@ namespace Network
 
 
         /// <summary>
-        /// 启动消息处理器
+        /// 启动消息处理器，服务端使用，使用线程池
         /// [多线程模式]
         /// </summary>
         /// <param name="ThreadNum">工作线程数</param>
@@ -172,7 +183,7 @@ namespace Network
         }
 
         /// <summary>
-        /// 停止消息处理器
+        /// 停止消息处理器，服务端使用 
         /// [多线程模式]
         /// </summary>
         public void Stop()
