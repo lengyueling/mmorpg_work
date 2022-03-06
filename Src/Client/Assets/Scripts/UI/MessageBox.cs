@@ -8,6 +8,7 @@ class MessageBox
     {
         if(cacheObject==null)
         {
+            //相当于Resources.Load
             cacheObject = Resloader.Load<Object>("UI/UIMessageBox");
         }
 

@@ -23,6 +23,11 @@ namespace GameServer.Services
 
         }
 
+        /// <summary>
+        /// 服务端用户注册
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="request"></param>
         void OnRegister(NetConnection<NetSession> sender, UserRegisterRequest request)
         {
             Log.InfoFormat("UserRegisterRequest: User:{0}  Pass:{1}", request.User, request.Passward);
@@ -32,6 +37,7 @@ namespace GameServer.Services
             message.Response.userRegister = new UserRegisterResponse();
 
             TUser user = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
+            //判断数据库中是否存在该用户名
             if (user != null)
             {
                 message.Response.userRegister.Result = Result.Failed;
@@ -39,6 +45,7 @@ namespace GameServer.Services
             }
             else
             {
+                //在数据库中用EF新建用户
                 TPlayer player = DBService.Instance.Entities.Players.Add(new TPlayer());
                 DBService.Instance.Entities.Users.Add(new TUser() { Username = request.User, Password = request.Passward, Player = player });
                 DBService.Instance.Entities.SaveChanges();

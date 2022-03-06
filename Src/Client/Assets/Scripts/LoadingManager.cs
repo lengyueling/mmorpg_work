@@ -20,6 +20,7 @@ public class LoadingManager : MonoBehaviour {
     // Use this for initialization
     IEnumerator Start()
     {
+        //配置，log4net.xml提前定义日志的格式
         log4net.Config.XmlConfigurator.ConfigureAndWatch(new System.IO.FileInfo("log4net.xml"));
         UnityLogger.Init();
         Common.Log.Init("Unity");

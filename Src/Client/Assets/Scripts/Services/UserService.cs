@@ -5,7 +5,6 @@ using System.Text;
 using Common;
 using Network;
 using UnityEngine;
-
 using SkillBridge.Message;
 
 namespace Services
@@ -16,14 +15,19 @@ namespace Services
         NetMessage pendingMessage = null;
         bool connected = false;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public UserService()
         {
             NetClient.Instance.OnConnect += OnGameServerConnect;
             NetClient.Instance.OnDisconnect += OnGameServerDisconnect;
-            MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
-            
+            MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);  
         }
 
+        /// <summary>
+        /// 销毁
+        /// </summary>
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
@@ -36,6 +40,9 @@ namespace Services
 
         }
 
+        /// <summary>
+        /// 连接服务器
+        /// </summary>
         public void ConnectToServer()
         {
             Debug.Log("ConnectToServer() Start ");
@@ -44,7 +51,11 @@ namespace Services
             NetClient.Instance.Connect();
         }
 
-
+        /// <summary>
+        /// 当服务器连接
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="reason"></param>
         void OnGameServerConnect(int result, string reason)
         {
             Log.InfoFormat("LoadingMesager::OnGameServerConnect :{0} reason:{1}", result, reason);
@@ -66,6 +77,11 @@ namespace Services
             }
         }
 
+        /// <summary>
+        /// 当服务器断开
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="reason"></param>
         public void OnGameServerDisconnect(int result, string reason)
         {
             this.DisconnectNotify(result, reason);
@@ -88,6 +104,11 @@ namespace Services
             return false;
         }
 
+        /// <summary>
+        /// 客户端发送用户注册信息给服务端
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="psw"></param>
         public void SendRegister(string user, string psw)
         {
             Debug.LogFormat("UserRegisterRequest::user :{0} psw:{1}", user, psw);
@@ -109,6 +130,11 @@ namespace Services
             }
         }
 
+        /// <summary>
+        /// 客户端用户注册
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="response"></param>
         void OnUserRegister(object sender, UserRegisterResponse response)
         {
             Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);

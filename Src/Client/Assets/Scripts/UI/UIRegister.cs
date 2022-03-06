@@ -3,29 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Services;
+using SkillBridge.Message;
 
-public class UIRegister : MonoBehaviour {
-
+public class UIRegister : MonoBehaviour
+{
     public InputField username;
     public InputField password;
     public InputField passwordConfirm;
     public Button buttonRegister;
 
-
-    // Use this for initialization
-    void Start () {
-        UserService.Instance.OnRegister = this.OnRegister;
-
-    }
-	
-    void OnRegister(SkillBridge.Message.Result result, string msg)
+	void Start ()
     {
-        MessageBox.Show(string.Format("结果：{0} msg:{1}",result,msg));
+        UserService.Instance.OnRegister += this.OnRegister;
     }
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void OnRegister(Result result, string msg)
+    {
+        MessageBox.Show(string.Format("结果：{0} msg:{1}", result, msg));
+    }
 
     public void OnClickRegister()
     {
