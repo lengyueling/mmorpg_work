@@ -80,9 +80,7 @@
     <None Include="Assets\Shader\Lightmap\Lightmap.shader" />
     <None Include="Assets\Shader\Particle\ParticleAdditive.shader" />
     <None Include="Assets\References\log4net.xml" />
-    <None Include="Assets\Resources\log4net.xml">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Assets\Resources\log4net.xml" />
     <None Include="Assets\Shader\DepthBloom.shader" />
     <None Include="Assets\Shader\MyMobile Particles AddNoMask Diff.shader" />
     <None Include="Assets\JsonDotNet\link.xml" />
