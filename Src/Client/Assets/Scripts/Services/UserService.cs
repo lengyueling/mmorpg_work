@@ -202,10 +202,14 @@ namespace Services
         void OnUserLogin(object sender, UserLoginResponse response)
         {
             Debug.LogFormat("OnUserLogin:{0} [{1}]", response.Result, response.Errormsg);
+            //把服务器返回的信息记录到本地
+            if (response.Result == Result.Success)
+            {
+                Models.User.Instance.SetupUserInfo(response.Userinfo);
+            }
             if (this.OnLogin != null)
             {
                 this.OnLogin(response.Result, response.Errormsg);
-
             }
 
         }

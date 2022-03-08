@@ -138,7 +138,7 @@ message NetMessageResponse{
 
 
 // User Protocol
-
+//Test
 message FirstTestRequest {
 	string helloword = 1;
 }

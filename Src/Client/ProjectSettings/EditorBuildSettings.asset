@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Levels/Loading.unity
     guid: d06076e7b6428a746945a2222983dd82
   - enabled: 1
+    path: Assets/Levels/CharSelect.unity
+    guid: b5e80e7e2ea2b7d47b6cfe3e9a4319e7
+  - enabled: 1
     path: Assets/Levels/MainCity.unity
     guid: 7cfd38121ab8fe245a28b9bc0aa16750
   - enabled: 1

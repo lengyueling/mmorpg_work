@@ -20,11 +20,10 @@ public class UILogin : MonoBehaviour
     void OnLogin(Result result, string msg)
     {
         MessageBox.Show(string.Format("结果：{0} msg:{1}", result, msg));
-        Debug.Log(123);
         if (result == Result.Success)
         {
             //登录成功，进入角色选择
-            //SceneManager.Instance.LoadScene("CharSelect");
+            SceneManager.Instance.LoadScene("CharSelect");
         }
     }
 
