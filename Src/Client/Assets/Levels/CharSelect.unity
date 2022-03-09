@@ -146,7 +146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00013027148, y: 0.000018478411}
+  m_AnchoredPosition: {x: 0.000103964274, y: 0.000048991325}
   m_SizeDelta: {x: 0, y: 165}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &22265525
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 36849103}
   - component: {fileID: 36849102}
   m_Layer: 5
-  m_Name: ButtonCancel
+  m_Name: But_Cancel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 226865714}
   - component: {fileID: 226865713}
   m_Layer: 5
-  m_Name: BgR
+  m_Name: Img_CharBgR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 282562636}
   - component: {fileID: 282562635}
   m_Layer: 5
-  m_Name: Arch
+  m_Name: Img_Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 294991918}
   - component: {fileID: 294991917}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: But_CharArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 352877417}
   - component: {fileID: 352877416}
   m_Layer: 5
-  m_Name: BgR
+  m_Name: Img_BgR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -969,7 +969,7 @@ GameObject:
   - component: {fileID: 468865056}
   - component: {fileID: 468865055}
   m_Layer: 5
-  m_Name: ButtonOK
+  m_Name: But_StartGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 553177030}
   - component: {fileID: 553177029}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Img_CharDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 575991161}
   - component: {fileID: 575991160}
   m_Layer: 5
-  m_Name: BgL
+  m_Name: Img_BgL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1250,7 +1250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &597115616
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1439,7 +1439,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1816812041024346, guid: 1ee80ae8a1eeee345919b6fd845a9de7, type: 2}
       propertyPath: m_Name
-      value: ButtonPlay
+      value: But_StartGame
       objectReference: {fileID: 0}
     - target: {fileID: 114255123729154320, guid: 1ee80ae8a1eeee345919b6fd845a9de7,
         type: 2}
@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 845089499}
   - component: {fileID: 845089498}
   m_Layer: 5
-  m_Name: BgL
+  m_Name: Img_CharBgL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1627,7 +1627,7 @@ GameObject:
   - component: {fileID: 859893408}
   - component: {fileID: 859893407}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Img_CharDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1821,7 +1821,7 @@ GameObject:
   - component: {fileID: 892787511}
   - component: {fileID: 892787510}
   m_Layer: 5
-  m_Name: BgL
+  m_Name: Img_BgL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: 959817505}
   - component: {fileID: 959817504}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_CharArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2096,7 +2096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963764698}
   m_Layer: 5
-  m_Name: Titles
+  m_Name: CharTitleImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2134,7 +2134,7 @@ GameObject:
   - component: {fileID: 989147459}
   - component: {fileID: 989147458}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Img_DescriptionBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2273,7 +2273,7 @@ GameObject:
   - component: {fileID: 1072481891}
   - component: {fileID: 1072481890}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Scv_SelectChar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2407,7 +2407,7 @@ GameObject:
   - component: {fileID: 1119638626}
   - component: {fileID: 1119638625}
   m_Layer: 5
-  m_Name: Warrior
+  m_Name: Img_Warrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2683,7 +2683,7 @@ GameObject:
   - component: {fileID: 1381515232}
   - component: {fileID: 1381515231}
   m_Layer: 5
-  m_Name: Button
+  m_Name: But_CharWarrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2957,6 +2957,10 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1767196585684966, guid: 3666ca0b4626c8e4884cb92e30db0da6, type: 2}
+      propertyPath: m_Name
+      value: Inp_CharName
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3666ca0b4626c8e4884cb92e30db0da6, type: 2}
   m_IsPrefabAsset: 0
@@ -3182,7 +3186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1816812041024346, guid: 1ee80ae8a1eeee345919b6fd845a9de7, type: 2}
       propertyPath: m_Name
-      value: ButtonNew
+      value: But_CreateNewChar
       objectReference: {fileID: 0}
     - target: {fileID: 114255123729154320, guid: 1ee80ae8a1eeee345919b6fd845a9de7,
         type: 2}
@@ -3223,7 +3227,7 @@ GameObject:
   - component: {fileID: 1681150844}
   - component: {fileID: 1681150843}
   m_Layer: 5
-  m_Name: BgR
+  m_Name: Img_BgR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3362,7 +3366,7 @@ GameObject:
   - component: {fileID: 1771000151}
   - component: {fileID: 1771000150}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3499,7 +3503,7 @@ GameObject:
   - component: {fileID: 1790183107}
   - component: {fileID: 1790183106}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_CharWarrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3575,7 +3579,7 @@ GameObject:
   - component: {fileID: 1794043617}
   - component: {fileID: 1794043616}
   m_Layer: 5
-  m_Name: Message
+  m_Name: Text_Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3816,7 +3820,7 @@ GameObject:
   - component: {fileID: 1836043298}
   - component: {fileID: 1836043297}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Text_Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4045,7 +4049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1909805352
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4191,7 +4195,7 @@ GameObject:
   - component: {fileID: 1920712205}
   - component: {fileID: 1920712204}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_CharWizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4352,7 +4356,7 @@ GameObject:
   - component: {fileID: 2091100770}
   - component: {fileID: 2091100769}
   m_Layer: 5
-  m_Name: Wizard
+  m_Name: Img_Wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4422,7 +4426,7 @@ GameObject:
   - component: {fileID: 2125288287}
   - component: {fileID: 2125288286}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: But_CharWizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
