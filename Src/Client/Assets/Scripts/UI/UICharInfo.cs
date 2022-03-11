@@ -10,7 +10,23 @@ public class UICharInfo : MonoBehaviour {
 
     public Text charClass;
     public Text charName;
-    // Use this for initialization
+    public Image hightLight;
+
+    /// <summary>
+    /// 该角色是否被选中
+    /// </summary>
+    public bool Selected
+    {
+        get
+        {
+            return hightLight.IsActive();
+        }
+        set
+        {
+            hightLight.gameObject.SetActive(value);
+        }
+    }
+
     void Start () {
 		if(info!=null)
         {
@@ -19,7 +35,6 @@ public class UICharInfo : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}

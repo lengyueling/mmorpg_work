@@ -16,18 +16,15 @@ public class UIMessageBox : MonoBehaviour {
 
     public UnityAction OnYes;
     public UnityAction OnNo;
-    
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+    /// <summary>
+    /// 信息框初始化
+    /// </summary>
+    /// <param name="title"></param>
+    /// <param name="message"></param>
+    /// <param name="type"></param>
+    /// <param name="btnOK"></param>
+    /// <param name="btnCancel"></param>
     public void Init(string title, string message, MessageBoxType type = MessageBoxType.Information, string btnOK = "", string btnCancel = "")
     {
         if (!string.IsNullOrEmpty(title)) this.title.text = title;

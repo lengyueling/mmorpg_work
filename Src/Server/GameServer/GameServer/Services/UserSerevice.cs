@@ -17,7 +17,7 @@ namespace GameServer.Services
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
-
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCreateCharacter);
         }
 
         public void Init()
@@ -99,11 +99,50 @@ namespace GameServer.Services
             {
                 //在数据库中用EF新建用户
                 TPlayer player = DBService.Instance.Entities.Players.Add(new TPlayer());
-                DBService.Instance.Entities.Users.Add(new TUser() { Username = request.User, Password = request.Passward, Player = player });
+                DBService.Instance.Entities.Users.Add(new TUser()
+                {
+                    Username = request.User,
+                    Password = request.Passward,
+                    Player = player
+                });
                 DBService.Instance.Entities.SaveChanges();
                 message.Response.userRegister.Result = Result.Success;
                 message.Response.userRegister.Errormsg = "None";
             }
+
+            byte[] data = PackageHandler.PackMessage(message);
+            sender.SendData(data, 0, data.Length);
+        }
+
+        /// <summary>
+        /// 服务器用户创建角色
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
+        void OnCreateCharacter(NetConnection<NetSession> sender, UserCreateCharacterRequest request)
+        {
+            Log.InfoFormat("UserRegisterRequest: CharName:{0}  Class:{1}", request.Name, request.Class);
+
+            TCharacter character = new TCharacter()
+            {
+                Name = request.Name,
+                Class = (int)request.Class,
+                TID = (int)request.Class,
+                MapID = 1,
+                MapPosX = 5000,
+                MapPosY = 4000,
+                MapPosZ =820,
+            };
+            DBService.Instance.Entities.Characters.Add(character);
+            sender.Session.User.Player.Characters.Add(character);
+            DBService.Instance.Entities.SaveChanges();
+
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.createChar = new UserCreateCharacterResponse();
+
+            message.Response.createChar.Result = Result.Success;
+            message.Response.createChar.Errormsg = "None";
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);

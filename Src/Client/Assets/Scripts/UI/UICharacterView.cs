@@ -22,16 +22,9 @@ public class UICharacterView : MonoBehaviour {
         }
     }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+    /// <summary>
+    /// 更新职业是否可见
+    /// </summary>
     void UpdateCharacter()
     {
         for(int i=0;i<3;i++)

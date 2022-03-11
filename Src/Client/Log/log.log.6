@@ -1,21 +1,20 @@
-2022-03-08 23:55:56,820 [ 1] INFO  Unity: LoadingManager start
-2022-03-08 23:56:00,123 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-08 23:56:00,329 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in the correct format, System.Int32.Parse (System.String s, NumberStyles style, IFormatProvider provider) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/Int32.cs:640)
-System.Int32.Parse (System.String s, IFormatProvider provider) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/Int32.cs:208)
-System.Convert.ToInt32 (System.String value, IFormatProvider provider) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/Convert.cs:1277)
-System.String.System.IConvertible.ToInt32 (IFormatProvider provider) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2391)
-System.Convert.ToType (System.Object value, System.Type conversionType, IFormatProvider provider, Boolean try_target_to_type) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/Convert.cs:2910)
-System.Convert.ChangeType (System.Object value, System.Type conversionType, IFormatProvider provider) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/Convert.cs:2511)
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType (Newtonsoft.Json.JsonReader reader, System.Object value, System.Globalization.CultureInfo culture, Newtonsoft.Json.Serialization.JsonContract contract, System.Type targetType)
-Rethrow as JsonSerializationException: Error converting value "ID" to type 'System.Int32'. Path '1.ID', line 3, position 9.
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType (Newtonsoft.Json.JsonReader reader, System.Object value, System.Globalization.CultureInfo culture, Newtonsoft.Json.Serialization.JsonContract contract, System.Type targetType)
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateDictionary (IDictionary dictionary, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonDictionaryContract contract, Newtonsoft.Json.Serialization.JsonProperty containerProperty, System.String id)
-Rethrow as JsonSerializationException: Could not convert string 'ID' to dictionary key type 'System.Int32'. Create a TypeConverter to convert from the string to the key type object. Path '1.ID', line 3, position 9.
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateDictionary (IDictionary dictionary, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonDictionaryContract contract, Newtonsoft.Json.Serialization.JsonProperty containerProperty, System.String id)
-}</args></log4net.Error>
-2022-03-08 23:56:06,662 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-03-08 23:56:06,663 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-03-09 23:53:02,813 [ 1] INFO  Unity: LoadingManager start
+2022-03-09 23:53:06,060 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-09 23:53:09,795 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-09 23:53:09,796 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-09 23:53:09,797 [ 1] INFO  Unity: DoConnect
+2022-03-09 23:53:09,799 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-09 23:53:09,801 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-03-09 23:53:09,804 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-09 23:53:09,903 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-03-09 23:53:09,916 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-03-09 23:53:10,206 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-09 23:53:11,596 [ 1] INFO  Unity: Select Char:[6]Õ¾Ê¿[Warrior]
+2022-03-09 23:53:12,303 [ 1] INFO  Unity: Select Char:[7]¼ýÊÖ[Archer]
+2022-03-09 23:53:13,567 [ 1] INFO  Unity: Select Char:[8]·¨[Wizard]
+2022-03-09 23:58:26,949 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-09 23:58:26,950 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
