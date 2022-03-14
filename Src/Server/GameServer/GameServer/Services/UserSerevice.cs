@@ -7,6 +7,7 @@ using Common;
 using Network;
 using SkillBridge.Message;
 using GameServer.Entities;
+using GameServer.Managers;
 
 namespace GameServer.Services
 {
@@ -18,6 +19,7 @@ namespace GameServer.Services
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCreateCharacter);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserGameEnterRequest>(this.OnGameEnter);
         }
 
         public void Init()
@@ -146,6 +148,32 @@ namespace GameServer.Services
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
+        }
+
+        /// <summary>
+        /// 服务器用户开始游戏
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="request"></param>
+        void OnGameEnter(NetConnection<NetSession> sender, UserGameEnterRequest request)
+        {
+            TCharacter dbchar = sender.Session.User.Player.Characters.ElementAt(request.characterIdx);
+            Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map{2}", dbchar.ID,dbchar.Name,dbchar.MapID);
+            Character character = CharacterManager.Instance.AddCharacter(dbchar);
+            
+            //发送用户进入游戏的信息给客户端
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.gameEnter = new UserGameEnterResponse();
+            message.Response.gameEnter.Result = Result.Success;
+            message.Response.gameEnter.Errormsg = "None";
+
+            byte[] data = PackageHandler.PackMessage(message);
+            sender.SendData(data, 0, data.Length);
+
+            //发送角色进入地图的信息给客户端
+            sender.Session.Character = character;
+            MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
     }
 }

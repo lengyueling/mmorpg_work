@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
 using System.Configuration;
-
 using System.Threading;
-
 using Network;
 using GameServer.Services;
+using GameServer.Managers;
 
 namespace GameServer
 {
@@ -27,6 +26,9 @@ namespace GameServer
             HelloWorldService.Instance.Init();
             DBService.Instance.Init();
             UserService.Instance.Init();
+            DataManager.Instance.Load();
+            MapManager.Instance.Init();
+
             thread = new Thread(new ThreadStart(this.Update));
             return true;
         }

@@ -1,21 +1,28 @@
-2022-03-10 16:11:28,395 [ 1] INFO  Unity: LoadingManager start
-2022-03-10 16:11:31,655 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-10 16:11:37,981 [ 1] INFO  Unity: UserRegisterRequest::user :1 psw:1
-2022-03-10 16:11:37,983 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-03-10 16:11:37,984 [ 1] INFO  Unity: DoConnect
-2022-03-10 16:11:37,986 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-03-10 16:11:37,988 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-03-14 16:54:06,934 [ 1] INFO  Unity: LoadingManager start
+2022-03-14 16:54:10,169 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-14 16:54:13,966 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-14 16:54:13,968 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-14 16:54:13,970 [ 1] INFO  Unity: DoConnect
+2022-03-14 16:54:13,972 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-14 16:54:13,974 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-03-10 16:11:37,991 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-03-10 16:11:40,212 [ 1] INFO  Unity: OnUserRegister:Failed [用户已存在.]
-2022-03-10 16:11:44,239 [ 1] INFO  Unity: UserRegisterRequest::user :2 psw:2
-2022-03-10 16:11:44,541 [ 1] INFO  Unity: OnUserRegister:Success [None]
-2022-03-10 16:11:57,077 [ 1] INFO  Unity: UserLoginRequest::user :2 psw:2
-2022-03-10 16:11:57,137 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-03-10 16:11:57,140 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-10 16:11:57,428 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-10 16:12:00,619 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-03-10 16:12:00,620 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-03-14 16:54:13,978 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-14 16:54:16,469 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-03-14 16:54:16,477 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-03-14 16:54:16,756 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-14 16:54:18,041 [ 1] INFO  Unity: Select Char:[6]站士[Warrior]
+2022-03-14 16:54:18,463 [ 1] INFO  Unity: Select Char:[7]箭手[Archer]
+2022-03-14 16:54:19,886 [ 1] INFO  Unity: UserGameEnterRequest::characterId:1
+2022-03-14 16:54:19,923 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-03-14 16:54:19,924 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-03-14 16:54:19,926 [ 1] INFO  Unity: AddCharacter:7:箭手 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-03-14 16:54:19,928 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-03-14 16:54:19,929 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-03-14 16:54:19,930 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-03-14 16:54:20,464 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-14 16:54:20,943 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-14 16:54:33,006 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-14 16:54:33,007 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
