@@ -39,7 +39,7 @@ public class EntityController : MonoBehaviour
     }
 
     /// <summary>
-    /// 更新当前位置
+    /// （开始与每帧）更新当前位置
     /// </summary>
     void UpdateTransform()
     {

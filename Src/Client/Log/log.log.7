@@ -1,63 +1,37 @@
-2022-03-16 08:41:18,647 [ 1] INFO  Unity: LoadingManager start
-2022-03-16 08:41:21,890 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-16 08:41:27,068 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:213
-2022-03-16 08:41:27,069 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-03-16 08:41:27,070 [ 1] INFO  Unity: DoConnect
-2022-03-16 08:41:27,072 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-03-16 08:41:27,075 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-03-17 21:13:10,977 [ 1] INFO  Unity: LoadingManager start
+2022-03-17 21:13:14,208 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-17 21:13:18,998 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-17 21:13:19,000 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-17 21:13:19,001 [ 1] INFO  Unity: DoConnect
+2022-03-17 21:13:19,002 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-17 21:13:19,006 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-03-16 08:41:27,078 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-03-16 08:41:27,166 [ 1] INFO  Unity: OnUserLogin:Failed [密码错误]
-2022-03-16 08:41:31,087 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-03-16 08:41:31,131 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-03-16 08:41:31,134 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-16 08:41:31,372 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-16 08:41:32,486 [ 1] INFO  Unity: Select Char:[6]站士[Warrior]
-2022-03-16 08:41:33,363 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-03-16 08:41:33,398 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-03-16 08:41:33,399 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2022-03-16 08:41:33,402 [ 1] INFO  Unity: AddCharacter:6:站士 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-16 08:41:33,404 [ 1] INFO  Unity: AddCharacter:6:站士 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-16 08:41:33,405 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-16 08:41:33,406 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-03-16 08:41:33,408 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-16 08:41:33,874 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-16 08:41:34,337 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-16 08:41:50,990 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
-
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Network\NetClient.cs:349 
-
-2022-03-16 08:41:50,991 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:363)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:450)
-
-2022-03-16 08:41:51,064 [ 1] INFO  Unity: DoConnect
-2022-03-16 08:41:51,065 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-03-16 08:41:51,067 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2022-03-16 08:41:53,100 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:277)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:172)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:321)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:448)
-
-2022-03-16 08:41:53,102 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:279)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:172)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:321)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:448)
-
-2022-03-16 08:41:59,634 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-03-16 08:41:59,635 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-03-17 21:13:19,009 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-17 21:13:21,263 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-03-17 21:13:21,293 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-03-17 21:13:21,677 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-17 21:13:22,643 [ 1] INFO  Unity: Select Char:[6]站士[Warrior]
+2022-03-17 21:13:23,360 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-03-17 21:13:23,398 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-03-17 21:13:23,399 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-03-17 21:13:23,401 [ 1] INFO  Unity: AddCharacter:6:站士 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-03-17 21:13:23,402 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-03-17 21:13:23,887 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-17 21:13:23,893 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:25)
+}</args></log4net.Error>
+2022-03-17 21:13:47,496 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:25)
+}</args></log4net.Error>
+2022-03-17 21:13:49,365 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:25)
+}</args></log4net.Error>
+2022-03-17 21:13:49,800 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UINameBar.Update () (at Assets/Scripts/UI/UINameBar.cs:25)
+}</args></log4net.Error>
+2022-03-17 21:13:52,432 [ 1] INFO  Unity: Character_6_站士 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-03-17 21:13:52,435 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-17 21:13:52,436 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)

@@ -42,16 +42,22 @@ public class GameObjectManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 创建角色实体
+    /// </summary>
+    /// <param name="character"></param>
     private void CreateCharacterObject(Character character)
     {
         if (!Characters.ContainsKey(character.Info.Id) || Characters[character.Info.Id] == null)
         {
+            //加载角色信息
             Object obj = Resloader.Load<Object>(character.Define.Resource);
             if(obj == null)
             {
                 Debug.LogErrorFormat("Character[{0}] Resource[{1}] not existed.",character.Define.TID, character.Define.Resource);
                 return;
             }
+            //实例化加载到的角色信息，设置角色初始位置，将信息最终赋值给角色管理的字典
             GameObject go = (GameObject)Instantiate(obj);
             go.name = "Character_" + character.Info.Id + "_" + character.Info.Name;
 
@@ -59,13 +65,15 @@ public class GameObjectManager : MonoBehaviour
             go.transform.forward = GameObjectTool.LogicToWorld(character.direction);
             Characters[character.Info.Id] = go;
 
+            //将必要信息给到实体控制器
             EntityController ec = go.GetComponent<EntityController>();
             if (ec != null)
             {
                 ec.entity = character;
                 ec.isPlayer = character.IsPlayer;
             }
-            
+
+            //将必要信息给到输入控制器
             PlayerInputController pc = go.GetComponent<PlayerInputController>();
             if (pc != null)
             {
@@ -81,7 +89,8 @@ public class GameObjectManager : MonoBehaviour
                     pc.enabled = false;
                 }
             }
-            //UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, character);
+
+            UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, character);
         }
     }
 }

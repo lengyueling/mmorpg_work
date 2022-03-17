@@ -1,7 +1,34 @@
-2022-03-16 08:27:48,827 [ 1] INFO  Unity: LoadingManager start
-2022-03-16 08:27:50,393 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-03-16 08:27:50,394 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-03-16 20:31:06,265 [ 1] INFO  Unity: LoadingManager start
+2022-03-16 20:31:09,512 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-16 20:31:13,564 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-16 20:31:13,565 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-16 20:31:13,567 [ 1] INFO  Unity: DoConnect
+2022-03-16 20:31:13,569 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-16 20:31:13,570 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-03-16 20:31:13,573 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-16 20:31:13,672 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-03-16 20:31:13,676 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-03-16 20:31:13,912 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-16 20:31:14,990 [ 1] INFO  Unity: Select Char:[6]站士[Warrior]
+2022-03-16 20:31:16,961 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-03-16 20:31:16,998 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-03-16 20:31:16,999 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2022-03-16 20:31:17,001 [ 1] INFO  Unity: AddCharacter:6:站士 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-03-16 20:31:17,002 [ 1] INFO  Unity: AddCharacter:7:箭手 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-03-16 20:31:17,003 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-03-16 20:31:17,480 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-16 20:31:17,485 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:84)
+GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameObjectManager:Start() (at Assets/Scripts/GameObject/GameObjectManager.cs:16)
+}</args></log4net.Error>
+2022-03-16 20:32:03,305 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-16 20:32:03,306 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
 
+2022-03-16 20:32:03,309 [ 1] INFO  Unity: Character_6_站士 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

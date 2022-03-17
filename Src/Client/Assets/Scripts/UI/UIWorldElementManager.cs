@@ -9,17 +9,11 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager> {
 
     private Dictionary<Transform, GameObject> elements = new Dictionary<Transform, GameObject>();
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
+    /// <summary>
+    /// 加入跟随角色的世界空间UI
+    /// </summary>
+    /// <param name="owner"></param>
+    /// <param name="character"></param>
     public void AddCharacterNameBar(Transform owner, Character character)
     {
         GameObject goNameBar = Instantiate(nameBarPrefab, this.transform);
@@ -29,7 +23,10 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager> {
         goNameBar.SetActive(true);
         this.elements[owner] = goNameBar;
     }
-
+    /// <summary>
+    /// 移除跟随角色的世界空间UI
+    /// </summary>
+    /// <param name="owner"></param>
     public void RemoveCharacterNameBar(Transform owner)
     {
         if (this.elements.ContainsKey(owner))

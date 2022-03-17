@@ -23,7 +23,7 @@ public class UICharacterView : MonoBehaviour {
     }
 
     /// <summary>
-    /// 更新职业是否可见
+    /// 更新职业是否可见（选定才可见）
     /// </summary>
     void UpdateCharacter()
     {
