@@ -34,8 +34,6 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnUserGameEnter);
             MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnUserGameLeave);
-            MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
-            MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnCharacterLeave);
         }
 
         /// <summary>
@@ -50,8 +48,6 @@ namespace Services
             MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnUserGameEnter);
             MessageDistributer.Instance.Unsubscribe<UserGameLeaveResponse>(this.OnUserGameLeave);
-            MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnCharacterEnter);
-            MessageDistributer.Instance.Unsubscribe<MapCharacterLeaveResponse>(this.OnCharacterLeave);
         }
 
         /// <summary>
@@ -321,29 +317,6 @@ namespace Services
         {
             MapService.Instance.CurrentMapId = 0;
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
-        }
-
-        /// <summary>
-        /// 客户端中角色进入游戏
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="response"></param>
-        void OnCharacterEnter(object sender, MapCharacterEnterResponse response)
-        {
-            Debug.LogFormat("OnMapCharacterEnter:{0}", response.mapId);
-            NCharacterInfo info = response.Characters[0];
-            User.Instance.CurrentCharacter = info;
-            SceneManager.Instance.LoadScene(DataManager.Instance.Maps[response.mapId].Resource);
-        }
-
-        /// <summary>
-        /// 客户端中角色离开游戏
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="response"></param>
-        void OnCharacterLeave(object sender, MapCharacterLeaveResponse response)
-        {
-            Debug.LogFormat("OnMapCharacterLeave:{0}", response.characterId);
         }
     }
 }

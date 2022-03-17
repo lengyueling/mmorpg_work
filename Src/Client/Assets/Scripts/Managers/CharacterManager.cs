@@ -14,6 +14,9 @@ namespace Services
 {
     class CharacterManager : Singleton<CharacterManager>, IDisposable
     {
+        /// <summary>
+        /// 储存角色id和实体的字典
+        /// </summary>
         public Dictionary<int, Character> Characters = new Dictionary<int, Character>();
 
 
@@ -38,6 +41,10 @@ namespace Services
             this.Characters.Clear();
         }
 
+        /// <summary>
+        /// 一个角色进入了地图
+        /// </summary>
+        /// <param name="cha"></param>
         public void AddCharacter(SkillBridge.Message.NCharacterInfo cha)
         {
             Debug.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", cha.Id, cha.Name, cha.mapId, cha.Entity.String());
@@ -50,7 +57,10 @@ namespace Services
             }
         }
 
-
+        /// <summary>
+        /// 一个角色离开了地图
+        /// </summary>
+        /// <param name="characterId"></param>
         public void RemoveCharacter(int characterId)
         {
             Debug.LogFormat("RemoveCharacter:{0}", characterId);

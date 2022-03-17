@@ -38,6 +38,9 @@ public class EntityController : MonoBehaviour
             rb.useGravity = false;
     }
 
+    /// <summary>
+    /// 更新当前位置
+    /// </summary>
     void UpdateTransform()
     {
         this.position = GameObjectTool.LogicToWorld(entity.position);
@@ -74,6 +77,10 @@ public class EntityController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 设置当前状态机
+    /// </summary>
+    /// <param name="entityEvent"></param>
     public void OnEntityEvent(EntityEvent entityEvent)
     {
         switch(entityEvent)

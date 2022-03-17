@@ -74,7 +74,7 @@ namespace Network
         }
 
         /// <summary>
-        /// 订阅
+        /// 订阅消息分发
         /// </summary>
         /// <typeparam name="Tm"></typeparam>
         /// <param name="messageHandler"></param>
@@ -89,7 +89,7 @@ namespace Network
         }
 
         /// <summary>
-        /// 取消订阅
+        /// 取消订阅消息分发
         /// </summary>
         /// <typeparam name="Tm"></typeparam>
         /// <param name="messageHandler"></param>

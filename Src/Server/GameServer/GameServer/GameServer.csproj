@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="Services\DBService.cs" />
     <Compile Include="Services\HelloWorldService.cs" />
+    <Compile Include="Services\MapService.cs" />
     <Compile Include="Services\UserSerevice.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Core\Vector3Int.cs" />
@@ -152,6 +153,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Entities.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Entities.edmx.diagram">
       <DependentUpon>Entities.edmx</DependentUpon>
     </None>

@@ -1,29 +1,277 @@
-2022-03-14 16:54:06,934 [ 1] INFO  Unity: LoadingManager start
-2022-03-14 16:54:10,169 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-14 16:54:13,966 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-03-14 16:54:13,968 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-03-14 16:54:13,970 [ 1] INFO  Unity: DoConnect
-2022-03-14 16:54:13,972 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-03-14 16:54:13,974 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-03-16 20:33:10,944 [ 1] INFO  Unity: LoadingManager start
+2022-03-16 20:33:14,090 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-16 20:33:21,564 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-16 20:33:21,565 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-16 20:33:21,566 [ 1] INFO  Unity: DoConnect
+2022-03-16 20:33:21,569 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-16 20:33:21,571 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-03-14 16:54:13,978 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-03-14 16:54:16,469 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-03-14 16:54:16,477 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-14 16:54:16,756 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-14 16:54:18,041 [ 1] INFO  Unity: Select Char:[6]站士[Warrior]
-2022-03-14 16:54:18,463 [ 1] INFO  Unity: Select Char:[7]箭手[Archer]
-2022-03-14 16:54:19,886 [ 1] INFO  Unity: UserGameEnterRequest::characterId:1
-2022-03-14 16:54:19,923 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-03-14 16:54:19,924 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-03-14 16:54:19,926 [ 1] INFO  Unity: AddCharacter:7:箭手 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-14 16:54:19,928 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-14 16:54:19,929 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-03-14 16:54:19,930 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-14 16:54:20,464 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-14 16:54:20,943 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-14 16:54:33,006 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-03-14 16:54:33,007 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-03-16 20:33:21,574 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-16 20:33:23,735 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-03-16 20:33:23,741 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-03-16 20:33:23,998 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-16 20:33:24,874 [ 1] INFO  Unity: Select Char:[6]站士[Warrior]
+2022-03-16 20:33:25,935 [ 1] INFO  Unity: Select Char:[8]法[Wizard]
+2022-03-16 20:33:26,931 [ 1] INFO  Unity: UserGameEnterRequest::characterId:2
+2022-03-16 20:33:26,966 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-03-16 20:33:26,967 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-03-16 20:33:26,969 [ 1] INFO  Unity: AddCharacter:8:法 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-03-16 20:33:26,972 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-03-16 20:33:27,435 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-16 20:33:28,710 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-03-16 20:33:28,811 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2022-03-16 20:33:28,912 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
+2022-03-16 20:33:29,013 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2022-03-16 20:33:29,098 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2022-03-16 20:33:29,186 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2022-03-16 20:33:29,268 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:29,270 [ 1] INFO  Unity: SetDirection:(22, -97, 0)
+2022-03-16 20:33:29,370 [ 1] INFO  Unity: SetDirection:(3, -100, 0)
+2022-03-16 20:33:29,538 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
+2022-03-16 20:33:31,004 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:31,425 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
+2022-03-16 20:33:31,527 [ 1] INFO  Unity: SetDirection:(-51, -86, 0)
+2022-03-16 20:33:31,627 [ 1] INFO  Unity: SetDirection:(-68, -74, 0)
+2022-03-16 20:33:31,728 [ 1] INFO  Unity: SetDirection:(-81, -58, 0)
+2022-03-16 20:33:31,814 [ 1] INFO  Unity: SetDirection:(-90, -43, 0)
+2022-03-16 20:33:31,899 [ 1] INFO  Unity: SetDirection:(-96, -27, 0)
+2022-03-16 20:33:31,983 [ 1] INFO  Unity: SetDirection:(-100, -10, 0)
+2022-03-16 20:33:32,067 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
+2022-03-16 20:33:32,168 [ 1] INFO  Unity: SetDirection:(-96, 28, 0)
+2022-03-16 20:33:32,270 [ 1] INFO  Unity: SetDirection:(-90, 44, 0)
+2022-03-16 20:33:33,584 [ 1] INFO  Unity: SetDirection:(-97, 26, 0)
+2022-03-16 20:33:33,684 [ 1] INFO  Unity: SetDirection:(-100, 6, 0)
+2022-03-16 20:33:33,770 [ 1] INFO  Unity: SetDirection:(-99, -12, 0)
+2022-03-16 20:33:33,870 [ 1] INFO  Unity: SetDirection:(-95, -32, 0)
+2022-03-16 20:33:33,954 [ 1] INFO  Unity: SetDirection:(-88, -48, 0)
+2022-03-16 20:33:34,005 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:34,056 [ 1] INFO  Unity: SetDirection:(-77, -64, 0)
+2022-03-16 20:33:34,225 [ 1] INFO  Unity: SetDirection:(-64, -77, 0)
+2022-03-16 20:33:34,814 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:36,618 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:37,577 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:37,594 [ 1] INFO  Unity: MoveBack
+2022-03-16 20:33:38,268 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:38,672 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:39,667 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:40,172 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:40,913 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:41,183 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:41,672 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:48,220 [ 1] INFO  Unity: SetDirection:(-77, -63, 0)
+2022-03-16 20:33:48,321 [ 1] INFO  Unity: SetDirection:(-88, -47, 0)
+2022-03-16 20:33:48,422 [ 1] INFO  Unity: SetDirection:(-96, -28, 0)
+2022-03-16 20:33:48,506 [ 1] INFO  Unity: SetDirection:(-99, -11, 0)
+2022-03-16 20:33:48,574 [ 1] INFO  Unity: SetDirection:(-100, 7, 0)
+2022-03-16 20:33:48,675 [ 1] INFO  Unity: SetDirection:(-96, 27, 0)
+2022-03-16 20:33:48,761 [ 1] INFO  Unity: SetDirection:(-90, 44, 0)
+2022-03-16 20:33:48,862 [ 1] INFO  Unity: SetDirection:(-79, 61, 0)
+2022-03-16 20:33:48,946 [ 1] INFO  Unity: SetDirection:(-67, 74, 0)
+2022-03-16 20:33:49,048 [ 1] INFO  Unity: SetDirection:(-50, 86, 0)
+2022-03-16 20:33:49,149 [ 1] INFO  Unity: SetDirection:(-31, 95, 0)
+2022-03-16 20:33:49,250 [ 1] INFO  Unity: SetDirection:(-13, 99, 0)
+2022-03-16 20:33:49,401 [ 1] INFO  Unity: SetDirection:(5, 100, 0)
+2022-03-16 20:33:50,615 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:51,137 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:52,434 [ 1] INFO  Unity: SetDirection:(-13, 99, 0)
+2022-03-16 20:33:52,535 [ 1] INFO  Unity: SetDirection:(-32, 95, 0)
+2022-03-16 20:33:52,620 [ 1] INFO  Unity: SetDirection:(-48, 88, 0)
+2022-03-16 20:33:52,704 [ 1] INFO  Unity: SetDirection:(-63, 78, 0)
+2022-03-16 20:33:52,805 [ 1] INFO  Unity: SetDirection:(-77, 63, 0)
+2022-03-16 20:33:52,923 [ 1] INFO  Unity: SetDirection:(-88, 48, 0)
+2022-03-16 20:33:54,591 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:55,115 [ 1] INFO  Unity: SetPosition:(4154, 2956, 799)
+2022-03-16 20:33:56,227 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:56,394 [ 1] INFO  Unity: MoveBack
+2022-03-16 20:33:57,288 [ 1] INFO  Unity: SetDirection:(-95, 32, 0)
+2022-03-16 20:33:57,490 [ 1] INFO  Unity: Stop
+2022-03-16 20:33:58,793 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:33:59,787 [ 1] INFO  Unity: SetDirection:(-87, 50, 0)
+2022-03-16 20:33:59,889 [ 1] INFO  Unity: SetDirection:(-75, 66, 0)
+2022-03-16 20:33:59,990 [ 1] INFO  Unity: SetDirection:(-60, 80, 0)
+2022-03-16 20:34:00,090 [ 1] INFO  Unity: SetDirection:(-43, 90, 0)
+2022-03-16 20:34:00,479 [ 1] INFO  Unity: SetDirection:(-59, 81, 0)
+2022-03-16 20:34:00,562 [ 1] INFO  Unity: SetDirection:(-72, 69, 0)
+2022-03-16 20:34:00,665 [ 1] INFO  Unity: SetDirection:(-85, 53, 0)
+2022-03-16 20:34:00,748 [ 1] INFO  Unity: SetDirection:(-93, 37, 0)
+2022-03-16 20:34:00,832 [ 1] INFO  Unity: SetDirection:(-99, 17, 0)
+2022-03-16 20:34:00,933 [ 1] INFO  Unity: SetDirection:(-100, -4, 0)
+2022-03-16 20:34:01,034 [ 1] INFO  Unity: SetDirection:(-97, -24, 0)
+2022-03-16 20:34:01,118 [ 1] INFO  Unity: SetDirection:(-91, -41, 0)
+2022-03-16 20:34:01,220 [ 1] INFO  Unity: SetDirection:(-81, -59, 0)
+2022-03-16 20:34:01,303 [ 1] INFO  Unity: SetDirection:(-69, -72, 0)
+2022-03-16 20:34:01,405 [ 1] INFO  Unity: SetDirection:(-53, -85, 0)
+2022-03-16 20:34:01,489 [ 1] INFO  Unity: SetDirection:(-37, -93, 0)
+2022-03-16 20:34:01,590 [ 1] INFO  Unity: SetDirection:(-17, -99, 0)
+2022-03-16 20:34:01,691 [ 1] INFO  Unity: SetDirection:(4, -100, 0)
+2022-03-16 20:34:01,793 [ 1] INFO  Unity: SetDirection:(24, -97, 0)
+2022-03-16 20:34:01,877 [ 1] INFO  Unity: SetDirection:(41, -91, 0)
+2022-03-16 20:34:01,979 [ 1] INFO  Unity: SetDirection:(59, -81, 0)
+2022-03-16 20:34:02,063 [ 1] INFO  Unity: SetDirection:(72, -69, 0)
+2022-03-16 20:34:02,164 [ 1] INFO  Unity: SetDirection:(85, -53, 0)
+2022-03-16 20:34:02,249 [ 1] INFO  Unity: SetDirection:(93, -37, 0)
+2022-03-16 20:34:02,351 [ 1] INFO  Unity: SetDirection:(99, -17, 0)
+2022-03-16 20:34:02,451 [ 1] INFO  Unity: SetDirection:(100, 4, 0)
+2022-03-16 20:34:02,537 [ 1] INFO  Unity: SetDirection:(97, 24, 0)
+2022-03-16 20:34:02,621 [ 1] INFO  Unity: SetDirection:(91, 41, 0)
+2022-03-16 20:34:02,722 [ 1] INFO  Unity: SetDirection:(81, 59, 0)
+2022-03-16 20:34:02,807 [ 1] INFO  Unity: SetDirection:(69, 72, 0)
+2022-03-16 20:34:02,909 [ 1] INFO  Unity: SetDirection:(53, 85, 0)
+2022-03-16 20:34:02,993 [ 1] INFO  Unity: SetDirection:(37, 93, 0)
+2022-03-16 20:34:03,096 [ 1] INFO  Unity: SetDirection:(17, 99, 0)
+2022-03-16 20:34:03,196 [ 1] INFO  Unity: SetDirection:(-4, 100, 0)
+2022-03-16 20:34:03,299 [ 1] INFO  Unity: SetDirection:(-24, 97, 0)
+2022-03-16 20:34:03,384 [ 1] INFO  Unity: SetDirection:(-41, 91, 0)
+2022-03-16 20:34:03,485 [ 1] INFO  Unity: SetDirection:(-59, 81, 0)
+2022-03-16 20:34:03,570 [ 1] INFO  Unity: SetDirection:(-72, 69, 0)
+2022-03-16 20:34:03,671 [ 1] INFO  Unity: SetDirection:(-85, 53, 0)
+2022-03-16 20:34:03,738 [ 1] INFO  Unity: SetDirection:(-93, 37, 0)
+2022-03-16 20:34:03,839 [ 1] INFO  Unity: SetDirection:(-99, 17, 0)
+2022-03-16 20:34:03,940 [ 1] INFO  Unity: SetDirection:(-100, -4, 0)
+2022-03-16 20:34:04,041 [ 1] INFO  Unity: SetDirection:(-97, -24, 0)
+2022-03-16 20:34:04,142 [ 1] INFO  Unity: SetDirection:(-91, -42, 0)
+2022-03-16 20:34:05,742 [ 1] INFO  Unity: Stop
+2022-03-16 20:34:14,930 [ 1] INFO  Unity: SetDirection:(-97, -23, 0)
+2022-03-16 20:34:15,030 [ 1] INFO  Unity: SetDirection:(-100, -3, 0)
+2022-03-16 20:34:15,115 [ 1] INFO  Unity: SetDirection:(-99, 15, 0)
+2022-03-16 20:34:15,215 [ 1] INFO  Unity: SetDirection:(-94, 35, 0)
+2022-03-16 20:34:15,299 [ 1] INFO  Unity: SetDirection:(-86, 51, 0)
+2022-03-16 20:34:15,401 [ 1] INFO  Unity: SetDirection:(-74, 68, 0)
+2022-03-16 20:34:15,502 [ 1] INFO  Unity: SetDirection:(-58, 81, 0)
+2022-03-16 20:34:15,586 [ 1] INFO  Unity: SetDirection:(-43, 90, 0)
+2022-03-16 20:34:15,670 [ 1] INFO  Unity: SetDirection:(-27, 96, 0)
+2022-03-16 20:34:15,755 [ 1] INFO  Unity: SetDirection:(-9, 100, 0)
+2022-03-16 20:34:15,856 [ 1] INFO  Unity: SetDirection:(11, 99, 0)
+2022-03-16 20:34:15,940 [ 1] INFO  Unity: SetDirection:(28, 96, 0)
+2022-03-16 20:34:16,024 [ 1] INFO  Unity: SetDirection:(45, 90, 0)
+2022-03-16 20:34:16,142 [ 1] INFO  Unity: SetDirection:(60, 80, 0)
+2022-03-16 20:34:38,026 [ 1] WARN  Unity: No script asset for GameObjectSelectionItem. Check that the definition is in a file of the same name.
+
+2022-03-16 20:34:38,026 [ 1] WARN  Unity: No script asset for GameObjectSelectionItem. Check that the definition is in a file of the same name.
+
+2022-03-16 20:34:47,914 [ 1] WARN  Unity: No script asset for GameObjectSelectionItem. Check that the definition is in a file of the same name.
+
+2022-03-16 20:34:47,914 [ 1] WARN  Unity: No script asset for GameObjectSelectionItem. Check that the definition is in a file of the same name.
+
+2022-03-16 20:34:51,949 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:34:52,656 [ 1] INFO  Unity: Stop
+2022-03-16 20:34:53,095 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
+2022-03-16 20:34:53,229 [ 1] INFO  Unity: SetDirection:(85, 52, 0)
+2022-03-16 20:34:53,330 [ 1] INFO  Unity: SetDirection:(94, 34, 0)
+2022-03-16 20:34:53,415 [ 1] INFO  Unity: SetDirection:(99, 17, 0)
+2022-03-16 20:34:53,516 [ 1] INFO  Unity: SetDirection:(100, -4, 0)
+2022-03-16 20:34:53,616 [ 1] INFO  Unity: SetDirection:(97, -24, 0)
+2022-03-16 20:34:53,701 [ 1] INFO  Unity: SetDirection:(91, -41, 0)
+2022-03-16 20:34:53,802 [ 1] INFO  Unity: SetDirection:(81, -59, 0)
+2022-03-16 20:34:53,886 [ 1] INFO  Unity: SetDirection:(69, -72, 0)
+2022-03-16 20:34:53,993 [ 1] INFO  Unity: SetDirection:(53, -85, 0)
+2022-03-16 20:34:54,077 [ 1] INFO  Unity: SetDirection:(37, -93, 0)
+2022-03-16 20:34:54,162 [ 1] INFO  Unity: SetDirection:(19, -98, 0)
+2022-03-16 20:34:54,358 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2022-03-16 20:35:09,046 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:35:09,646 [ 1] INFO  Unity: Stop
+2022-03-16 20:35:13,697 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:35:14,356 [ 1] INFO  Unity: SetPosition:(3251, 2882, 799)
+2022-03-16 20:35:14,624 [ 1] INFO  Unity: Stop
+2022-03-16 20:35:15,585 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:35:16,007 [ 1] INFO  Unity: SetDirection:(20, -98, 0)
+2022-03-16 20:35:16,082 [ 1] INFO  Unity: Stop
+2022-03-16 20:35:16,116 [ 1] INFO  Unity: SetDirection:(38, -93, 0)
+2022-03-16 20:35:16,217 [ 1] INFO  Unity: SetDirection:(56, -83, 0)
+2022-03-16 20:35:16,301 [ 1] INFO  Unity: SetDirection:(70, -72, 0)
+2022-03-16 20:35:16,403 [ 1] INFO  Unity: SetDirection:(83, -56, 0)
+2022-03-16 20:35:16,487 [ 1] INFO  Unity: SetDirection:(91, -41, 0)
+2022-03-16 20:35:16,556 [ 1] INFO  Unity: SetDirection:(97, -24, 0)
+2022-03-16 20:35:16,658 [ 1] INFO  Unity: SetDirection:(100, -3, 0)
+2022-03-16 20:35:16,761 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2022-03-16 20:35:16,865 [ 1] INFO  Unity: SetDirection:(93, 38, 0)
+2022-03-16 20:35:16,967 [ 1] INFO  Unity: SetDirection:(83, 56, 0)
+2022-03-16 20:35:17,052 [ 1] INFO  Unity: SetDirection:(72, 70, 0)
+2022-03-16 20:35:17,156 [ 1] INFO  Unity: SetDirection:(56, 83, 0)
+2022-03-16 20:35:17,225 [ 1] INFO  Unity: SetDirection:(41, 91, 0)
+2022-03-16 20:35:17,310 [ 1] INFO  Unity: SetDirection:(24, 97, 0)
+2022-03-16 20:35:17,411 [ 1] INFO  Unity: SetDirection:(3, 100, 0)
+2022-03-16 20:35:17,515 [ 1] INFO  Unity: SetDirection:(-18, 98, 0)
+2022-03-16 20:35:17,617 [ 1] INFO  Unity: SetDirection:(-38, 93, 0)
+2022-03-16 20:35:17,719 [ 1] INFO  Unity: SetDirection:(-56, 83, 0)
+2022-03-16 20:35:17,825 [ 1] INFO  Unity: SetDirection:(-72, 70, 0)
+2022-03-16 20:35:17,875 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:35:17,943 [ 1] INFO  Unity: SetDirection:(-83, 55, 0)
+2022-03-16 20:35:19,252 [ 1] INFO  Unity: SetDirection:(-72, 69, 0)
+2022-03-16 20:35:19,352 [ 1] INFO  Unity: SetDirection:(-57, 82, 0)
+2022-03-16 20:35:19,436 [ 1] INFO  Unity: SetDirection:(-42, 91, 0)
+2022-03-16 20:35:19,523 [ 1] INFO  Unity: SetDirection:(-25, 97, 0)
+2022-03-16 20:35:19,624 [ 1] INFO  Unity: SetDirection:(-5, 100, 0)
+2022-03-16 20:35:19,712 [ 1] INFO  Unity: SetDirection:(13, 99, 0)
+2022-03-16 20:35:19,812 [ 1] INFO  Unity: SetDirection:(33, 94, 0)
+2022-03-16 20:35:19,879 [ 1] INFO  Unity: SetDirection:(49, 87, 0)
+2022-03-16 20:35:19,967 [ 1] INFO  Unity: SetDirection:(63, 77, 0)
+2022-03-16 20:35:20,051 [ 1] INFO  Unity: SetDirection:(76, 65, 0)
+2022-03-16 20:35:20,156 [ 1] INFO  Unity: SetDirection:(88, 48, 0)
+2022-03-16 20:35:20,241 [ 1] INFO  Unity: SetDirection:(95, 32, 0)
+2022-03-16 20:35:20,324 [ 1] INFO  Unity: SetDirection:(99, 15, 0)
+2022-03-16 20:35:20,408 [ 1] INFO  Unity: SetDirection:(100, -2, 0)
+2022-03-16 20:35:20,493 [ 1] INFO  Unity: SetDirection:(98, -20, 0)
+2022-03-16 20:35:20,526 [ 1] INFO  Unity: Stop
+2022-03-16 20:35:20,593 [ 1] INFO  Unity: SetDirection:(92, -40, 0)
+2022-03-16 20:35:20,695 [ 1] INFO  Unity: SetDirection:(81, -58, 0)
+2022-03-16 20:35:20,797 [ 1] INFO  Unity: SetDirection:(68, -74, 0)
+2022-03-16 20:35:20,898 [ 1] INFO  Unity: SetDirection:(51, -86, 0)
+2022-03-16 20:35:20,966 [ 1] INFO  Unity: SetDirection:(35, -94, 0)
+2022-03-16 20:35:21,068 [ 1] INFO  Unity: SetDirection:(15, -99, 0)
+2022-03-16 20:35:21,153 [ 1] INFO  Unity: SetDirection:(-2, -100, 0)
+2022-03-16 20:35:21,238 [ 1] INFO  Unity: SetDirection:(-20, -98, 0)
+2022-03-16 20:35:21,340 [ 1] INFO  Unity: SetDirection:(-40, -92, 0)
+2022-03-16 20:35:21,442 [ 1] INFO  Unity: SetDirection:(-58, -81, 0)
+2022-03-16 20:35:21,543 [ 1] INFO  Unity: SetDirection:(-74, -68, 0)
+2022-03-16 20:35:21,643 [ 1] INFO  Unity: SetDirection:(-86, -51, 0)
+2022-03-16 20:35:21,729 [ 1] INFO  Unity: SetDirection:(-94, -35, 0)
+2022-03-16 20:35:21,829 [ 1] INFO  Unity: SetDirection:(-99, -15, 0)
+2022-03-16 20:35:21,915 [ 1] INFO  Unity: SetDirection:(-100, 2, 0)
+2022-03-16 20:35:21,999 [ 1] INFO  Unity: SetDirection:(-98, 20, 0)
+2022-03-16 20:35:22,101 [ 1] INFO  Unity: SetDirection:(-92, 38, 0)
+2022-03-16 20:35:22,235 [ 1] INFO  Unity: SetDirection:(-84, 55, 0)
+2022-03-16 20:35:22,631 [ 1] INFO  Unity: SetDirection:(-93, 37, 0)
+2022-03-16 20:35:22,733 [ 1] INFO  Unity: SetDirection:(-98, 18, 0)
+2022-03-16 20:35:22,818 [ 1] INFO  Unity: SetDirection:(-100, 0, 0)
+2022-03-16 20:35:22,919 [ 1] INFO  Unity: SetDirection:(-98, -20, 0)
+2022-03-16 20:35:23,020 [ 1] INFO  Unity: SetDirection:(-93, -37, 0)
+2022-03-16 20:35:23,407 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:35:24,739 [ 1] INFO  Unity: Stop
+2022-03-16 20:35:25,345 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:35:25,594 [ 1] INFO  Unity: Stop
+2022-03-16 20:35:26,385 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:35:26,604 [ 1] INFO  Unity: Stop
+2022-03-16 20:35:27,682 [ 1] INFO  Unity: MoveBack
+2022-03-16 20:35:28,038 [ 1] INFO  Unity: Stop
+2022-03-16 20:36:25,027 [ 1] INFO  Unity: SetDirection:(-84, -54, 0)
+2022-03-16 20:36:25,162 [ 1] INFO  Unity: SetDirection:(-72, -69, 0)
+2022-03-16 20:36:25,263 [ 1] INFO  Unity: SetDirection:(-57, -82, 0)
+2022-03-16 20:36:25,349 [ 1] INFO  Unity: SetDirection:(-42, -91, 0)
+2022-03-16 20:36:25,437 [ 1] INFO  Unity: SetDirection:(-25, -97, 0)
+2022-03-16 20:36:25,524 [ 1] INFO  Unity: SetDirection:(-5, -100, 0)
+2022-03-16 20:36:25,609 [ 1] INFO  Unity: SetDirection:(13, -99, 0)
+2022-03-16 20:36:25,710 [ 1] INFO  Unity: SetDirection:(33, -95, 0)
+2022-03-16 20:36:25,845 [ 1] INFO  Unity: SetDirection:(50, -87, 0)
+2022-03-16 20:36:26,537 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:36:26,976 [ 1] INFO  Unity: SetDirection:(65, -76, 0)
+2022-03-16 20:36:27,094 [ 1] INFO  Unity: SetDirection:(79, -61, 0)
+2022-03-16 20:36:27,206 [ 1] INFO  Unity: SetDirection:(90, -44, 0)
+2022-03-16 20:36:27,241 [ 1] INFO  Unity: Stop
+2022-03-16 20:36:27,291 [ 1] INFO  Unity: SetDirection:(96, -27, 0)
+2022-03-16 20:36:27,391 [ 1] INFO  Unity: SetDirection:(100, -7, 0)
+2022-03-16 20:36:27,461 [ 1] INFO  Unity: SetDirection:(99, 11, 0)
+2022-03-16 20:36:27,562 [ 1] INFO  Unity: SetDirection:(95, 31, 0)
+2022-03-16 20:36:27,580 [ 1] INFO  Unity: MoveForward
+2022-03-16 20:36:27,647 [ 1] INFO  Unity: SetDirection:(88, 47, 0)
+2022-03-16 20:36:27,732 [ 1] INFO  Unity: SetDirection:(79, 62, 0)
+2022-03-16 20:36:27,833 [ 1] INFO  Unity: SetDirection:(65, 76, 0)
+2022-03-16 20:36:27,968 [ 1] INFO  Unity: Stop
+2022-03-16 20:36:27,969 [ 1] INFO  Unity: SetDirection:(51, 86, 0)
+2022-03-16 20:37:14,803 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-16 20:37:14,804 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
 
+2022-03-16 20:37:14,805 [ 1] INFO  Unity: Character_8_法 OnDestroy :ID:0 POS:(2832, 2898, 799) DIR:(51, 86, 0) SPD:0 

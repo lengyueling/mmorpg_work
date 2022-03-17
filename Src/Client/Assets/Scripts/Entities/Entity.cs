@@ -7,6 +7,11 @@ using SkillBridge.Message;
 
 namespace Entities
 {
+    /// <summary>
+    /// 实体类是任何存在的游戏对象的父类
+    /// 拥有游戏对象的基本信息
+    /// 维护游戏实体的数据和逻辑规则
+    /// </summary>
     public class Entity
     {
         public int entityId;
