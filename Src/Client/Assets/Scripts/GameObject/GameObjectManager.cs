@@ -5,6 +5,8 @@ using UnityEngine;
 using Entities;
 using Services;
 using SkillBridge.Message;
+using Managers;
+using Models;
 
 public class GameObjectManager : MonoBehaviour
 {
@@ -73,12 +75,13 @@ public class GameObjectManager : MonoBehaviour
                 ec.isPlayer = character.IsPlayer;
             }
 
-            //将必要信息给到输入控制器
+            //将必要信息给到输入控制器,将当前角色给到相机控制和当前角色物体
             PlayerInputController pc = go.GetComponent<PlayerInputController>();
             if (pc != null)
             {
-                if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id)
+                if (character.Info.Id == User.Instance.CurrentCharacter.Id)
                 {
+                    User.Instance.CurrentCharacterObject = go;
                     MainPlayerCamera.Instance.player = go;
                     pc.enabled = true;
                     pc.character = character;

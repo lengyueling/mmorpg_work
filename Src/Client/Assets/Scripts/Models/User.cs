@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SkillBridge.Message;
+using Common.Data;
+using UnityEngine;
 
 namespace Models
 {
@@ -10,18 +13,20 @@ namespace Models
         SkillBridge.Message.NUserInfo userInfo;
 
 
-        public SkillBridge.Message.NUserInfo Info
+        public NUserInfo Info
         {
             get { return userInfo; }
         }
 
 
-        public void SetupUserInfo(SkillBridge.Message.NUserInfo info)
+        public void SetupUserInfo(NUserInfo info)
         {
             this.userInfo = info;
         }
 
-        public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
+        public NCharacterInfo CurrentCharacter { get; set; }
+        public MapDefine CurrentMapData { get; set; }
+        public GameObject CurrentCharacterObject { get; set; }
 
     }
 }

@@ -76,7 +76,7 @@ namespace GameServer.Models
         }
 
         /// <summary>
-        /// 告诉出自己之外的角色自己进入了地图
+        /// 告诉除自己之外的角色自己进入了地图
         /// </summary>
         /// <param name="conn"></param>
         /// <param name="character"></param>

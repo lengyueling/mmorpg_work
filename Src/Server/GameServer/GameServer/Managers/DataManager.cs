@@ -25,6 +25,9 @@ namespace GameServer.Managers
             Log.Info("DataManager > DataManager()");
         }
 
+        /// <summary>
+        /// ¼ÓÔØJsonÎÄµµ
+        /// </summary>
         internal void Load()
         {
             string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
