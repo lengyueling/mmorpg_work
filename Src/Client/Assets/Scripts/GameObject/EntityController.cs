@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Entities;
+using Managers;
 
-
-public class EntityController : MonoBehaviour
+public class EntityController : MonoBehaviour,IEntityNotify
 {
 
     public Animator anim;
@@ -31,6 +31,7 @@ public class EntityController : MonoBehaviour
     void Start () {
         if (entity != null)
         {
+            EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId, this);
             this.UpdateTransform();
         }
 
@@ -75,6 +76,15 @@ public class EntityController : MonoBehaviour
         {
             this.UpdateTransform();
         }
+    }
+
+    public void OnEntityRemoved()
+    {
+        if (UIWorldElementManager.Instance != null)
+        {
+            UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
+        }
+        Destroy(this.gameObject);
     }
 
     /// <summary>

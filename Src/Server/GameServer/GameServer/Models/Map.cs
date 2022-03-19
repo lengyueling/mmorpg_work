@@ -92,5 +92,37 @@ namespace GameServer.Models
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
         }
+
+        /// <summary>
+        /// 角色离开地图
+        /// </summary>
+        /// <param name="character"></param>
+        internal void CharacterLeave(NCharacterInfo cha)
+        {
+            Log.InfoFormat("CharacterLeave:Map:{0} characterId{1}", this.Define.ID, cha.Id);
+            this.MapCharacters.Remove(cha.Id);
+            foreach (var kv in this.MapCharacters)
+            {
+                SendCharacterLeaveMap(kv.Value.connection, cha);
+            }
+        }
+
+
+        /// <summary>
+        /// 告诉除自己之外的角色自己离开了地图
+        /// </summary>
+        /// <param name="conn"></param>
+        /// <param name="character"></param>
+        void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        {
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+
+            message.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
+            message.Response.mapCharacterLeave.characterId = character.Id;
+
+            byte[] data = PackageHandler.PackMessage(message);
+            conn.SendData(data, 0, data.Length);
+        }
     }
 }

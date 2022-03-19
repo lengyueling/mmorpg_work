@@ -33,6 +33,10 @@ public class UIMinimap : MonoBehaviour {
     }
 
 	void Update () {
+        if (minimapBoundingBox == null || playerTransform == null)
+        {
+            return;
+        }
         //角色在地图的绝对位置
         float realWidth = minimapBoundingBox.bounds.size.x;
         float realHeight = minimapBoundingBox.bounds.size.z;
