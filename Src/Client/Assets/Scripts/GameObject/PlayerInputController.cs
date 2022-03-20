@@ -50,8 +50,11 @@ public class PlayerInputController : MonoBehaviour {
         if (character == null)
             return;
 
-        
-        float v = Input.GetAxis("Vertical");
+        float v = 0f;
+        if (SceneManager.Instance.NowLevelName() != "CharSelect")
+        {
+             v = Input.GetAxis("Vertical");
+        }
         if (v > 0.01)
         {
             if (state != SkillBridge.Message.CharacterState.Move)

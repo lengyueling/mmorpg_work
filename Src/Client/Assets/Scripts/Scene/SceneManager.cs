@@ -43,4 +43,9 @@ public class SceneManager : MonoSingleton<SceneManager>
             onProgress(1f);
         Debug.Log("LevelLoadCompleted:" + obj.progress);
     }
+
+    public string NowLevelName()
+    {
+        return UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+    }
 }
