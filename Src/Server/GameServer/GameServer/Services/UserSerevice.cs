@@ -137,16 +137,15 @@ namespace GameServer.Services
                 MapID = 1,
                 MapPosX = 5000,
                 MapPosY = 4000,
-                MapPosZ =820,
+                MapPosZ = 820,
             };
-            DBService.Instance.Entities.Characters.Add(character);
+            character = DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character);
             DBService.Instance.Entities.SaveChanges();
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.createChar = new UserCreateCharacterResponse();
-
             message.Response.createChar.Result = Result.Success;
             message.Response.createChar.Errormsg = "None";
 

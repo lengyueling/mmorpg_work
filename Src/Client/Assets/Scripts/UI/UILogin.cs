@@ -25,10 +25,10 @@ public class UILogin : MonoBehaviour
             //登录成功，进入角色选择
             SceneManager.Instance.LoadScene("CharSelect");
         }
-		//else
-  //      {
-  //          MessageBox.Show(message, "错误", MessageBoxType.Error);
-  //      }
+        //else
+        //{
+        //    MessageBox.Show(message, "错误", MessageBoxType.Error);
+        //}
     }
 
     public void OnClickLogin()

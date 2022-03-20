@@ -78,6 +78,9 @@ public class EntityController : MonoBehaviour,IEntityNotify
         }
     }
 
+    /// <summary>
+    /// 移除实体操作
+    /// </summary>
     public void OnEntityRemoved()
     {
         if (UIWorldElementManager.Instance != null)

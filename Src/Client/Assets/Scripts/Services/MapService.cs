@@ -62,7 +62,7 @@ namespace Services
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
             Debug.LogFormat("OnMapCharacterLeave:CharID{0}", response.characterId);
-            //判断当前离开的角色是否是我自己，如果是自己则清楚所有角色，如果是其他人就清除其他人
+            //判断当前离开的角色是否是我自己，如果是自己则清除所有角色，如果是其他人就清除其他人
             if (response.characterId != User.Instance.CurrentCharacter.Id)
             {
                 CharacterManager.Instance.RemoveCharacter(response.characterId);

@@ -30,6 +30,7 @@ namespace GameServer.Managers
         {
             this.Characters.Clear();
         }
+
         /// <summary>
         /// 根据数据库中的角色来创建实体
         /// 只有运行进入游戏时才会生成实体
