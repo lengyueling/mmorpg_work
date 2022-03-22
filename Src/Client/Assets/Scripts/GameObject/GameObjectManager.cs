@@ -30,12 +30,6 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         CharacterManager.Instance.OnCharacterLeave -= OnCharacterLeave;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnCharacterEnter(Character cha)
     {
         CreateCharacterObject(cha);

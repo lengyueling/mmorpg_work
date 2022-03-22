@@ -10,7 +10,20 @@ namespace Managers
 {
     interface IEntityNotify
     {
+        /// <summary>
+        /// 移除实体
+        /// </summary>
         void OnEntityRemoved();
+        /// <summary>
+        /// 设置实体数据变化
+        /// </summary>
+        /// <param name="entity"></param>
+        void OnEntityChange(Entity entity);
+        /// <summary>
+        /// 设置实体状态变化
+        /// </summary>
+        /// <param name="event"></param>
+        void OnEntityEvent(EntityEvent @event);
     }
     class EntityManager : Singleton<EntityManager>
     {
@@ -42,6 +55,28 @@ namespace Managers
             {
                 notifiers[entity.Id].OnEntityRemoved();
                 notifiers.Remove(entity.Id);
+            }
+        }
+
+        /// <summary>
+        /// 当实体同步时
+        /// </summary>
+        /// <param name="data"></param>
+        internal void OnEntitySync(NEntitySync data)
+        {
+            Entity entity = null;
+            entities.TryGetValue(data.Id, out entity);
+            if (entity != null)
+            {
+                if (data.Entity != null)
+                {
+                    entity.EntityData = data.Entity;
+                }
+                if (notifiers.ContainsKey(data.Id))
+                {
+                    notifiers[entity.entityId].OnEntityChange(entity);
+                    notifiers[entity.entityId].OnEntityEvent(data.Event);
+                }
             }
         }
     }

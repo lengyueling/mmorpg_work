@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SkillBridge.Message;
+using GameServer.Services;
 
 using Common;
 using Common.Data;
@@ -99,7 +100,7 @@ namespace GameServer.Models
         /// <param name="character"></param>
         internal void CharacterLeave(NCharacterInfo cha)
         {
-            Log.InfoFormat("CharacterLeave:Map:{0} characterId{1}", this.Define.ID, cha.Id);
+            Log.InfoFormat("CharacterLeave:Map:{0} characterId:{1}", this.Define.ID, cha.Id);
             this.MapCharacters.Remove(cha.Id);
             foreach (var kv in this.MapCharacters)
             {
@@ -123,6 +124,29 @@ namespace GameServer.Models
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
+        }
+
+        /// <summary>
+        /// 遍历地图中的所有角色，更新实体状态
+        /// </summary>
+        /// <param name="entity"></param>
+        internal void UpdateEntity(NEntitySync entity)
+        {
+            foreach (var kv in this.MapCharacters)
+            {
+                //如果是自己在移动，更新服务端中的Entity中的数据
+                if (kv.Value.character.entityId == entity.Id)
+                {
+                    kv.Value.character.Position = entity.Entity.Position;
+                    kv.Value.character.Direction = entity.Entity.Direction;
+                    kv.Value.character.Speed = entity.Entity.Speed;
+                }
+                //如果是其他角色在移动
+                else
+                {
+                    MapService.Instance.SendEntityUpdate(kv.Value.connection, entity);
+                }
+            }
         }
     }
 }

@@ -315,7 +315,7 @@ namespace Services
         /// <param name="response"></param>
         void OnUserGameLeave(object sender, UserGameLeaveResponse response)
         {
-            //MapService.Instance.CurrentMapId = 0;
+            MapService.Instance.CurrentMapId = 0;
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
         }
     }

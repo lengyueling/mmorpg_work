@@ -5,7 +5,7 @@ using UnityEngine;
 using Entities;
 using Managers;
 
-public class EntityController : MonoBehaviour,IEntityNotify
+public class EntityController : MonoBehaviour, IEntityNotify
 {
 
     public Animator anim;
@@ -79,18 +79,6 @@ public class EntityController : MonoBehaviour,IEntityNotify
     }
 
     /// <summary>
-    /// 移除实体操作
-    /// </summary>
-    public void OnEntityRemoved()
-    {
-        if (UIWorldElementManager.Instance != null)
-        {
-            UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
-        }
-        Destroy(this.gameObject);
-    }
-
-    /// <summary>
     /// 设置当前状态机
     /// </summary>
     /// <param name="entityEvent"></param>
@@ -112,5 +100,26 @@ public class EntityController : MonoBehaviour,IEntityNotify
                 anim.SetTrigger("Jump");
                 break;
         }
+    }
+
+    /// <summary>
+    /// 移除实体操作
+    /// </summary>
+    public void OnEntityRemoved()
+    {
+        if (UIWorldElementManager.Instance != null)
+        {
+            UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
+        }
+        Destroy(this.gameObject);
+    }
+
+    /// <summary>
+    /// 设置实体数据
+    /// </summary>
+    /// <param name="entity"></param>
+    public void OnEntityChange(Entity entity)
+    {
+        Debug.LogFormat("OnEntityChanged :ID:{0} POS:{1} DIR:{2} SPD:{3}", entity.entityId, entity.position, entity.direction, entity.speed);
     }
 }
