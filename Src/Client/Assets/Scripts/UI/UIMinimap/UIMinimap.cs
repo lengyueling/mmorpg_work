@@ -28,11 +28,13 @@ public class UIMinimap : MonoBehaviour {
         }
         this.minimap.SetNativeSize();
         this.minimap.transform.localPosition = Vector3.zero;
-        //设置当前角色坐标
-        this.playerTransform = User.Instance.CurrentCharacterObject.transform;
     }
 
 	void Update () {
+        if (playerTransform == null)
+        {
+            playerTransform = MinimapManager.Instance.PlayerTransform;
+        }
         if (minimapBoundingBox == null || playerTransform == null)
         {
             return;

@@ -1,7 +1,29 @@
-2022-03-22 11:14:18,468 [ 1] INFO  Unity: LoadingManager start
-2022-03-22 11:14:21,764 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-22 11:14:22,674 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-03-22 11:14:22,676 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-03-23 00:41:50,472 [ 1] INFO  Unity: LoadingManager start
+2022-03-23 00:41:53,646 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-23 00:41:57,220 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-23 00:41:57,221 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-23 00:41:57,223 [ 1] INFO  Unity: DoConnect
+2022-03-23 00:41:57,224 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-23 00:41:57,227 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-03-23 00:41:57,231 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-23 00:41:59,641 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-03-23 00:41:59,646 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-03-23 00:41:59,819 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-23 00:42:00,670 [ 1] INFO  Unity: Select Char:[7]¼ýÊÖ[Archer]
+2022-03-23 00:42:01,158 [ 1] INFO  Unity: UserGameEnterRequest::characterId:1
+2022-03-23 00:42:01,195 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-03-23 00:42:01,196 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-03-23 00:42:01,199 [ 1] INFO  Unity: AddCharacter:1:¼ýÊÖ Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-03-23 00:42:01,202 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-03-23 00:42:01,685 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-23 00:42:01,692 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.InitMap () (at Assets/Scripts/UI/UIMinimap/UIMinimap.cs:32)
+UIMinimap.Start () (at Assets/Scripts/UI/UIMinimap/UIMinimap.cs:17)
+}</args></log4net.Error>
+2022-03-23 00:42:11,909 [ 1] INFO  Unity: Character_1_¼ýÊÖ OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-03-23 00:42:11,912 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-23 00:42:11,913 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
