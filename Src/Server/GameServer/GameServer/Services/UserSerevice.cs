@@ -66,7 +66,7 @@ namespace GameServer.Services
                 message.Response.userLogin.Userinfo.Id = (int)user.ID;
                 message.Response.userLogin.Userinfo.Player = new NPlayerInfo();
                 message.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
-                //将角色信息返回给用户
+                //将该用户已经创建好的角色信息返回给用户
                 foreach (var c in user.Player.Characters)
                 {
                     NCharacterInfo info = new NCharacterInfo();

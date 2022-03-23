@@ -35,6 +35,9 @@ namespace GameServer.Models
         }
         internal MapDefine Define;
 
+        /// <summary>
+        /// 地图中的角色集合
+        /// </summary>
         Dictionary<int, MapCharacter> MapCharacters = new Dictionary<int, MapCharacter>();
 
 
@@ -110,7 +113,7 @@ namespace GameServer.Models
 
 
         /// <summary>
-        /// 告诉除自己之外的角色自己离开了地图
+        /// 告诉所有角色自己离开了地图
         /// </summary>
         /// <param name="conn"></param>
         /// <param name="character"></param>
