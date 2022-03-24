@@ -42241,6 +42241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29a5f548d7d416b41aad9a5a8edcc83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 1
   avatarName: {fileID: 181966884}
   avatarLevel: {fileID: 1899658402}
 --- !u!114 &1415483397

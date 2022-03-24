@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65022535247726892}
   - component: {fileID: 114719082436287614}
   m_Layer: 0
-  m_Name: Teleporter2
+  m_Name: Teleporter3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 65417643186008958}
   - component: {fileID: 114977837852201810}
   m_Layer: 0
-  m_Name: Teleporter3
+  m_Name: Teleporter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab88e4d0e6a7554b96cc5fc2150fc01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 4
+  ID: 4
 --- !u!114 &114650928091746020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab88e4d0e6a7554b96cc5fc2150fc01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  ID: 1
 --- !u!114 &114719082436287614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab88e4d0e6a7554b96cc5fc2150fc01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
+  ID: 3
 --- !u!114 &114977837852201810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab88e4d0e6a7554b96cc5fc2150fc01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 3
+  ID: 2
 --- !u!198 &198033696908031428
 ParticleSystem:
   m_ObjectHideFlags: 1

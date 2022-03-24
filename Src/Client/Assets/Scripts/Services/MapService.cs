@@ -56,6 +56,7 @@ namespace Services
                 this.CurrentMapId = response.mapId;
             }
         }
+
         /// <summary>
         /// 客户端中角色离开游戏
         /// </summary>
@@ -131,6 +132,20 @@ namespace Services
                 sb.AppendLine();
             }
             Debug.Log(sb.ToString());
+        }
+
+        /// <summary>
+        /// 客户端发送地图传送给服务端
+        /// </summary>
+        /// <param name="iD"></param>
+        internal void SendMapTelport(int teleporterID)
+        {
+            Debug.LogFormat("MapTeleportRequest :teleporterID:{0}", teleporterID);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.mapTeleport = new MapTeleportRequest();
+            message.Request.mapTeleport.teleporterId = teleporterID;
+            NetClient.Instance.SendMessage(message);
         }
     }
 }

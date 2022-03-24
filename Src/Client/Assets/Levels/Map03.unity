@@ -1422,6 +1422,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0d4a02cc69f38c44b81ffa791a4680ca,
     type: 2}
   m_PrefabInternal: {fileID: 1342040315}
+--- !u!1001 &167535027
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347930953426790, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3153f8a9a64c99047b3d10986fdfdff3, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &179273038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,7 +4683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &581669759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4720,7 +4762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9e84343b096e34eaeaceae6c489657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sceneName: MainCity
 --- !u!1 &584678553
 GameObject:
   m_ObjectHideFlags: 0

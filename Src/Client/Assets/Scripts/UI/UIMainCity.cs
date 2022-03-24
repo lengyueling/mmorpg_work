@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMainCity : MonoBehaviour {
+public class UIMainCity : MonoSingleton<UIMainCity>
+{
 
     public Text avatarName;
     public Text avatarLevel;
 
-    void Start()
+    protected override void OnStart()
     {
         this.UpdateAvatar();
     }
