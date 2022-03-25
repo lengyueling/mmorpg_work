@@ -5855,6 +5855,47 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f8c84c45931db6045b77565fe95bf9ed, type: 3}
+--- !u!1 &688078681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688078683}
+  - component: {fileID: 688078682}
+  m_Layer: 0
+  m_Name: MinimapBoundingBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &688078682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688078681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &688078683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688078681}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 34.8, y: 1.2, z: -61.8}
+  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1889144874}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &698001331
 GameObject:
   m_ObjectHideFlags: 0
@@ -7341,6 +7382,10 @@ Prefab:
         type: 2}
       propertyPath: m_ScaleInLightmap
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013927171960, guid: 1fc92f9514fd79045992e61ba28112a3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fc92f9514fd79045992e61ba28112a3, type: 2}
@@ -16868,6 +16913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889144874}
+  - component: {fileID: 1889144875}
   m_Layer: 0
   m_Name: MapRoot
   m_TagString: Untagged
@@ -16898,9 +16944,22 @@ Transform:
   - {fileID: 1978059899}
   - {fileID: 554923925}
   - {fileID: 989425972}
+  - {fileID: 688078683}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1889144875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889144873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df7f93d164554f498b76a68b7357736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapBoundingBox: {fileID: 688078682}
 --- !u!1 &1896930650
 GameObject:
   m_ObjectHideFlags: 0

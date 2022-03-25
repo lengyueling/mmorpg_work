@@ -14,20 +14,25 @@ public class UIMinimap : MonoBehaviour {
     private Transform playerTransform;
 
 	void Start () {
-        this.InitMap();
+        MinimapManager.Instance.minimap = this;
+        this.UpdateMap();
 	}
 	
-    void InitMap()
+    /// <summary>
+    /// 更新地图
+    /// </summary>
+    public void UpdateMap()
     {
-        //设置地图名字
+        //设置小地图名字
         this.mapName.text = User.Instance.CurrentMapData.Name;
-        //设置地图
-        if (this.minimap.overrideSprite == null)
-        {
-            this.minimap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
-        }
+        //设置小地图资源
+        this.minimap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
         this.minimap.SetNativeSize();
         this.minimap.transform.localPosition = Vector3.zero;
+        //设置小地图的包围盒
+        this.minimapBoundingBox = MinimapManager.Instance.MinimapBoundingBox;
+        //重置小地图的玩家位置
+        this.playerTransform = null;
     }
 
 	void Update () {
