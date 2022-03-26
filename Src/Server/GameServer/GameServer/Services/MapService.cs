@@ -84,7 +84,6 @@ namespace GameServer.Services
             character.Position = target.Position;
             character.Direction = target.Direction;
             MapManager.Instance[target.MapID].CharacterEnter(sender, character);
-
         }
     }
 }
