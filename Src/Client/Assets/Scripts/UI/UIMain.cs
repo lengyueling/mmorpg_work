@@ -32,5 +32,16 @@ public class UIMain : MonoSingleton<UIMain>
         SceneManager.Instance.LoadScene("CharSelect");
         Services.UserService.Instance.SendGameLeave();
     }
-	
+
+    public void OnClickTest()
+    {
+        UITest uITest = UIManager.Instance.Show<UITest>();
+        uITest.SetTitle("这是一个测试标题");
+        uITest.OnClose += UITest_OnClose;
+    }
+
+    private void UITest_OnClose(UIWindow sender, UIWindow.WindowResult result)
+    {
+        MessageBox.Show("点击了对话框的：" + result, "对话框响应结果", MessageBoxType.Information);
+    }
 }
