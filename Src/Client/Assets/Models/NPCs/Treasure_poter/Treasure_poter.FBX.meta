@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f49e475a6036fdb49b198ed1793ea51f
+guid: 4c26b644206218d419fbcee61d9a54b6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -45,6 +45,7 @@ ModelImporter:
     100078: Dummy002
     100080: //RootNode
     100082: treasure_poter_item01
+    100084: Root
     400000: Bip001
     400002: Bip001 Footsteps
     400004: Bip001 Head
@@ -87,6 +88,7 @@ ModelImporter:
     400078: Dummy002
     400080: //RootNode
     400082: treasure_poter_item01
+    400084: Root
     2100000: 'Material #25'
     4300000: treasure_poter_item01
     9500000: //RootNode
