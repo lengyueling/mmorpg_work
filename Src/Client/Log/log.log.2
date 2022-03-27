@@ -1,81 +1,49 @@
-2022-03-27 00:42:46,460 [ 1] INFO  Unity: LoadingManager start
-2022-03-27 00:42:49,754 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-27 00:42:53,003 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-03-27 00:42:53,004 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-03-27 00:42:53,005 [ 1] INFO  Unity: DoConnect
-2022-03-27 00:42:53,007 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-03-27 00:42:53,009 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-03-27 22:36:23,307 [ 1] INFO  Unity: LoadingManager start
+2022-03-27 22:36:26,478 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-27 22:36:29,592 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-27 22:36:29,594 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-27 22:36:29,595 [ 1] INFO  Unity: DoConnect
+2022-03-27 22:36:29,597 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-27 22:36:29,599 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-03-27 00:42:53,013 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-03-27 00:42:55,239 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-03-27 00:42:55,252 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-27 00:42:55,425 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-27 00:42:56,161 [ 1] INFO  Unity: Select Char:[6]站士[Warrior]
-2022-03-27 00:42:57,089 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-03-27 00:42:57,126 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-03-27 00:42:57,127 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-03-27 00:42:57,129 [ 1] INFO  Unity: AddCharacter:1:站士 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-27 00:42:57,131 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-27 00:42:57,728 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+2022-03-27 22:36:29,603 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-27 22:36:36,267 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-03-27 22:36:42,692 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
 
-2022-03-27 00:42:57,728 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Network\NetClient.cs:349 
 
-2022-03-27 00:42:57,844 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-27 00:42:58,952 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2022-03-27 00:42:58,954 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:0
-2022-03-27 00:42:59,054 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
-2022-03-27 00:42:59,055 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(93,-36,0) SPD:0
-2022-03-27 00:42:59,155 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
-2022-03-27 00:42:59,156 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(84,-55,0) SPD:0
-2022-03-27 00:42:59,208 [ 1] INFO  Unity: MoveForward
-2022-03-27 00:42:59,208 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(84,-55,0) SPD:300
-2022-03-27 00:42:59,258 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
-2022-03-27 00:42:59,259 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5012,3991,820) DIR:(71,-71,0) SPD:300
-2022-03-27 00:42:59,359 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
-2022-03-27 00:42:59,359 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5036,3967,820) DIR:(57,-82,0) SPD:300
-2022-03-27 00:42:59,528 [ 1] INFO  Unity: Stop
-2022-03-27 00:42:59,529 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5066,3927,820) DIR:(57,-82,0) SPD:0
-2022-03-27 00:43:08,254 [ 1] INFO  Unity: MoveForward
-2022-03-27 00:43:08,255 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5066,3927,820) DIR:(57,-82,0) SPD:300
-2022-03-27 00:43:08,759 [ 1] INFO  Unity: SetDirection:(41, -91, 0)
-2022-03-27 00:43:08,760 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5156,3807,820) DIR:(41,-91,0) SPD:300
-2022-03-27 00:43:08,928 [ 1] INFO  Unity: SetDirection:(22, -98, 0)
-2022-03-27 00:43:08,929 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5176,3757,820) DIR:(22,-98,0) SPD:300
-2022-03-27 00:43:09,030 [ 1] INFO  Unity: SetDirection:(2, -100, 0)
-2022-03-27 00:43:09,030 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5182,3727,820) DIR:(2,-100,0) SPD:300
-2022-03-27 00:43:09,130 [ 1] INFO  Unity: SetDirection:(-19, -98, 0)
-2022-03-27 00:43:09,131 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5182,3697,820) DIR:(-19,-98,0) SPD:300
-2022-03-27 00:43:09,226 [ 1] INFO  Unity: SetDirection:(-39, -92, 0)
-2022-03-27 00:43:09,226 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5176,3667,820) DIR:(-39,-92,0) SPD:300
-2022-03-27 00:43:09,326 [ 1] INFO  Unity: SetDirection:(-55, -84, 0)
-2022-03-27 00:43:09,327 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5164,3637,820) DIR:(-55,-84,0) SPD:300
-2022-03-27 00:43:09,528 [ 1] INFO  Unity: SetDirection:(-69, -73, 0)
-2022-03-27 00:43:09,529 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5128,3589,820) DIR:(-69,-73,0) SPD:300
-2022-03-27 00:43:09,882 [ 1] INFO  Unity: SetDirection:(-81, -59, 0)
-2022-03-27 00:43:09,883 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5065,3505,820) DIR:(-81,-59,0) SPD:300
-2022-03-27 00:43:10,051 [ 1] INFO  Unity: SetDirection:(-90, -43, 0)
-2022-03-27 00:43:10,051 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5025,3475,820) DIR:(-90,-43,0) SPD:300
-2022-03-27 00:43:10,286 [ 1] INFO  Unity: SetDirection:(-97, -25, 0)
-2022-03-27 00:43:10,287 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4955,3447,820) DIR:(-97,-25,0) SPD:300
-2022-03-27 00:43:10,371 [ 1] INFO  Unity: SetDirection:(-100, -7, 0)
-2022-03-27 00:43:10,372 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4925,3441,820) DIR:(-100,-7,0) SPD:300
-2022-03-27 00:43:10,525 [ 1] INFO  Unity: SetDirection:(-99, 11, 0)
-2022-03-27 00:43:10,526 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4880,3441,820) DIR:(-99,11,0) SPD:300
-2022-03-27 00:43:10,846 [ 1] INFO  Unity: SetDirection:(-100, -6, 0)
-2022-03-27 00:43:10,847 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4785,3460,820) DIR:(-100,-6,0) SPD:300
-2022-03-27 00:43:10,947 [ 1] INFO  Unity: SetDirection:(-97, -26, 0)
-2022-03-27 00:43:10,948 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4755,3460,820) DIR:(-97,-26,0) SPD:300
-2022-03-27 00:43:11,048 [ 1] INFO  Unity: SetDirection:(-90, -43, 0)
-2022-03-27 00:43:11,049 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4725,3454,820) DIR:(-90,-43,0) SPD:300
-2022-03-27 00:43:12,363 [ 1] INFO  Unity: SetPosition:(4370, 3274, 799)
-2022-03-27 00:43:12,364 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4370,3274,799) DIR:(-90,-43,0) SPD:300
-2022-03-27 00:43:12,708 [ 1] INFO  Unity: Stop
-2022-03-27 00:43:12,709 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4270,3234,799) DIR:(-90,-43,0) SPD:0
-2022-03-27 00:50:07,325 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(19,16): warning CS0649: Field `EntityController.rotation' is never assigned to, and will always have its default value
+2022-03-27 22:36:42,694 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:363)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:450)
 
-2022-03-27 00:50:07,325 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(22,16): warning CS0414: The private field `EntityController.lastRotation' is assigned but its value is never used
+2022-03-27 22:36:42,709 [ 1] INFO  Unity: DoConnect
+2022-03-27 22:36:42,710 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-27 22:36:42,714 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-03-27 00:50:07,326 [ 1] WARN  Unity: Assets/Scripts/GameObject/PlayerInputController.cs(114,11): warning CS0414: The private field `PlayerInputController.lastSync' is assigned but its value is never used
+2022-03-27 22:36:44,745 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:277)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:172)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:321)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:448)
 
-2022-03-27 00:50:07,327 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(21,32): warning CS0219: The variable `alllTeleporters' is assigned but its value is never used
+2022-03-27 22:36:44,748 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:279)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:172)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:321)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:448)
+
+2022-03-27 22:36:45,365 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-27 22:36:45,366 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
 

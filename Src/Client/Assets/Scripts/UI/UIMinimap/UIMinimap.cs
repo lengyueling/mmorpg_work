@@ -14,7 +14,12 @@ public class UIMinimap : MonoBehaviour {
     private Transform playerTransform;
 
 	void Start () {
-        MinimapManager.Instance.minimap = this;
+        //不写这个会在单例中被destory
+        if (MinimapManager.Instance.minimap == null)
+        {
+            MinimapManager.Instance.minimap = this;
+
+        }
         this.UpdateMap();
 	}
 	
