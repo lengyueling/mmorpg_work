@@ -1,10 +1,181 @@
-2022-03-27 22:41:36,790 [ 1] INFO  Unity: LoadingManager start
-2022-03-27 22:41:40,054 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-27 23:33:05,877 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(19,16): warning CS0649: Field `EntityController.rotation' is never assigned to, and will always have its default value
+2022-03-29 00:53:03,433 [ 1] INFO  Unity: LoadingManager start
+2022-03-29 00:53:06,718 [ 1] INFO  Unity: DataManager > DataManager()
+2022-03-29 00:53:09,910 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-03-29 00:53:09,911 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-03-29 00:53:09,913 [ 1] INFO  Unity: DoConnect
+2022-03-29 00:53:09,914 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-03-29 00:53:09,917 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-03-27 23:33:05,878 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(22,16): warning CS0414: The private field `EntityController.lastRotation' is assigned but its value is never used
+2022-03-29 00:53:09,919 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-03-29 00:53:12,169 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-03-29 00:53:12,175 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-03-29 00:53:12,540 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-29 00:53:13,197 [ 1] INFO  Unity: Select Char:[12]test[Wizard]
+2022-03-29 00:53:13,677 [ 1] INFO  Unity: Select Char:[13]²â111[Warrior]
+2022-03-29 00:53:14,487 [ 1] INFO  Unity: UserGameEnterRequest::characterId:1
+2022-03-29 00:53:14,524 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-03-29 00:53:14,525 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-03-29 00:53:14,528 [ 1] INFO  Unity: AddCharacter:1:²â111 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-03-29 00:53:14,530 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-03-29 00:53:15,346 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-03-29 00:53:15,893 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-03-29 00:53:15,894 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:0
+2022-03-29 00:53:15,994 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2022-03-29 00:53:15,995 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(93,-36,0) SPD:0
+2022-03-29 00:53:16,096 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
+2022-03-29 00:53:16,097 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(84,-55,0) SPD:0
+2022-03-29 00:53:16,195 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2022-03-29 00:53:16,197 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(71,-71,0) SPD:0
+2022-03-29 00:53:16,214 [ 1] INFO  Unity: MoveForward
+2022-03-29 00:53:16,216 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(71,-71,0) SPD:300
+2022-03-29 00:53:16,282 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2022-03-29 00:53:16,282 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5016,3984,820) DIR:(57,-82,0) SPD:300
+2022-03-29 00:53:16,384 [ 1] INFO  Unity: SetDirection:(41, -91, 0)
+2022-03-29 00:53:16,385 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5034,3960,820) DIR:(41,-91,0) SPD:300
+2022-03-29 00:53:16,553 [ 1] INFO  Unity: SetDirection:(24, -97, 0)
+2022-03-29 00:53:16,554 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5056,3905,820) DIR:(24,-97,0) SPD:300
+2022-03-29 00:53:16,771 [ 1] INFO  Unity: SetDirection:(7, -100, 0)
+2022-03-29 00:53:16,772 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5069,3840,820) DIR:(7,-100,0) SPD:300
+2022-03-29 00:53:16,873 [ 1] INFO  Unity: SetDirection:(-11, -99, 0)
+2022-03-29 00:53:16,874 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5069,3810,820) DIR:(-11,-99,0) SPD:300
+2022-03-29 00:53:16,957 [ 1] INFO  Unity: SetDirection:(-28, -96, 0)
+2022-03-29 00:53:16,958 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5064,3785,820) DIR:(-28,-96,0) SPD:300
+2022-03-29 00:53:17,041 [ 1] INFO  Unity: SetDirection:(-45, -89, 0)
+2022-03-29 00:53:17,042 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5059,3760,820) DIR:(-45,-89,0) SPD:300
+2022-03-29 00:53:17,143 [ 1] INFO  Unity: SetDirection:(-62, -78, 0)
+2022-03-29 00:53:17,144 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5047,3736,820) DIR:(-62,-78,0) SPD:300
+2022-03-29 00:53:17,228 [ 1] INFO  Unity: SetDirection:(-75, -66, 0)
+2022-03-29 00:53:17,229 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5032,3716,820) DIR:(-75,-66,0) SPD:300
+2022-03-29 00:53:17,691 [ 1] INFO  Unity: SetDirection:(-62, -79, 0)
+2022-03-29 00:53:17,692 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4920,3632,820) DIR:(-62,-79,0) SPD:300
+2022-03-29 00:53:18,002 [ 1] INFO  Unity: SetDirection:(-75, -66, 0)
+2022-03-29 00:53:18,003 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4866,3560,820) DIR:(-75,-66,0) SPD:300
+2022-03-29 00:53:18,105 [ 1] INFO  Unity: SetDirection:(-86, -50, 0)
+2022-03-29 00:53:18,105 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4842,3542,820) DIR:(-86,-50,0) SPD:300
+2022-03-29 00:53:18,157 [ 1] INFO  Unity: Stop
+2022-03-29 00:53:18,158 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4826,3530,820) DIR:(-86,-50,0) SPD:0
+2022-03-29 00:53:18,193 [ 1] INFO  Unity: SetDirection:(-95, -32, 0)
+2022-03-29 00:53:18,194 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4826,3530,820) DIR:(-95,-32,0) SPD:0
+2022-03-29 00:53:18,329 [ 1] INFO  Unity: SetDirection:(-99, -14, 0)
+2022-03-29 00:53:18,330 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4826,3530,820) DIR:(-99,-14,0) SPD:0
+2022-03-29 00:53:19,158 [ 1] WARN  Unity: taskNPC
+UnityEngine.Debug:LogWarning(Object)
+NpcController:OnMouseDown() (at Assets/Scripts/GameObject/NpcController.cs:25)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32)
 
-2022-03-27 23:33:05,879 [ 1] WARN  Unity: Assets/Scripts/GameObject/PlayerInputController.cs(114,11): warning CS0414: The private field `PlayerInputController.lastSync' is assigned but its value is never used
+2022-03-29 00:53:19,800 [ 1] INFO  Unity: MoveForward
+2022-03-29 00:53:19,800 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4826,3530,820) DIR:(-99,-14,0) SPD:300
+2022-03-29 00:53:20,237 [ 1] INFO  Unity: SetDirection:(-95, -31, 0)
+2022-03-29 00:53:20,238 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4696,3504,820) DIR:(-95,-31,0) SPD:300
+2022-03-29 00:53:20,407 [ 1] INFO  Unity: SetDirection:(-87, -49, 0)
+2022-03-29 00:53:20,407 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4646,3484,820) DIR:(-87,-49,0) SPD:300
+2022-03-29 00:53:20,861 [ 1] INFO  Unity: SetDirection:(-94, -33, 0)
+2022-03-29 00:53:20,862 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4534,3428,820) DIR:(-94,-33,0) SPD:300
+2022-03-29 00:53:21,168 [ 1] INFO  Unity: SetDirection:(-86, -51, 0)
+2022-03-29 00:53:21,169 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4444,3392,820) DIR:(-86,-51,0) SPD:300
+2022-03-29 00:53:21,270 [ 1] INFO  Unity: SetDirection:(-74, -67, 0)
+2022-03-29 00:53:21,271 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4420,3374,820) DIR:(-74,-67,0) SPD:300
+2022-03-29 00:53:21,354 [ 1] INFO  Unity: SetDirection:(-61, -79, 0)
+2022-03-29 00:53:21,355 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4400,3359,820) DIR:(-61,-79,0) SPD:300
+2022-03-29 00:53:21,443 [ 1] INFO  Unity: SetDirection:(-46, -89, 0)
+2022-03-29 00:53:21,445 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4385,3339,820) DIR:(-46,-89,0) SPD:300
+2022-03-29 00:53:21,846 [ 1] INFO  Unity: SetDirection:(-61, -80, 0)
+2022-03-29 00:53:21,847 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4337,3243,820) DIR:(-61,-80,0) SPD:300
+2022-03-29 00:53:21,881 [ 1] INFO  Unity: Stop
+2022-03-29 00:53:21,882 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4328,3231,820) DIR:(-61,-80,0) SPD:0
+2022-03-29 00:53:21,900 [ 1] INFO  Unity: MoveForward
+2022-03-29 00:53:21,901 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4328,3231,820) DIR:(-61,-80,0) SPD:300
+2022-03-29 00:53:21,934 [ 1] INFO  Unity: SetDirection:(-76, -65, 0)
+2022-03-29 00:53:21,935 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4322,3223,820) DIR:(-76,-65,0) SPD:300
+2022-03-29 00:53:22,052 [ 1] INFO  Unity: SetDirection:(-87, -49, 0)
+2022-03-29 00:53:22,053 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4294,3202,820) DIR:(-87,-49,0) SPD:300
+2022-03-29 00:53:23,124 [ 1] INFO  Unity: SetDirection:(-95, -32, 0)
+2022-03-29 00:53:23,125 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4038,3074,820) DIR:(-95,-32,0) SPD:300
+2022-03-29 00:53:23,257 [ 1] INFO  Unity: SetDirection:(-99, -15, 0)
+2022-03-29 00:53:23,258 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3998,3058,820) DIR:(-99,-15,0) SPD:300
+2022-03-29 00:53:23,358 [ 1] INFO  Unity: SetDirection:(-100, 5, 0)
+2022-03-29 00:53:23,359 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3968,3052,820) DIR:(-100,5,0) SPD:300
+2022-03-29 00:53:23,477 [ 1] INFO  Unity: SetDirection:(-97, 23, 0)
+2022-03-29 00:53:23,478 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3933,3052,820) DIR:(-97,23,0) SPD:300
+2022-03-29 00:53:24,034 [ 1] INFO  Unity: SetDirection:(-92, 40, 0)
+2022-03-29 00:53:24,035 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3763,3086,820) DIR:(-92,40,0) SPD:300
+2022-03-29 00:53:24,168 [ 1] INFO  Unity: SetDirection:(-83, 56, 0)
+2022-03-29 00:53:24,169 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3723,3102,820) DIR:(-83,56,0) SPD:300
+2022-03-29 00:53:24,269 [ 1] INFO  Unity: SetDirection:(-71, 71, 0)
+2022-03-29 00:53:24,270 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3699,3120,820) DIR:(-71,71,0) SPD:300
+2022-03-29 00:53:24,387 [ 1] INFO  Unity: SetDirection:(-57, 83, 0)
+2022-03-29 00:53:24,388 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3671,3148,820) DIR:(-57,83,0) SPD:300
+2022-03-29 00:53:25,297 [ 1] INFO  Unity: Stop
+2022-03-29 00:53:25,298 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3509,3364,820) DIR:(-57,83,0) SPD:0
+2022-03-29 00:53:25,433 [ 1] WARN  Unity: Treasure_poter
+UnityEngine.Debug:LogWarning(Object)
+NpcController:OnMouseDown() (at Assets/Scripts/GameObject/NpcController.cs:25)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32)
 
-2022-03-27 23:33:05,880 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(21,32): warning CS0219: The variable `alllTeleporters' is assigned but its value is never used
+2022-03-29 00:53:25,890 [ 1] INFO  Unity: MoveForward
+2022-03-29 00:53:25,891 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3509,3364,820) DIR:(-57,83,0) SPD:300
+2022-03-29 00:53:26,345 [ 1] INFO  Unity: SetDirection:(-40, 91, 0)
+2022-03-29 00:53:26,346 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3428,3472,820) DIR:(-40,91,0) SPD:300
+2022-03-29 00:53:26,480 [ 1] INFO  Unity: SetDirection:(-22, 97, 0)
+2022-03-29 00:53:26,481 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3412,3512,820) DIR:(-22,97,0) SPD:300
+2022-03-29 00:53:26,581 [ 1] INFO  Unity: SetDirection:(-3, 100, 0)
+2022-03-29 00:53:26,582 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3406,3542,820) DIR:(-3,100,0) SPD:300
+2022-03-29 00:53:26,717 [ 1] INFO  Unity: SetDirection:(16, 99, 0)
+2022-03-29 00:53:26,717 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3406,3582,820) DIR:(16,99,0) SPD:300
+2022-03-29 00:53:29,596 [ 1] INFO  Unity: SetPosition:(3544, 4418, 799)
+2022-03-29 00:53:29,596 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3544,4418,799) DIR:(16,99,0) SPD:300
+2022-03-29 00:53:30,527 [ 1] INFO  Unity: Stop
+2022-03-29 00:53:30,528 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(16,99,0) SPD:0
+2022-03-29 00:53:31,713 [ 1] INFO  Unity: SetDirection:(34, 94, 0)
+2022-03-29 00:53:31,714 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(34,94,0) SPD:0
+2022-03-29 00:53:31,831 [ 1] INFO  Unity: SetDirection:(51, 86, 0)
+2022-03-29 00:53:31,831 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(51,86,0) SPD:0
+2022-03-29 00:53:31,931 [ 1] INFO  Unity: SetDirection:(67, 74, 0)
+2022-03-29 00:53:31,932 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(67,74,0) SPD:0
+2022-03-29 00:53:32,017 [ 1] INFO  Unity: SetDirection:(79, 61, 0)
+2022-03-29 00:53:32,017 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(79,61,0) SPD:0
+2022-03-29 00:53:32,100 [ 1] INFO  Unity: SetDirection:(89, 45, 0)
+2022-03-29 00:53:32,101 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(89,45,0) SPD:0
+2022-03-29 00:53:32,252 [ 1] INFO  Unity: SetDirection:(96, 29, 0)
+2022-03-29 00:53:32,252 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(96,29,0) SPD:0
+2022-03-29 00:53:32,827 [ 1] WARN  Unity: DeliveryNPC01
+UnityEngine.Debug:LogWarning(Object)
+NpcController:OnMouseDown() (at Assets/Scripts/GameObject/NpcController.cs:25)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32)
 
+2022-03-29 00:53:33,197 [ 1] INFO  Unity: MoveForward
+2022-03-29 00:53:33,199 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3599,4693,799) DIR:(96,29,0) SPD:300
+2022-03-29 00:53:33,704 [ 1] INFO  Unity: SetDirection:(89, 47, 0)
+2022-03-29 00:53:33,705 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3754,4724,799) DIR:(89,47,0) SPD:300
+2022-03-29 00:53:33,806 [ 1] INFO  Unity: SetDirection:(78, 63, 0)
+2022-03-29 00:53:33,807 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3778,4736,799) DIR:(78,63,0) SPD:300
+2022-03-29 00:53:33,907 [ 1] INFO  Unity: SetDirection:(63, 77, 0)
+2022-03-29 00:53:33,908 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3802,4754,799) DIR:(63,77,0) SPD:300
+2022-03-29 00:53:34,025 [ 1] INFO  Unity: SetDirection:(48, 88, 0)
+2022-03-29 00:53:34,040 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3823,4782,799) DIR:(48,88,0) SPD:300
+2022-03-29 00:53:34,816 [ 1] INFO  Unity: Stop
+2022-03-29 00:53:34,816 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3917,4970,799) DIR:(48,88,0) SPD:0
+2022-03-29 00:53:35,018 [ 1] WARN  Unity: DeliveryNPC02
+UnityEngine.Debug:LogWarning(Object)
+NpcController:OnMouseDown() (at Assets/Scripts/GameObject/NpcController.cs:25)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32)
+
+2022-03-29 00:53:35,489 [ 1] INFO  Unity: MoveForward
+2022-03-29 00:53:35,491 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(3917,4970,799) DIR:(48,88,0) SPD:300
+2022-03-29 00:53:36,047 [ 1] INFO  Unity: SetPosition:(4009, 5150, 799)
+2022-03-29 00:53:36,048 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4009,5150,799) DIR:(48,88,0) SPD:300
+2022-03-29 00:53:36,147 [ 1] INFO  Unity: SetDirection:(64, 77, 0)
+2022-03-29 00:53:36,148 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4021,5174,799) DIR:(64,77,0) SPD:300
+2022-03-29 00:53:36,249 [ 1] INFO  Unity: SetDirection:(78, 63, 0)
+2022-03-29 00:53:36,250 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4039,5198,799) DIR:(78,63,0) SPD:300
+2022-03-29 00:53:36,383 [ 1] INFO  Unity: SetDirection:(88, 47, 0)
+2022-03-29 00:53:36,384 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4071,5222,799) DIR:(88,47,0) SPD:300
+2022-03-29 00:53:36,602 [ 1] INFO  Unity: Stop
+2022-03-29 00:53:36,603 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4123,5248,799) DIR:(88,47,0) SPD:0
+2022-03-29 00:53:36,770 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-03-29 00:53:36,771 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
+
+2022-03-29 00:53:36,775 [ 1] INFO  Unity: Character_1_²â111 OnDestroy :ID:1 POS:(4123, 5248, 799) DIR:(88, 47, 0) SPD:0 
