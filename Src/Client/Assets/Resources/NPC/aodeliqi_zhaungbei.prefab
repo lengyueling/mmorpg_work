@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 114058170207971538}
   - component: {fileID: 65457804608500368}
   m_Layer: 0
-  m_Name: Treasure_poter
+  m_Name: aodeliqi_zhaungbei
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

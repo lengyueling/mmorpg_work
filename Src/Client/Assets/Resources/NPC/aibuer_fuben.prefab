@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 114591130986465604}
   - component: {fileID: 65662620325890010}
   m_Layer: 0
-  m_Name: taskNPC
+  m_Name: aibuer_fuben
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
