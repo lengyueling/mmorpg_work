@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 03/06/2022 16:44:35
+-- Date Created: 03/31/2022 14:47:20
 -- Generated from EDMX file: E:\mmorpg_warehouse\mmorpg_work\Src\Server\GameServer\GameServer\Entities.edmx
 -- --------------------------------------------------
 
@@ -80,8 +80,9 @@ GO
 
 -- Creating table 'CharacterItem'
 CREATE TABLE [dbo].[CharacterItem] (
-    [Id] int IDENTITY(1,1) NOT NULL,
-    [Name] nvarchar(max)  NOT NULL,
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [ItemID] int  NOT NULL,
+    [ItemCount] int  NOT NULL,
     [CharacterID] int  NOT NULL
 );
 GO
@@ -108,10 +109,10 @@ ADD CONSTRAINT [PK_Characters]
     PRIMARY KEY CLUSTERED ([ID] ASC);
 GO
 
--- Creating primary key on [Id] in table 'CharacterItem'
+-- Creating primary key on [ID] in table 'CharacterItem'
 ALTER TABLE [dbo].[CharacterItem]
 ADD CONSTRAINT [PK_CharacterItem]
-    PRIMARY KEY CLUSTERED ([Id] ASC);
+    PRIMARY KEY CLUSTERED ([ID] ASC);
 GO
 
 -- --------------------------------------------------

@@ -17,11 +17,11 @@ namespace GameServer.Services
         }
         public void Start()
         {
-            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<FirstTestRequest>(this.onFirstTestRequest);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<FirstTestRequest>(this.OnFirstTestRequest);
         }
-        void onFirstTestRequest(NetConnection<NetSession> sender,FirstTestRequest request)
+        void OnFirstTestRequest(NetConnection<NetSession> sender,FirstTestRequest request)
         {
-            Log.InfoFormat("onFirstTestRequest:{0}", request.Helloword);
+            Log.InfoFormat("OnFirstTestRequest:{0}", request.Helloword);
         }
     }
 }
