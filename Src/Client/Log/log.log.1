@@ -1,138 +1,88 @@
-2022-03-31 22:58:49,876 [ 1] INFO  Unity: LoadingManager start
-2022-03-31 22:58:53,209 [ 1] INFO  Unity: DataManager > DataManager()
-2022-03-31 22:58:59,081 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-03-31 22:58:59,082 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-03-31 22:58:59,084 [ 1] INFO  Unity: DoConnect
-2022-03-31 22:58:59,085 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-03-31 22:58:59,088 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-03 00:15:16,512 [ 1] INFO  Unity: LoadingManager start
+2022-04-03 00:15:19,662 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-03 00:15:22,767 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-04-03 00:15:22,769 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-03 00:15:22,770 [ 1] INFO  Unity: DoConnect
+2022-04-03 00:15:22,772 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-03 00:15:22,774 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-03-31 22:58:59,090 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-03-31 22:59:01,570 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-03-31 22:59:01,576 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-31 22:59:02,209 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 22:59:03,220 [ 1] INFO  Unity: Select Char:[1]test[Warrior]
-2022-03-31 22:59:04,769 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-03-31 22:59:05,076 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-03-31 22:59:05,078 [ 1] INFO  Unity: ItemManager:Initid:1,Count:2
-2022-03-31 22:59:05,079 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-03-31 22:59:05,081 [ 1] INFO  Unity: AddCharacter:1:test Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-31 22:59:05,085 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-31 22:59:06,407 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 22:59:58,222 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-31 22:59:58,224 [ 1] INFO  Unity: UserGameLeave
-2022-03-31 22:59:58,381 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
-2022-03-31 22:59:58,384 [ 1] INFO  Unity: RemoveCharacter:1
-2022-03-31 22:59:58,388 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-03-31 22:59:58,389 [ 1] INFO  Unity: Character_1_test OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-03-31 22:59:58,492 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 22:59:59,371 [ 1] INFO  Unity: Select Char:[1]test[Warrior]
-2022-03-31 23:00:00,189 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-03-31 23:00:00,223 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-03-31 23:00:00,224 [ 1] INFO  Unity: ItemManager:Initid:1,Count:2
-2022-03-31 23:00:00,225 [ 1] INFO  Unity: ItemManager:Initid:2,Count:5
-2022-03-31 23:00:00,225 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-03-31 23:00:00,226 [ 1] INFO  Unity: AddCharacter:2:test Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-31 23:00:00,228 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-31 23:00:01,035 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 23:00:18,094 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-31 23:00:18,095 [ 1] INFO  Unity: UserGameLeave
-2022-03-31 23:00:18,228 [ 1] INFO  Unity: OnMapCharacterLeave:CharID2
-2022-03-31 23:00:18,229 [ 1] INFO  Unity: RemoveCharacter:2
-2022-03-31 23:00:18,230 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-03-31 23:00:18,231 [ 1] INFO  Unity: Character_2_test OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-03-31 23:00:18,320 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 23:00:19,500 [ 1] INFO  Unity: Select Char:[1]test[Warrior]
-2022-03-31 23:00:20,211 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-03-31 23:00:20,245 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-03-31 23:00:20,246 [ 1] INFO  Unity: ItemManager:Initid:1,Count:2
-2022-03-31 23:00:20,247 [ 1] INFO  Unity: ItemManager:Initid:2,Count:5
-2022-03-31 23:00:20,248 [ 1] ERROR Unity: Message handler exception:, An element with the same key already exists in the dictionary., mscorlib,   at System.Collections.Generic.Dictionary`2[System.Int32,Models.Item].Add (Int32 key, Models.Item value) [0x0007e] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:404 
-  at Managers.ItemManager.Init (System.Collections.Generic.List`1 items) [0x00036] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Managers\ItemManager.cs:27 
-  at Services.UserService.OnUserGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:297 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
-2022-03-31 23:00:20,249 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{ArgumentException: An element with the same key already exists in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Models.Item].Add (Int32 key, Models.Item value) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:404)
-Managers.ItemManager.Init (System.Collections.Generic.List`1 items) (at Assets/Scripts/Managers/ItemManager.cs:27)
-Services.UserService.OnUserGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:297)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
+2022-04-03 00:15:22,776 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-03 00:15:22,879 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-04-03 00:15:22,884 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-03 00:15:23,234 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-03 00:15:24,189 [ 1] INFO  Unity: Select Char:[1]zhanshi[Warrior]
+2022-04-03 00:15:24,977 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-04-03 00:15:25,014 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-03 00:15:25,016 [ 1] INFO  Unity: ItemManager:InitId:2,Count:5
+2022-04-03 00:15:25,017 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-03 00:15:25,019 [ 1] INFO  Unity: AddCharacter:4:zhanshi Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-03 00:15:25,022 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-03 00:15:25,797 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-03 00:15:27,683 [ 1] INFO  Unity: MoveForward
+2022-04-03 00:15:27,685 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2022-04-03 00:15:28,408 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-04-03 00:15:28,409 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5220,4000,820) DIR:(98,-18,0) SPD:300
+2022-04-03 00:15:28,510 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2022-04-03 00:15:28,511 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5250,3994,820) DIR:(93,-36,0) SPD:300
+2022-04-03 00:15:28,610 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
+2022-04-03 00:15:28,612 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5280,3982,820) DIR:(84,-54,0) SPD:300
+2022-04-03 00:15:28,696 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
+2022-04-03 00:15:28,697 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5300,3967,820) DIR:(73,-68,0) SPD:300
+2022-04-03 00:15:28,798 [ 1] INFO  Unity: SetDirection:(58, -82, 0)
+2022-04-03 00:15:28,799 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5324,3949,820) DIR:(58,-82,0) SPD:300
+2022-04-03 00:15:28,883 [ 1] INFO  Unity: SetDirection:(42, -91, 0)
+2022-04-03 00:15:28,884 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5339,3929,820) DIR:(42,-91,0) SPD:300
+2022-04-03 00:15:28,985 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
+2022-04-03 00:15:28,985 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5351,3899,820) DIR:(23,-97,0) SPD:300
+2022-04-03 00:15:29,069 [ 1] INFO  Unity: SetDirection:(5, -100, 0)
+2022-04-03 00:15:29,070 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5356,3874,820) DIR:(5,-100,0) SPD:300
+2022-04-03 00:15:29,174 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
+2022-04-03 00:15:29,175 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5356,3844,820) DIR:(-15,-99,0) SPD:300
+2022-04-03 00:15:29,241 [ 1] INFO  Unity: SetDirection:(-32, -95, 0)
+2022-04-03 00:15:29,242 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5351,3819,820) DIR:(-32,-95,0) SPD:300
+2022-04-03 00:15:29,327 [ 1] INFO  Unity: SetDirection:(-48, -88, 0)
+2022-04-03 00:15:29,328 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5341,3794,820) DIR:(-48,-88,0) SPD:300
+2022-04-03 00:15:29,445 [ 1] INFO  Unity: SetDirection:(-63, -77, 0)
+2022-04-03 00:15:29,446 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5327,3766,820) DIR:(-63,-77,0) SPD:300
+2022-04-03 00:15:29,647 [ 1] INFO  Unity: Stop
+2022-04-03 00:15:29,648 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5291,3718,820) DIR:(-63,-77,0) SPD:0
+2022-04-03 00:15:30,668 [ 1] INFO  Unity: MoveForward
+2022-04-03 00:15:30,669 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5291,3718,820) DIR:(-63,-77,0) SPD:300
+2022-04-03 00:15:31,446 [ 1] INFO  Unity: SetDirection:(-47, -88, 0)
+2022-04-03 00:15:31,447 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5150,3530,820) DIR:(-47,-88,0) SPD:300
+2022-04-03 00:15:31,548 [ 1] INFO  Unity: SetDirection:(-29, -96, 0)
+2022-04-03 00:15:31,549 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5138,3506,820) DIR:(-29,-96,0) SPD:300
+2022-04-03 00:15:31,685 [ 1] INFO  Unity: SetDirection:(-12, -99, 0)
+2022-04-03 00:15:31,686 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5130,3466,820) DIR:(-12,-99,0) SPD:300
+2022-04-03 00:15:31,946 [ 1] INFO  Unity: Stop
+2022-04-03 00:15:31,946 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:4 POS:(5114,3386,820) DIR:(-12,-99,0) SPD:0
+2022-04-03 00:15:32,519 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-03 00:15:32,521 [ 1] INFO  Unity: UserGameLeave
+2022-04-03 00:15:32,554 [ 1] INFO  Unity: OnMapCharacterLeave:CharID4
+2022-04-03 00:15:32,556 [ 1] INFO  Unity: RemoveCharacter:4
+2022-04-03 00:15:32,560 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-03 00:15:32,560 [ 1] INFO  Unity: Character_4_zhanshi OnDestroy :ID:4 POS:(5114, 3386, 820) DIR:(-12, -99, 0) SPD:0 
+2022-04-03 00:15:32,857 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-03 00:15:37,155 [ 1] INFO  Unity: Select Char:[1]zhanshi[Warrior]
+2022-04-03 00:15:47,869 [ 1] INFO  Unity: SendCharecterCreat::charName:gongjianshou ClassArcher
+2022-04-03 00:15:47,972 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-04-03 00:15:47,974 [ 1] ERROR Unity: Message handler exception:, The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
+  at UICharacterSelect.InitCharacterSelect (Boolean init) [0x00008] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\UICharacterSelect.cs:49 
+  at UICharacterSelect.OnCharacterCreate (Result result, System.String message) [0x0000a] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\UICharacterSelect.cs:131 
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<SkillBridge.Message.Result, string>:invoke_void__this___Result_string (SkillBridge.Message.Result,string)
+  at Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) [0x0008b] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:267 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
+2022-04-03 00:15:47,975 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., UICharacterSelect.InitCharacterSelect (Boolean init) (at Assets/Scripts/UI/UICharacterSelect.cs:49)
+UICharacterSelect.OnCharacterCreate (Result result, System.String message) (at Assets/Scripts/UI/UICharacterSelect.cs:131)
+Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) (at Assets/Scripts/Services/UserService.cs:267)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
 }</args></log4net.Error>
-2022-03-31 23:00:22,868 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-03-31 23:00:22,869 [ 1] INFO  Unity: AddCharacter:3:test Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-31 23:00:22,871 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-31 23:00:23,664 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 23:00:40,535 [ 1] INFO  Unity: SetDirection:(98, -19, 0)
-2022-03-31 23:00:40,536 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5000,4000,820) DIR:(98,-19,0) SPD:0
-2022-03-31 23:00:40,607 [ 1] INFO  Unity: MoveForward
-2022-03-31 23:00:40,608 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5000,4000,820) DIR:(98,-19,0) SPD:300
-2022-03-31 23:00:40,629 [ 1] INFO  Unity: SetDirection:(93, -37, 0)
-2022-03-31 23:00:40,630 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5010,3998,820) DIR:(93,-37,0) SPD:300
-2022-03-31 23:00:40,737 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
-2022-03-31 23:00:40,738 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5040,3986,820) DIR:(84,-54,0) SPD:300
-2022-03-31 23:00:40,893 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
-2022-03-31 23:00:40,893 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5080,3956,820) DIR:(73,-68,0) SPD:300
-2022-03-31 23:00:41,253 [ 1] INFO  Unity: SetDirection:(58, -81, 0)
-2022-03-31 23:00:41,254 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5164,3893,820) DIR:(58,-81,0) SPD:300
-2022-03-31 23:00:41,354 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
-2022-03-31 23:00:41,355 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5182,3869,820) DIR:(43,-90,0) SPD:300
-2022-03-31 23:00:41,446 [ 1] INFO  Unity: Stop
-2022-03-31 23:00:41,447 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5194,3839,820) DIR:(43,-90,0) SPD:0
-2022-03-31 23:00:41,448 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
-2022-03-31 23:00:41,448 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5194,3839,820) DIR:(23,-97,0) SPD:0
-2022-03-31 23:00:41,548 [ 1] INFO  Unity: SetDirection:(3, -100, 0)
-2022-03-31 23:00:41,548 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5194,3839,820) DIR:(3,-100,0) SPD:0
-2022-03-31 23:00:41,584 [ 1] INFO  Unity: MoveForward
-2022-03-31 23:00:41,585 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5194,3839,820) DIR:(3,-100,0) SPD:300
-2022-03-31 23:00:41,641 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
-2022-03-31 23:00:41,642 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5194,3824,820) DIR:(-15,-99,0) SPD:300
-2022-03-31 23:00:41,736 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
-2022-03-31 23:00:41,736 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5188,3794,820) DIR:(-34,-94,0) SPD:300
-2022-03-31 23:00:41,876 [ 1] INFO  Unity: SetDirection:(-50, -87, 0)
-2022-03-31 23:00:41,877 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5170,3749,820) DIR:(-50,-87,0) SPD:300
-2022-03-31 23:00:41,978 [ 1] INFO  Unity: Stop
-2022-03-31 23:00:41,979 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5152,3725,820) DIR:(-50,-87,0) SPD:0
-2022-03-31 23:00:44,178 [ 1] INFO  Unity: MoveForward
-2022-03-31 23:00:44,179 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(5152,3725,820) DIR:(-50,-87,0) SPD:300
-2022-03-31 23:00:44,940 [ 1] INFO  Unity: TestManager.OnNpcInvokeInsrance :NPC[3: °£²¼¶û] Type:Functional Func:InvokeInsrance]
-2022-03-31 23:00:45,093 [ 1] INFO  Unity: Stop
-2022-03-31 23:00:45,093 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(4987,3505,820) DIR:(-50,-87,0) SPD:0
-2022-03-31 23:00:46,073 [ 1] INFO  Unity: MoveForward
-2022-03-31 23:00:46,074 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(4987,3505,820) DIR:(-50,-87,0) SPD:300
-2022-03-31 23:00:46,280 [ 1] INFO  Unity: SetPosition:(4988, 3430, 799)
-2022-03-31 23:00:46,281 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(4988,3430,799) DIR:(-50,-87,0) SPD:300
-2022-03-31 23:00:46,627 [ 1] INFO  Unity: SetDirection:(-65, -76, 0)
-2022-03-31 23:00:46,628 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(4925,3346,799) DIR:(-65,-76,0) SPD:300
-2022-03-31 23:00:47,017 [ 1] INFO  Unity: Stop
-2022-03-31 23:00:47,018 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:3 POS:(4856,3254,799) DIR:(-65,-76,0) SPD:0
-2022-03-31 23:01:10,669 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-03-31 23:01:10,671 [ 1] INFO  Unity: UserGameLeave
-2022-03-31 23:01:10,816 [ 1] INFO  Unity: OnMapCharacterLeave:CharID3
-2022-03-31 23:01:10,818 [ 1] INFO  Unity: RemoveCharacter:3
-2022-03-31 23:01:10,820 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-03-31 23:01:10,820 [ 1] INFO  Unity: Character_3_test OnDestroy :ID:3 POS:(4856, 3254, 799) DIR:(-65, -76, 0) SPD:0 
-2022-03-31 23:01:10,932 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 23:01:14,322 [ 1] INFO  Unity: Select Char:[1]test[Warrior]
-2022-03-31 23:01:15,621 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-03-31 23:01:15,655 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-03-31 23:01:15,656 [ 1] INFO  Unity: ItemManager:Initid:1,Count:2
-2022-03-31 23:01:15,657 [ 1] INFO  Unity: ItemManager:Initid:2,Count:5
-2022-03-31 23:01:15,657 [ 1] ERROR Unity: Message handler exception:, An element with the same key already exists in the dictionary., mscorlib,   at System.Collections.Generic.Dictionary`2[System.Int32,Models.Item].Add (Int32 key, Models.Item value) [0x0007e] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:404 
-  at Managers.ItemManager.Init (System.Collections.Generic.List`1 items) [0x00036] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Managers\ItemManager.cs:27 
-  at Services.UserService.OnUserGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:297 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
-2022-03-31 23:01:15,658 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{ArgumentException: An element with the same key already exists in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Models.Item].Add (Int32 key, Models.Item value) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:404)
-Managers.ItemManager.Init (System.Collections.Generic.List`1 items) (at Assets/Scripts/Managers/ItemManager.cs:27)
-Services.UserService.OnUserGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:297)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
-}</args></log4net.Error>
-2022-03-31 23:01:20,285 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-03-31 23:01:20,286 [ 1] INFO  Unity: AddCharacter:4:test Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-03-31 23:01:20,288 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-03-31 23:01:21,033 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-03-31 23:01:58,941 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-03-31 23:01:58,943 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-03 00:16:17,631 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-03 00:16:17,631 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
 
-2022-03-31 23:01:58,944 [ 1] INFO  Unity: Character_4_test OnDestroy :ID:4 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
