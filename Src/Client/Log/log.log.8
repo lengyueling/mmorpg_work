@@ -1,8 +1,61 @@
-2022-04-02 23:50:37,604 [ 1] INFO  Unity: LoadingManager start
-2022-04-02 23:50:41,592 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-02 23:51:06,443 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-02 23:51:06,444 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-03 22:52:51,703 [ 1] INFO  Unity: LoadingManager start
+2022-04-03 22:52:55,014 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-03 22:52:59,478 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-04-03 22:52:59,480 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-03 22:52:59,481 [ 1] INFO  Unity: DoConnect
+2022-04-03 22:52:59,483 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-03 22:52:59,485 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-04-03 22:52:59,488 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-03 22:53:01,719 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-04-03 22:53:01,731 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-03 22:53:02,128 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-03 22:53:02,837 [ 1] INFO  Unity: Select Char:[1]zhanshi[Warrior]
+2022-04-03 22:53:03,664 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-04-03 22:53:04,994 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-04-03 22:53:06,804 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-04-03 22:53:21,447 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Network\NetClient.cs:349 
+
+2022-04-03 22:53:21,449 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:178)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:363)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:450)
+
+2022-04-03 22:53:21,522 [ 1] INFO  Unity: DoConnect
+2022-04-03 22:53:21,522 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-03 22:53:21,524 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-04-03 22:53:23,573 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:183)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:277)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:172)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:321)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:448)
+
+2022-04-03 22:53:23,576 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:279)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:172)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:321)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:448)
+
+2022-04-03 22:56:04,121 [ 1] WARN  Unity: Assets/Scripts/GameObject/NpcController.cs(13,25): warning CS0108: `NpcController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
+
+2022-04-03 22:56:04,121 [ 1] WARN  Unity: Assets/Scripts/UI/UIMain/UIMain.cs(38,15): warning CS0219: The variable `uIBag' is assigned but its value is never used
+
+2022-04-03 22:56:04,122 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(19,16): warning CS0649: Field `EntityController.rotation' is never assigned to, and will always have its default value
+
+2022-04-03 22:56:04,123 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(22,16): warning CS0414: The private field `EntityController.lastRotation' is assigned but its value is never used
+
+2022-04-03 22:56:04,124 [ 1] WARN  Unity: Assets/Scripts/GameObject/PlayerInputController.cs(114,11): warning CS0414: The private field `PlayerInputController.lastSync' is assigned but its value is never used
+
+2022-04-03 22:56:04,125 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(21,32): warning CS0219: The variable `alllTeleporters' is assigned but its value is never used
 

@@ -15,6 +15,7 @@ public class UIMinimap : MonoBehaviour {
 
 	void Start () {
         //不写这个会在单例中被destory
+        //在单例中把创建mono改成awake实现也可以解决地图不加载的问题
         if (MinimapManager.Instance.minimap == null)
         {
             MinimapManager.Instance.minimap = this;

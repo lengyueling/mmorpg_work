@@ -33,6 +33,11 @@ public class UIMain : MonoSingleton<UIMain>
         Services.UserService.Instance.SendGameLeave();
     }
 
+    public void OnClickBag()
+    {
+        UIBag uIBag = UIManager.Instance.Show<UIBag>();
+    }
+
     public void OnClickTest()
     {
         UITest uITest = UIManager.Instance.Show<UITest>();

@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TabView : MonoBehaviour {
+public class TabView : MonoBehaviour
+{
+    /// <summary>
+    /// 几号背包按钮上的脚本
+    /// </summary>
     public TabButton[] tabButtons;
+    /// <summary>
+    /// 几号背包的物体
+    /// </summary>
     public GameObject[] tabPages;
     public int index = -1;
 
@@ -18,6 +25,10 @@ public class TabView : MonoBehaviour {
         SelectTab(0);
 	}
 
+    /// <summary>
+    /// 设置背包
+    /// </summary>
+    /// <param name="index"></param>
     public void SelectTab(int index)
     {
         if (this.index != index)

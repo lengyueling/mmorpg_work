@@ -18,7 +18,12 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 
     }
 
-    void Start()
+    /// <summary>
+    /// 在monosingleton中写awake后
+    /// 子类也不能使用awake了
+    /// 同理如果要用start需要用重写的方法
+    /// </summary>
+    void Awake()
     {
         if (global)
         {

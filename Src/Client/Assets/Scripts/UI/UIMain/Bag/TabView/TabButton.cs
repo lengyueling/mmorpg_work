@@ -22,6 +22,10 @@ public class TabButton : MonoBehaviour {
         this.GetComponent<Button>().onClick.AddListener(OnClick);
 	}
 
+    /// <summary>
+    /// 设置当前背包的sprite为被按下或者未被按下的
+    /// </summary>
+    /// <param name="select"></param>
     public void Select(bool select)
     {
         tabImage.overrideSprite = select ? activeImage : normalImage;
