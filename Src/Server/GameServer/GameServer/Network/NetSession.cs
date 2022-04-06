@@ -11,7 +11,7 @@ using SkillBridge.Message;
 
 namespace Network
 {
-    class NetSession
+    class NetSession : INetSession
     {
         /// <summary>
         /// 用户登录时进行赋值
@@ -27,12 +27,50 @@ namespace Network
         /// <summary>
         /// 断开连接，删除角色
         /// </summary>
-        internal void Disconnected()
+        public void Disconnected()
         {
             if (Character != null)
             {
                 UserService.Instance.CharacterLeave(Character);
             }
         }
+
+        NetMessage response;
+
+        public NetMessageResponse Response
+        {
+            get
+            {
+                if (response == null)
+                {
+                    response = new NetMessage();
+                }
+                if (response.Response == null)
+                {
+                    response.Response = new NetMessageResponse();
+                }
+                return response.Response;
+            }
+        }
+
+        /// <summary>
+        /// 获取当前会话的打包数据
+        /// </summary>
+        /// <returns></returns>
+        public byte[] GetResponse()
+        {
+            if (response != null)
+            {
+                if (this.Character != null && this.Character.StatusManager.HasStatus)
+                {
+                    this.Character.StatusManager.ApplyResponse(Response);
+                }
+                byte[] data = PackageHandler.PackMessage(response);
+                response = null;
+                return data;
+            }
+            return null;
+        }
+        
     }
 }

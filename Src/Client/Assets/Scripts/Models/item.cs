@@ -13,11 +13,20 @@ namespace Models
         public int Count;
         public ItemDefine Define;
 
-        public Item(NItemInfo item)
+        /// <summary>
+        /// 构造函数
+        /// this重载了Item类的构造函数
+        /// </summary>
+        /// <param name="item"></param>
+        public Item(NItemInfo item) : this(item.Id, item.Count)
         {
-            this.Id = item.Id;
-            this.Count = item.Count;
-            this.Define = DataManager.Instance.Items[item.Id];
+        }
+
+        public Item(int id, int count)
+        {
+            Id = id;
+            Count = count;
+            this.Define = DataManager.Instance.Items[this.Id];
         }
 
         public override string ToString()

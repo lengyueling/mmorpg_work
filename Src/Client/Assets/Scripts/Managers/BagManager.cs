@@ -100,5 +100,54 @@ namespace Managers
                 i++;
             }
         }
+
+        /// <summary>
+        /// 增加背包道具 
+        /// </summary>
+        /// <param name="itemId"></param>
+        /// <param name="count"></param>
+        public void AddItem(int itemId, int count)
+        {
+            ushort addCount = (ushort)count;
+            for (int i = 0; i < Items.Length; i++)
+            {
+                if (this.Items[i].ItemId == itemId)
+                {
+                    ushort canAdd = (ushort)(DataManager.Instance.Items[itemId].StackLimit - this.Items[i].Count);
+                    if (canAdd >= addCount)
+                    {
+                        this.Items[i].Count += addCount;
+                        addCount = 0;
+                        break;
+                    }
+                    else
+                    {
+                        this.Items[i].Count += canAdd;
+                        addCount -= canAdd;
+                    }
+                }
+            }
+            if (addCount > 0)
+            {
+                for (int i = 0; i < Items.Length; i++)
+                {
+                    if (this.Items[i].ItemId == 0)
+                    {
+                        this.Items[i].ItemId = (ushort)itemId;
+                        this.Items[i].Count = addCount;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 移除背包道具
+        /// </summary>
+        /// <param name="itemId"></param>
+        /// <param name="count"></param>
+        public void RemoveItem(int itemId, int count)
+        {
+
+        }
     }
 }

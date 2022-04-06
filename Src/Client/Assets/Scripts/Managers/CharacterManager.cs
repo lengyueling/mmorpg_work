@@ -36,7 +36,10 @@ namespace Managers
         {
 
         }
-
+        /// <summary>
+        /// 自己离开游戏
+        /// 移除屏幕上的所有人
+        /// </summary>
         public void Clear()
         {
             int[] keys = this.Characters.Keys.ToArray();

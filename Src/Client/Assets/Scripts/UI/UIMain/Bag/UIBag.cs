@@ -53,16 +53,17 @@ public class UIBag : UIWindow
         {
             slots[i].color = Color.gray;
         }
+        SetMoney();
         yield return null;
     }
 
     /// <summary>
-    /// 设置金钱
+    /// 设置当前金钱
     /// </summary>
-    /// <param name="title"></param>
-    public void SetTitle(string title)
+    public void SetMoney()
     {
-        this.money.text = User.Instance.CurrentCharacter.Id.ToString();
+        //this.money.text = User.Instance.CurrentCharacter.Id.ToString();
+        this.money.text = User.Instance.CurrentCharacter.Gold.ToString();
     }
 
     /// <summary>

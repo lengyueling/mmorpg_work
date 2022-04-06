@@ -141,6 +141,7 @@ namespace GameServer.Services
                 MapPosX = 5000,
                 MapPosY = 4000,
                 MapPosZ = 820,
+                Gold = 100000,//初始设置为十万金币
             };
             var bag = new TCharacterBag();
             bag.Owner = character;

@@ -81,13 +81,16 @@
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MinimapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
     <Compile Include="Assets\Scripts\Models\BagItem.cs" />
-    <Compile Include="Assets\Scripts\Models\Item.cs" />
+    <Compile Include="Assets\Scripts\Models\item.cs" />
     <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
+    <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharacterView.cs" />
@@ -100,6 +103,8 @@
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\TabView\TabView.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\UIBag.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\UIIconItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShop.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIMain.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UITest.cs" />
@@ -111,7 +116,6 @@
     <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
-    <Compile Include="Assets\Test\Login.cs" />
     <None Include="Assets\Shader\UITest.shader" />
     <None Include="Assets\Shader\Lightmap\Lightmap.shader" />
     <None Include="Assets\Shader\Particle\ParticleAdditive.shader" />

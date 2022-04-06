@@ -28,5 +28,13 @@ namespace Models
         public MapDefine CurrentMapData { get; set; }
         public GameObject CurrentCharacterObject { get; set; }
 
+        /// <summary>
+        /// 加减金币数量
+        /// </summary>
+        /// <param name="gold"></param>
+        public void AddGold(int gold)
+        {
+            this.CurrentCharacter.Gold += gold;
+        }
     }
 }
