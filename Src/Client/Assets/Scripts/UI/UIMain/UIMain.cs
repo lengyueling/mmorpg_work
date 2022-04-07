@@ -38,6 +38,11 @@ public class UIMain : MonoSingleton<UIMain>
         UIBag uIBag = UIManager.Instance.Show<UIBag>();
     }
 
+    public void OnClickCharEquip()
+    {
+        UIManager.Instance.Show<UICharEquip>();
+    }
+
     public void OnClickTest()
     {
         UITest uITest = UIManager.Instance.Show<UITest>();

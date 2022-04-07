@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\EquipManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MinimapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
@@ -103,6 +104,8 @@
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\TabView\TabView.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\UIBag.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\UIIconItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\CharEquip\UICharEquip.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\CharEquip\UICharEquipItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShop.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIMain.cs" />

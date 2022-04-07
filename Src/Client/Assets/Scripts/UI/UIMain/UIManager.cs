@@ -32,6 +32,11 @@ public class UIManager : Singleton<UIManager>
             Resources = "UI/UIShop",
             Cache = false
         });
+        this.UIResources.Add(typeof(UIShop), new UIElement()
+        {
+            Resources = "UI/UICharEquip",
+            Cache = false
+        });
     }
 
     ~UIManager()
