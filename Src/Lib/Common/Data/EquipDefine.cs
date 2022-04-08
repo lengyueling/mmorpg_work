@@ -8,7 +8,7 @@ namespace Common.Data
 {
     public class EquipDefine
     {
-        public EquipSlot slot { get; set; }
+        public EquipSlot Slot { get; set; }
         public string Category { get; set; }
         public float STR { get; set; }
         public float INT { get; set; }

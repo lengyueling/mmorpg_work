@@ -7,10 +7,11 @@ using System.Text;
 
 namespace Models
 {
-    class Item
+    public class Item
     {
         public int Id;
         public int Count;
+        public EquipDefine EquipInfo;
         public ItemDefine Define;
 
         /// <summary>
@@ -26,7 +27,8 @@ namespace Models
         {
             Id = id;
             Count = count;
-            this.Define = DataManager.Instance.Items[this.Id];
+            DataManager.Instance.Items.TryGetValue(this.Id, out this.Define);
+            DataManager.Instance.Equips.TryGetValue(this.Id, out this.EquipInfo);
         }
 
         public override string ToString()

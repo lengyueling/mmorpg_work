@@ -19,6 +19,10 @@ public class StatusService : Singleton<StatusService>, IDisposable
     public delegate bool StatusNotifyHandler(NStatus status);
 
     Dictionary<StatusType, StatusNotifyHandler> eventMap = new Dictionary<StatusType, StatusNotifyHandler>();
+    /// <summary>
+    /// 解决返回角色选择后重复进入，多次添加道具的bug，下面判断action是否重复，重复则不执行
+    /// </summary>
+    HashSet<StatusNotifyHandler> handlers = new HashSet<StatusNotifyHandler>();
 
     public void Init()
     {
@@ -33,6 +37,10 @@ public class StatusService : Singleton<StatusService>, IDisposable
     /// <param name="action"></param>
     public void RegisterStatusNofity(StatusType function, StatusNotifyHandler action)
     {
+        if (handlers.Contains(action))
+        {
+            return;
+        }
         if (!eventMap.ContainsKey(function))
         {
             eventMap[function] = action;
@@ -41,6 +49,7 @@ public class StatusService : Singleton<StatusService>, IDisposable
         {
             eventMap[function] += action;
         }
+        handlers.Add(action);
     }
 
     public StatusService()

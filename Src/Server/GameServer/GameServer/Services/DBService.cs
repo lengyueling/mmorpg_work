@@ -23,13 +23,21 @@ namespace GameServer.Services
         }
 
         /// <summary>
-        /// 异步保存DB
-        /// 执行保存命令以后继续做其他的事情
+        /// 异步/同步保存DB
+        /// 异步保存执行保存命令以后继续做其他的事情
         /// 可以加一个计时器，几秒钟统一保存一次
         /// </summary>
-        internal void Save()
+        internal void Save(bool async = false)
         {
-            entities.SaveChangesAsync();
+            if (async)
+            {
+                entities.SaveChangesAsync();
+            }
+            else
+            {
+                entities.SaveChanges();
+            }
+            
         }
     }
 }

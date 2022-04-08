@@ -10,6 +10,9 @@ namespace Managers
     class BagManager : Singleton<BagManager>
     {
         public int Unlocked;
+        /// <summary>
+        /// 通过结构体组成的数组管理背包的槽位
+        /// </summary>
         public BagItem[] Items;
         NBagInfo info;
 
@@ -34,6 +37,7 @@ namespace Managers
         }
 
         /// <summary>
+        /// 背包槽位
         /// 将字节数组解析为结构体数组
         /// </summary>
         /// <param name="items"></param>
@@ -50,6 +54,7 @@ namespace Managers
         }
 
         /// <summary>
+        /// 背包槽位
         /// 将结构体数组解析为字节数组
         /// </summary>
         /// <returns></returns>
@@ -135,6 +140,7 @@ namespace Managers
                     {
                         this.Items[i].ItemId = (ushort)itemId;
                         this.Items[i].Count = addCount;
+                        break;
                     }
                 }
             }

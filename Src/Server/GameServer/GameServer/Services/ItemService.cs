@@ -17,6 +17,8 @@ namespace GameServer.Services
         public ItemService()
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ItemBuyRequest>(this.OnItemBuy);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ItemEquipRequest>(this.OnItemEquip);
+
         }
 
         public void Init()
@@ -36,6 +38,21 @@ namespace GameServer.Services
             var result = ShopManager.Instance.BuyItem(sender, request.shopId, request.shopItemId);
             sender.Session.Response.itemBuy = new ItemBuyResponse();
             sender.Session.Response.itemBuy.Result = result;
+            sender.SendResponse();
+        }
+
+        /// <summary>
+        /// 服务器穿脱装备
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
+        void OnItemEquip(NetConnection<NetSession> sender, ItemEquipRequest request)
+        {
+            Character character = sender.Session.Character;
+            Log.InfoFormat("OnItemEquip::Character:{0}:Item:{1} Equip:{2}", character.Id, request.Slot, request.itemId);
+            var result = EquipManager.Instance.EquipItem(sender, request.Slot, request.itemId, request.isEquip);
+            sender.Session.Response.itemEquip = new ItemEquipResponse();
+            sender.Session.Response.itemEquip.Result = result;
             sender.SendResponse();
         }
     }
