@@ -1,6 +1,49 @@
-2022-04-09 00:56:52,360 [ 1] INFO  Unity: LoadingManager start
-2022-04-09 00:57:02,735 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-09 00:57:02,737 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-09 22:50:28,745 [ 1] INFO  Unity: LoadingManager start
+2022-04-09 22:50:31,903 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-09 22:50:36,093 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-04-09 22:50:36,094 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-09 22:50:36,095 [ 1] INFO  Unity: DoConnect
+2022-04-09 22:50:36,097 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-09 22:50:36,099 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-04-09 22:50:36,102 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-09 22:50:38,259 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-04-09 22:50:38,264 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-09 22:50:38,590 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 22:50:39,965 [ 1] INFO  Unity: Select Char:[4]4[Archer]
+2022-04-09 22:50:40,390 [ 1] INFO  Unity: UserGameEnterRequest::characterId:3
+2022-04-09 22:50:40,480 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-09 22:50:40,482 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-04-09 22:50:40,483 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-04-09 22:50:40,494 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-09 22:50:40,496 [ 1] INFO  Unity: AddCharacter:1:4 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-09 22:50:40,499 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-09 22:50:41,272 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 22:50:42,394 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-09 22:50:42,395 [ 1] INFO  Unity: UserGameLeave
+2022-04-09 22:50:42,537 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
+2022-04-09 22:50:42,539 [ 1] INFO  Unity: RemoveCharacter:1
+2022-04-09 22:50:42,542 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-09 22:50:42,543 [ 1] INFO  Unity: Character_1_4 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-09 22:50:42,669 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 22:50:48,838 [ 1] INFO  Unity: SendCharecterCreat::charName:13 ClassWarrior
+2022-04-09 22:50:49,142 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-04-09 22:50:49,144 [ 1] ERROR Unity: Message handler exception:, The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
+  at UICharacterSelect.InitCharacterSelect (Boolean init) [0x00008] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:49 
+  at UICharacterSelect.OnCharacterCreate (Result result, System.String message) [0x0000a] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:131 
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<SkillBridge.Message.Result, string>:invoke_void__this___Result_string (SkillBridge.Message.Result,string)
+  at Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) [0x0008b] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:267 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
+2022-04-09 22:50:49,145 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., UICharacterSelect.InitCharacterSelect (Boolean init) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:49)
+UICharacterSelect.OnCharacterCreate (Result result, System.String message) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:131)
+Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) (at Assets/Scripts/Services/UserService.cs:267)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
+}</args></log4net.Error>
+2022-04-09 22:53:06,760 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-09 22:53:06,761 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)

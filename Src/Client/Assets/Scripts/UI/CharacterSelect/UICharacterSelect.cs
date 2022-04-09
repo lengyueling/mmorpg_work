@@ -34,7 +34,7 @@ public class UICharacterSelect : MonoBehaviour {
     void Start()
     {
         InitCharacterSelect(true);
-        UserService.Instance.OnCharacterCreate += OnCharacterCreate;
+        UserService.Instance.OnCharacterCreate = OnCharacterCreate;
         //临时测试用，一般情况下会在登录界面加载数据
         //DataManager.Instance.Load();
     }

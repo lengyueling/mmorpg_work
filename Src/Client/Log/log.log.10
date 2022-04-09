@@ -1,62 +1,50 @@
-2022-04-09 00:27:24,561 [ 1] INFO  Unity: LoadingManager start
-2022-04-09 00:27:27,856 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-09 00:27:30,949 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-04-09 00:27:30,951 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-09 00:27:30,952 [ 1] INFO  Unity: DoConnect
-2022-04-09 00:27:30,954 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-09 00:27:30,956 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-09 22:36:29,729 [ 1] INFO  Unity: LoadingManager start
+2022-04-09 22:36:32,894 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-09 22:36:35,643 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-04-09 22:36:35,644 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-09 22:36:35,646 [ 1] INFO  Unity: DoConnect
+2022-04-09 22:36:35,648 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-09 22:36:35,650 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-09 00:27:30,959 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-09 00:27:31,078 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-04-09 00:27:31,083 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-09 00:27:31,472 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 00:27:32,073 [ 1] INFO  Unity: Select Char:[1]1[Warrior]
-2022-04-09 00:27:32,654 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-04-09 00:27:32,692 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-09 00:27:32,695 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
-2022-04-09 00:27:32,695 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
-2022-04-09 00:27:32,696 [ 1] INFO  Unity: ItemManager:InitId:1002,Count:1
-2022-04-09 00:27:32,697 [ 1] INFO  Unity: ItemManager:InitId:1001,Count:1
-2022-04-09 00:27:32,701 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-09 00:27:32,703 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-09 00:27:32,705 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-09 00:27:33,529 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 00:27:34,096 [ 1] INFO  Unity: MoveForward
-2022-04-09 00:27:34,097 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
-2022-04-09 00:27:34,499 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2022-04-09 00:27:34,500 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5120,4000,820) DIR:(98,-18,0) SPD:300
-2022-04-09 00:27:34,549 [ 1] INFO  Unity: Stop
-2022-04-09 00:27:34,550 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5135,3997,820) DIR:(98,-18,0) SPD:0
-2022-04-09 00:27:34,600 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
-2022-04-09 00:27:34,601 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5135,3997,820) DIR:(93,-36,0) SPD:0
-2022-04-09 00:27:34,768 [ 1] INFO  Unity: SetDirection:(85, -52, 0)
-2022-04-09 00:27:34,769 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5135,3997,820) DIR:(85,-52,0) SPD:0
-2022-04-09 00:27:37,025 [ 1] INFO  Unity: MoveForward
-2022-04-09 00:27:37,026 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5135,3997,820) DIR:(85,-52,0) SPD:300
-2022-04-09 00:27:37,838 [ 1] INFO  Unity: Stop
-2022-04-09 00:27:37,839 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(85,-52,0) SPD:0
-2022-04-09 00:27:38,343 [ 1] INFO  Unity: SetDirection:(74, -67, 0)
-2022-04-09 00:27:38,343 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(74,-67,0) SPD:0
-2022-04-09 00:27:38,462 [ 1] INFO  Unity: SetDirection:(60, -80, 0)
-2022-04-09 00:27:38,464 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(60,-80,0) SPD:0
-2022-04-09 00:27:38,562 [ 1] INFO  Unity: SetDirection:(42, -91, 0)
-2022-04-09 00:27:38,563 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(42,-91,0) SPD:0
-2022-04-09 00:27:38,664 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
-2022-04-09 00:27:38,665 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(23,-97,0) SPD:0
-2022-04-09 00:27:38,748 [ 1] INFO  Unity: SetDirection:(5, -100, 0)
-2022-04-09 00:27:38,749 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(5,-100,0) SPD:0
-2022-04-09 00:27:38,836 [ 1] INFO  Unity: SetDirection:(-16, -99, 0)
-2022-04-09 00:27:38,836 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(-16,-99,0) SPD:0
-2022-04-09 00:27:38,938 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
-2022-04-09 00:27:38,939 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(-34,-94,0) SPD:0
-2022-04-09 00:27:39,105 [ 1] INFO  Unity: SetDirection:(-50, -86, 0)
-2022-04-09 00:27:39,106 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2 POS:(5331,3850,820) DIR:(-50,-86,0) SPD:0
-2022-04-09 00:27:47,006 [ 1] INFO  Unity: SendEquipItem
-2022-04-09 00:27:49,180 [ 1] INFO  Unity: SendEquipItem
-2022-04-09 00:28:36,338 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-09 00:28:36,339 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-09 22:36:35,654 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-09 22:36:37,822 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-04-09 22:36:37,826 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-09 22:36:38,134 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 22:36:38,743 [ 1] INFO  Unity: Select Char:[7]1[Warrior]
+2022-04-09 22:36:39,485 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-04-09 22:36:39,575 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-09 22:36:39,577 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-04-09 22:36:39,578 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-04-09 22:36:39,582 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-09 22:36:39,584 [ 1] INFO  Unity: AddCharacter:1:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-09 22:36:39,586 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-09 22:36:40,348 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 22:36:41,503 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-09 22:36:41,504 [ 1] INFO  Unity: UserGameLeave
+2022-04-09 22:36:41,652 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
+2022-04-09 22:36:41,654 [ 1] INFO  Unity: RemoveCharacter:1
+2022-04-09 22:36:41,656 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-09 22:36:41,657 [ 1] INFO  Unity: Character_1_1 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-09 22:36:41,785 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 22:36:47,436 [ 1] INFO  Unity: SendCharecterCreat::charName:9 ClassWarrior
+2022-04-09 22:36:47,724 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-04-09 22:36:47,726 [ 1] ERROR Unity: Message handler exception:, The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
+  at UICharacterSelect.InitCharacterSelect (Boolean init) [0x00008] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:49 
+  at UICharacterSelect.OnCharacterCreate (Result result, System.String message) [0x0000a] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:131 
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<SkillBridge.Message.Result, string>:invoke_void__this___Result_string (SkillBridge.Message.Result,string)
+  at Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) [0x0008b] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:267 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
+2022-04-09 22:36:47,728 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., UICharacterSelect.InitCharacterSelect (Boolean init) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:49)
+UICharacterSelect.OnCharacterCreate (Result result, System.String message) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:131)
+Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) (at Assets/Scripts/Services/UserService.cs:267)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
+}</args></log4net.Error>
+2022-04-09 22:36:51,200 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-09 22:36:51,201 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)
 
-2022-04-09 00:28:36,341 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:2 POS:(5331, 3850, 820) DIR:(-50, -86, 0) SPD:0 

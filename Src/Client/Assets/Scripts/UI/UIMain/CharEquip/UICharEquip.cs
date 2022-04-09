@@ -49,6 +49,7 @@ public class UICharEquip : UIWindow
     {
         foreach (var kv in ItemManager.Instance.Items)
         {
+            //防止穿的不是衣服或者穿不为当前职业的装备
             if (kv.Value.Define.Type == ItemType.Equip && kv.Value.Define.LimitClass == User.Instance.CurrentCharacter.Class)
             {
                 //已经装备就不显示了
