@@ -1,50 +1,97 @@
-2022-04-09 22:49:07,777 [ 1] INFO  Unity: LoadingManager start
-2022-04-09 22:49:11,140 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-09 22:49:15,530 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-04-09 22:49:15,531 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-09 22:49:15,532 [ 1] INFO  Unity: DoConnect
-2022-04-09 22:49:15,534 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-09 22:49:15,536 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-09 23:22:36,288 [ 1] INFO  Unity: LoadingManager start
+2022-04-09 23:22:39,443 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-09 23:22:44,548 [ 1] INFO  Unity: UserRegisterRequest::user :2 psw:2
+2022-04-09 23:22:44,549 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-09 23:22:44,551 [ 1] INFO  Unity: DoConnect
+2022-04-09 23:22:44,552 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-09 23:22:44,555 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-09 22:49:15,539 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-09 22:49:17,664 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-04-09 22:49:17,669 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-09 22:49:18,023 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 22:50:05,243 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
-
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Network\NetClient.cs:345 
-
-2022-04-09 22:50:05,245 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:359)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:446)
-
-2022-04-09 22:50:05,265 [ 1] INFO  Unity: DoConnect
-2022-04-09 22:50:05,266 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-09 22:50:05,268 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2022-04-09 22:50:07,302 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:273)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:168)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:317)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:444)
-
-2022-04-09 22:50:07,304 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:275)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:168)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:317)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:444)
-
-2022-04-09 22:50:08,313 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-09 22:50:08,314 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-09 23:22:44,558 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-09 23:22:46,789 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2022-04-09 23:22:51,217 [ 1] INFO  Unity: UserLoginRequest::user :2 psw:2
+2022-04-09 23:22:51,279 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-04-09 23:22:51,281 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-09 23:22:51,636 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 23:22:54,612 [ 1] INFO  Unity: SendCharecterCreat::charName:1 ClassWarrior
+2022-04-09 23:22:54,718 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-04-09 23:22:55,472 [ 1] INFO  Unity: Select Char:[0]1[Warrior]
+2022-04-09 23:22:56,062 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-04-09 23:22:56,102 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-09 23:22:56,104 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-04-09 23:22:56,105 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-04-09 23:22:56,109 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-09 23:22:56,111 [ 1] INFO  Unity: AddCharacter:1:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-09 23:22:56,114 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-09 23:22:56,921 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 23:22:58,046 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-04-09 23:22:58,048 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:0
+2022-04-09 23:22:58,132 [ 1] INFO  Unity: MoveForward
+2022-04-09 23:22:58,133 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:300
+2022-04-09 23:22:58,148 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2022-04-09 23:22:58,148 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5005,3999,820) DIR:(93,-36,0) SPD:300
+2022-04-09 23:22:58,248 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
+2022-04-09 23:22:58,249 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5035,3987,820) DIR:(84,-55,0) SPD:300
+2022-04-09 23:22:58,350 [ 1] INFO  Unity: SetDirection:(71, -70, 0)
+2022-04-09 23:22:58,351 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5059,3969,820) DIR:(71,-70,0) SPD:300
+2022-04-09 23:22:58,500 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2022-04-09 23:22:58,501 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5095,3933,820) DIR:(57,-82,0) SPD:300
+2022-04-09 23:22:59,007 [ 1] INFO  Unity: Stop
+2022-04-09 23:22:59,008 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5185,3813,820) DIR:(57,-82,0) SPD:0
+2022-04-09 23:22:59,596 [ 1] INFO  Unity: SetDirection:(72, -69, 0)
+2022-04-09 23:22:59,597 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5185,3813,820) DIR:(72,-69,0) SPD:0
+2022-04-09 23:22:59,613 [ 1] INFO  Unity: MoveForward
+2022-04-09 23:22:59,614 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5185,3813,820) DIR:(72,-69,0) SPD:300
+2022-04-09 23:22:59,990 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2022-04-09 23:22:59,992 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5273,3747,820) DIR:(57,-82,0) SPD:300
+2022-04-09 23:23:00,280 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2022-04-09 23:23:00,281 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5327,3675,820) DIR:(71,-71,0) SPD:300
+2022-04-09 23:23:00,431 [ 1] INFO  Unity: Stop
+2022-04-09 23:23:00,432 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(71,-71,0) SPD:0
+2022-04-09 23:23:00,701 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2022-04-09 23:23:00,702 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(57,-82,0) SPD:0
+2022-04-09 23:23:00,953 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2022-04-09 23:23:00,954 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(71,-71,0) SPD:0
+2022-04-09 23:23:01,055 [ 1] INFO  Unity: SetDirection:(83, -56, 0)
+2022-04-09 23:23:01,056 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(83,-56,0) SPD:0
+2022-04-09 23:23:01,156 [ 1] INFO  Unity: SetDirection:(92, -38, 0)
+2022-04-09 23:23:01,157 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(92,-38,0) SPD:0
+2022-04-09 23:23:01,241 [ 1] INFO  Unity: SetDirection:(98, -21, 0)
+2022-04-09 23:23:01,242 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(98,-21,0) SPD:0
+2022-04-09 23:23:01,329 [ 1] INFO  Unity: SetDirection:(100, -1, 0)
+2022-04-09 23:23:01,330 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(100,-1,0) SPD:0
+2022-04-09 23:23:01,421 [ 1] INFO  Unity: SetDirection:(99, 17, 0)
+2022-04-09 23:23:01,422 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(99,17,0) SPD:0
+2022-04-09 23:23:01,524 [ 1] INFO  Unity: SetDirection:(93, 37, 0)
+2022-04-09 23:23:01,525 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(93,37,0) SPD:0
+2022-04-09 23:23:01,627 [ 1] INFO  Unity: SetDirection:(83, 55, 0)
+2022-04-09 23:23:01,627 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(83,55,0) SPD:0
+2022-04-09 23:23:01,711 [ 1] INFO  Unity: SetDirection:(72, 69, 0)
+2022-04-09 23:23:01,712 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(72,69,0) SPD:0
+2022-04-09 23:23:01,795 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2022-04-09 23:23:01,796 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(57,82,0) SPD:0
+2022-04-09 23:23:01,914 [ 1] INFO  Unity: SetDirection:(41, 91, 0)
+2022-04-09 23:23:01,915 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(41,91,0) SPD:0
+2022-04-09 23:23:04,276 [ 1] INFO  Unity: MoveForward
+2022-04-09 23:23:04,277 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5363,3639,820) DIR:(41,91,0) SPD:300
+2022-04-09 23:23:04,521 [ 1] INFO  Unity: SetDirection:(24, 97, 0)
+2022-04-09 23:23:04,522 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5393,3714,820) DIR:(24,97,0) SPD:300
+2022-04-09 23:23:04,656 [ 1] INFO  Unity: SetDirection:(6, 100, 0)
+2022-04-09 23:23:04,657 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5401,3754,820) DIR:(6,100,0) SPD:300
+2022-04-09 23:23:04,757 [ 1] INFO  Unity: SetDirection:(-14, 99, 0)
+2022-04-09 23:23:04,758 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5401,3784,820) DIR:(-14,99,0) SPD:300
+2022-04-09 23:23:04,841 [ 1] INFO  Unity: SetDirection:(-31, 95, 0)
+2022-04-09 23:23:04,842 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5396,3809,820) DIR:(-31,95,0) SPD:300
+2022-04-09 23:23:04,943 [ 1] INFO  Unity: SetDirection:(-47, 88, 0)
+2022-04-09 23:23:04,944 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5384,3839,820) DIR:(-47,88,0) SPD:300
+2022-04-09 23:23:05,299 [ 1] INFO  Unity: Stop
+2022-04-09 23:23:05,300 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5342,3923,820) DIR:(-47,88,0) SPD:0
+2022-04-09 23:23:15,586 [ 1] INFO  Unity: SendBuyItem
+2022-04-09 23:23:15,643 [ 1] INFO  Unity: StatusNotify:[Item][Add]1001:1
+2022-04-09 23:23:15,646 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:300
+2022-04-09 23:23:20,461 [ 1] INFO  Unity: SendEquipItem
+2022-04-09 23:23:26,720 [ 1] INFO  Unity: Character_1_1 OnDestroy :ID:1 POS:(5342, 3923, 820) DIR:(-47, 88, 0) SPD:0 
+2022-04-09 23:23:26,721 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-09 23:23:26,722 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)

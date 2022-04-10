@@ -1,49 +1,50 @@
-2022-04-09 22:39:32,998 [ 1] INFO  Unity: LoadingManager start
-2022-04-09 22:39:36,145 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-09 22:39:39,823 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-04-09 22:39:39,825 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-09 22:39:39,826 [ 1] INFO  Unity: DoConnect
-2022-04-09 22:39:39,828 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-09 22:39:39,830 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-09 22:49:07,777 [ 1] INFO  Unity: LoadingManager start
+2022-04-09 22:49:11,140 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-09 22:49:15,530 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-04-09 22:49:15,531 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-09 22:49:15,532 [ 1] INFO  Unity: DoConnect
+2022-04-09 22:49:15,534 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-09 22:49:15,536 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-09 22:39:39,833 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-09 22:39:41,977 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-04-09 22:39:41,982 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-09 22:39:42,312 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 22:39:42,986 [ 1] INFO  Unity: Select Char:[3]2[Wizard]
-2022-04-09 22:39:43,683 [ 1] INFO  Unity: UserGameEnterRequest::characterId:2
-2022-04-09 22:39:43,790 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-09 22:39:43,792 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
-2022-04-09 22:39:43,793 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
-2022-04-09 22:39:43,798 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-09 22:39:43,800 [ 1] INFO  Unity: AddCharacter:1:2 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-09 22:39:43,803 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-09 22:39:44,548 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 22:39:45,788 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-09 22:39:45,789 [ 1] INFO  Unity: UserGameLeave
-2022-04-09 22:39:45,931 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
-2022-04-09 22:39:45,933 [ 1] INFO  Unity: RemoveCharacter:1
-2022-04-09 22:39:45,936 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-09 22:39:45,937 [ 1] INFO  Unity: Character_1_2 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-09 22:39:46,062 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 22:39:57,309 [ 1] INFO  Unity: SendCharecterCreat::charName:10 ClassWarrior
-2022-04-09 22:39:57,595 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2022-04-09 22:39:57,597 [ 1] ERROR Unity: Message handler exception:, The object of type 'GameObject' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
-  at UICharacterSelect.InitCharacterSelect (Boolean init) [0x00008] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:49 
-  at UICharacterSelect.OnCharacterCreate (Result result, System.String message) [0x0000a] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:131 
-  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<SkillBridge.Message.Result, string>:invoke_void__this___Result_string (SkillBridge.Message.Result,string)
-  at Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) [0x0008b] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:267 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
-2022-04-09 22:39:57,598 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., UICharacterSelect.InitCharacterSelect (Boolean init) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:49)
-UICharacterSelect.OnCharacterCreate (Result result, System.String message) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:131)
-Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) (at Assets/Scripts/Services/UserService.cs:267)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
-}</args></log4net.Error>
-2022-04-09 22:40:01,230 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-09 22:40:01,231 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-09 22:49:15,539 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-09 22:49:17,664 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-04-09 22:49:17,669 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-09 22:49:18,023 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-09 22:50:05,243 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Network\NetClient.cs:345 
+
+2022-04-09 22:50:05,245 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:359)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:446)
+
+2022-04-09 22:50:05,265 [ 1] INFO  Unity: DoConnect
+2022-04-09 22:50:05,266 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-09 22:50:05,268 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-04-09 22:50:07,302 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:273)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:168)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:317)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:444)
+
+2022-04-09 22:50:07,304 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:275)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:168)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:317)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:444)
+
+2022-04-09 22:50:08,313 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-09 22:50:08,314 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)

@@ -116,6 +116,7 @@
     <Compile Include="Assets\Scripts\UI\UIWorldElement\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement\UIWorldElement.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement\UIWorldElementManager.cs" />
+    <Compile Include="Assets\Scripts\Utilities\EnumUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />

@@ -89,6 +89,7 @@ message NCharacterInfo {
 	repeated NItemInfo Items = 10;
 	NBagInfo Bag = 11;
 	bytes Equips = 12;
+	repeated NQuestInfo quests = 13;
 }
 
 message NItemInfo
@@ -166,8 +167,6 @@ message NEntitySync {
 	
 }
 
-
-
 ////////////////////////////////////////////////////////////////
 //
 //  Messages
@@ -195,6 +194,9 @@ message NetMessageRequest{
 	ItemBuyRequest itemBuy = 10;
 	ItemEquipRequest itemEquip = 11;
 
+	QuestListRequest questList = 12;
+	QuestAcceptRequest questAccept = 13;
+
 }
 
 message NetMessageResponse{
@@ -208,8 +210,13 @@ message NetMessageResponse{
 	MapCharacterLeaveResponse mapCharacterLeave = 7;
 
 	MapEntitySyncResponse mapEntitySync = 8;
+
 	ItemBuyResponse itemBuy = 10;
 	ItemEquipResponse itemEquip = 11;
+
+	QuestListResponse questList = 12;
+	QuestAcceptResponse questAccept = 13;
+
 	StatusNotify StatusNotify = 100;
 }
 
@@ -305,6 +312,7 @@ message MapTeleportRequest
 	int32 teleporterId = 1;
 }
 
+//ItemSystem
 message ItemBuyRequest
 {
 	int32 shopId = 1;
@@ -317,6 +325,7 @@ message ItemBuyResponse
 	string erromessage = 2;
 }
 
+//BagSystem
 //背包保存
 message BagSaveRequest
 {
@@ -338,6 +347,75 @@ message ItemEquipRequest
 }
 
 message ItemEquipResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+//QuestSystem
+enum Quset_State
+{
+	IN_PROGRESS = 0;//已接受，未完成
+	COMPLATED = 1;	//已完成，未提交
+	FINISHED = 2;	//已完成已提交
+	FAILED = 3;		//已失败
+}
+
+enum QUEST_LIST_TYPE
+{
+	ALL = 0;
+	IN_PROGRESS = 1;
+	FINISHED = 2;
+}
+
+message NQuestInfo
+{
+	int32 quest_id = 1;
+	int32 quest_guid = 2;
+	Quset_State state = 3;
+	repeated int32 targets = 4;
+}
+
+message QuestListRequest
+{
+	QUEST_LIST_TYPE listType = 1;
+}
+
+message QuestListResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	repeated NQuestInfo quests = 3;
+}
+
+message QuestAcceptRequest
+{
+	int32 quest_id = 1;
+}
+
+message QuestAcceptResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+message QuestSubmitRequest
+{
+	int32 quest_id = 1;
+}
+
+message QuestSubmitResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+message QuestAbandonRequest
+{
+	int32 quest_id = 1;
+}
+
+message QuestAbandonResponse
 {
 	RESULT result = 1;
 	string errormsg = 2;
