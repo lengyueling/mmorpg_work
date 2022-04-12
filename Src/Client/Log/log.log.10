@@ -1,49 +1,44 @@
-2022-04-09 22:40:18,700 [ 1] INFO  Unity: LoadingManager start
-2022-04-09 22:40:21,916 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-09 22:40:25,326 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-04-09 22:40:25,327 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-09 22:40:25,328 [ 1] INFO  Unity: DoConnect
-2022-04-09 22:40:25,330 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-09 22:40:25,333 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-13 00:02:50,510 [ 1] INFO  Unity: LoadingManager start
+2022-04-13 00:02:53,785 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-13 00:02:57,259 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-04-13 00:02:57,260 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-13 00:02:57,262 [ 1] INFO  Unity: DoConnect
+2022-04-13 00:02:57,264 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-13 00:02:57,266 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-09 22:40:25,335 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-09 22:40:27,548 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-04-09 22:40:27,555 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-09 22:40:27,919 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 22:40:29,512 [ 1] INFO  Unity: Select Char:[21]10[Warrior]
-2022-04-09 22:40:29,916 [ 1] INFO  Unity: UserGameEnterRequest::characterId:9
-2022-04-09 22:40:30,022 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-09 22:40:30,025 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
-2022-04-09 22:40:30,026 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
-2022-04-09 22:40:30,030 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-09 22:40:30,032 [ 1] INFO  Unity: AddCharacter:1:10 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-09 22:40:30,035 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-09 22:40:30,803 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 22:40:31,808 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-09 22:40:31,809 [ 1] INFO  Unity: UserGameLeave
-2022-04-09 22:40:31,958 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
-2022-04-09 22:40:31,960 [ 1] INFO  Unity: RemoveCharacter:1
-2022-04-09 22:40:31,963 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-09 22:40:31,964 [ 1] INFO  Unity: Character_1_10 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-09 22:40:32,096 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-09 22:40:34,952 [ 1] INFO  Unity: SendCharecterCreat::charName:11 ClassWarrior
-2022-04-09 22:40:35,257 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2022-04-09 22:40:35,259 [ 1] ERROR Unity: Message handler exception:, The object of type 'GameObject' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
-  at UICharacterSelect.InitCharacterSelect (Boolean init) [0x00008] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:49 
-  at UICharacterSelect.OnCharacterCreate (Result result, System.String message) [0x0000a] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs:131 
-  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<SkillBridge.Message.Result, string>:invoke_void__this___Result_string (SkillBridge.Message.Result,string)
-  at Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) [0x0008b] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:267 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
-2022-04-09 22:40:35,260 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., UICharacterSelect.InitCharacterSelect (Boolean init) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:49)
-UICharacterSelect.OnCharacterCreate (Result result, System.String message) (at Assets/Scripts/UI/CharacterSelect/UICharacterSelect.cs:131)
-Services.UserService.OnUserCreateCharacter (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse response) (at Assets/Scripts/Services/UserService.cs:267)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserCreateCharacterResponse] (System.Object sender, SkillBridge.Message.UserCreateCharacterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
+2022-04-13 00:02:57,269 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-13 00:02:57,379 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-04-13 00:02:57,385 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-13 00:02:57,724 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-13 00:02:58,430 [ 1] INFO  Unity: Select Char:[1]1[Warrior]
+2022-04-13 00:02:59,053 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-04-13 00:02:59,092 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-13 00:02:59,094 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-04-13 00:02:59,095 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-04-13 00:02:59,105 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.QuestManager.AddNpcQuest (Int32 npcId, Models.Quest quest) [0x00132] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Managers\QuestManager.cs:158 
+  at Managers.QuestManager.InitQuests () [0x001b2] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Managers\QuestManager.cs:109 
+  at Managers.QuestManager.Init (System.Collections.Generic.List`1 quests) [0x0001f] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Managers\QuestManager.cs:50 
+  at Services.UserService.OnUserGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x0009f] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:302 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
+2022-04-13 00:02:59,106 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.QuestManager.AddNpcQuest (Int32 npcId, Models.Quest quest) (at Assets/Scripts/Managers/QuestManager.cs:158)
+Managers.QuestManager.InitQuests () (at Assets/Scripts/Managers/QuestManager.cs:109)
+Managers.QuestManager.Init (System.Collections.Generic.List`1 quests) (at Assets/Scripts/Managers/QuestManager.cs:50)
+Services.UserService.OnUserGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:302)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
 }</args></log4net.Error>
-2022-04-09 22:40:42,541 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-09 22:40:42,542 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-13 00:04:11,922 [ 1] ERROR Unity: Assets/Scripts/Managers/QuestManager.cs(184,15): error CS1525: Unexpected symbol `NpcQuestStatus', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+
+2022-04-13 00:04:11,922 [ 1] ERROR Unity: Assets/Scripts/Managers/QuestManager.cs(186,12): error CS1525: Unexpected symbol `Dictionary', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+
+2022-04-13 00:04:11,922 [ 1] ERROR Unity: Assets/Scripts/Managers/QuestManager.cs(186,64): error CS1514: Unexpected symbol `new', expecting `.' or `{'
+
+2022-04-13 00:04:11,923 [ 1] ERROR Unity: Assets/Scripts/Managers/QuestManager.cs(186,62): error CS1530: Keyword `new' is not allowed on namespace elements
+
+2022-04-13 00:04:11,924 [ 1] ERROR Unity: Assets/Scripts/Managers/QuestManager.cs(186,65): error CS1525: Unexpected symbol `Dictionary', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+
+2022-04-13 00:04:12,543 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-13 00:04:12,543 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)

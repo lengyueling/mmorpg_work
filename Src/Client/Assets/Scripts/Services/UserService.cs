@@ -284,6 +284,7 @@ namespace Services
 
         /// <summary>
         /// 客户端用户进入游戏
+        /// 初始化各个系统
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="response"></param>
@@ -294,9 +295,11 @@ namespace Services
             {
                 if (response.Character != null)
                 {
+                    User.Instance.CurrentCharacter = response.Character;
                     ItemManager.Instance.Init(response.Character.Items);
                     BagManager.Instance.Init(response.Character.Bag);
                     EquipManager.Instance.Init(response.Character.Equips);
+                    QuestManager.Instance.Init(response.Character.Quests);
                 }
                 
             }

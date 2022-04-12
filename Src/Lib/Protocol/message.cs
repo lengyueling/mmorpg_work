@@ -654,8 +654,8 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(2, Name = @"quest_guid")]
         public int QuestGuid { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3, Name = @"state")]
-        public QusetState State { get; set; }
+        [global::ProtoBuf.ProtoMember(3, Name = @"status")]
+        public QuestStatus Status { get; set; }
 
         [global::ProtoBuf.ProtoMember(4, Name = @"targets", IsPacked = true)]
         public int[] Targets { get; set; }
@@ -890,8 +890,8 @@ namespace SkillBridge.Message
         Item = 3,
     }
 
-    [global::ProtoBuf.ProtoContract(Name = @"Quset_State")]
-    public enum QusetState
+    [global::ProtoBuf.ProtoContract(Name = @"QUEST_STATUS")]
+    public enum QuestStatus
     {
         [global::ProtoBuf.ProtoEnum(Name = @"IN_PROGRESS")]
         InProgress = 0,

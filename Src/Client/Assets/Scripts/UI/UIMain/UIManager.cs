@@ -37,6 +37,16 @@ public class UIManager : Singleton<UIManager>
             Resources = "UI/UICharEquip",
             Cache = false
         });
+        this.UIResources.Add(typeof(UIQuestSystem), new UIElement()
+        {
+            Resources = "UI/UIQuestSystem",
+            Cache = false
+        });
+        this.UIResources.Add(typeof(UIQuestDialog), new UIElement()
+        {
+            Resources = "UI/UIQuestDialog",
+            Cache = false
+        });
     }
 
     ~UIManager()

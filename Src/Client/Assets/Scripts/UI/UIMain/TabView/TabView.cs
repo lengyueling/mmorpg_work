@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TabView : MonoBehaviour
 {
+    public UnityAction<int> OnTabSelect;
     /// <summary>
-    /// 几号背包按钮上的脚本
+    /// 几号按钮上的脚本
     /// </summary>
     public TabButton[] tabButtons;
     /// <summary>
-    /// 几号背包的物体
+    /// 几号的物体
     /// </summary>
     public GameObject[] tabPages;
     public int index = -1;
@@ -26,7 +28,7 @@ public class TabView : MonoBehaviour
 	}
 
     /// <summary>
-    /// 设置背包
+    /// 设置切换页码
     /// </summary>
     /// <param name="index"></param>
     public void SelectTab(int index)
@@ -36,7 +38,14 @@ public class TabView : MonoBehaviour
             for (int i = 0; i < tabButtons.Length; i++)
             {
                 tabButtons[i].Select(i == index);
-                tabPages[i].SetActive(i == index);
+                if (i < tabPages.Length)
+                {
+                    tabPages[i].SetActive(i == index);
+                }
+            }
+            if (OnTabSelect != null)
+            {
+                OnTabSelect(index);
             }
         }
     }

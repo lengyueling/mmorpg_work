@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SkillBridge.Message;
 
-public class UINameBar : MonoBehaviour {
-
-    public Text avaverName;
+[ExecuteInEditMode]
+public class UINameBar : MonoBehaviour
+{
+    public Image avatar;
+    public Text characterName;
     public Character character;
 
 
@@ -14,15 +17,20 @@ public class UINameBar : MonoBehaviour {
     void Start () {
 		if(this.character!=null)
         {
-            
+            if (character.Info.Type == CharacterType.Monster)
+            {
+                this.avatar.gameObject.SetActive(false);
+            }
+            else
+            {
+                this.avatar.gameObject.SetActive(true);
+            }
         }
 	}
 	
 	// Update is called once per frame
 	void Update () {
         this.UpdateInfo();
-        //this.transform.LookAt(Camera.main.transform, Vector3.up);
-        this.transform.forward = Camera.main.transform.forward;
 	}
 
     void UpdateInfo()
@@ -31,9 +39,9 @@ public class UINameBar : MonoBehaviour {
         {
             string name = this.character.Name + " Lv." + this.character.Info.Level;
             //通过判断提高性能
-            if(name != this.avaverName.text)
+            if(name != this.characterName.text)
             {
-                this.avaverName.text = name;
+                this.characterName.text = name;
             }
         }
     }

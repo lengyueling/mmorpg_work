@@ -75,8 +75,12 @@ public class UIEquipItem : MonoBehaviour, IPointerClickHandler
             this.icon.overrideSprite = Resloader.Load<Sprite>(this.item.Define.Icon);
         }
     }
-    
 
+    /// <summary>
+    /// 实现接口IPointerClickHandler
+    /// 点击UIEquipItem时触发
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnPointerClick(PointerEventData eventData)
     {
         if (this.isEquiped)
