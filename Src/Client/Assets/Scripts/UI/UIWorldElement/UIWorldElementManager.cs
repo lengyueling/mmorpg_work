@@ -41,7 +41,7 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager> {
     }
 
     /// <summary>
-    /// 加入Npc状态UI
+    /// 加入Npc状态头顶UI
     /// </summary>
     /// <param name="owner"></param>
     /// <param name="status"></param>

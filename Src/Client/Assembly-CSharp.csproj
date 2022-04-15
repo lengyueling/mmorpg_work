@@ -86,13 +86,14 @@
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
     <Compile Include="Assets\Scripts\Models\BagItem.cs" />
-    <Compile Include="Assets\Scripts\Models\Item.cs" />
+    <Compile Include="Assets\Scripts\Models\item.cs" />
     <Compile Include="Assets\Scripts\Models\Quest.cs" />
     <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
     <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
+    <Compile Include="Assets\Scripts\Services\QuestService.cs" />
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs" />

@@ -31,7 +31,6 @@ public class UIQuestSystem : UIWindow
         this.listBranch.onItemSelected += this.OnQuestSelected;
         this.Tabs.OnTabSelect += OnSelectTab;
         this.RefreshUI();
-        //QuestManager.Instance.OnQuestChanged += RefreshUI;
     }
 
     /// <summary>
@@ -46,11 +45,10 @@ public class UIQuestSystem : UIWindow
 
     private void OnDestroy()
     {
-        //QuestManager.Instance.OnQuestChanged -= RefreshUI;
     }
 
     /// <summary>
-    /// 刷新UI
+    /// 当选中可接任务或者已接任务时刷新UI
     /// </summary>
     private void RefreshUI()
     {

@@ -14,10 +14,15 @@ public class UIQuestDialog : UIWindow
     public GameObject openButtons;
     public GameObject submitButtons;
 
+    /// <summary>
+    /// 设置与NPC交互框的ui
+    /// </summary>
+    /// <param name="quest"></param>
     public void SetQuest(Quest quest)
     {
         this.quest = quest;
         this.UpdateQuest();
+        //网络没有信息说明还没有接任务
         if (this.quest.Info == null)
         {
             openButtons.SetActive(true);
@@ -27,8 +32,8 @@ public class UIQuestDialog : UIWindow
         {
             if (this.quest.Info.Status == QuestStatus.Complated)
             {
-                openButtons.SetActive(true);
-                submitButtons.SetActive(false);
+                openButtons.SetActive(false);
+                submitButtons.SetActive(true);
             }
             else
             {

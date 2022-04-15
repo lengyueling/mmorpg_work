@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd86a28e1829e3439ebd43570d85324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NpcID: 3
+  npcID: 3
 --- !u!137 &137740772739432188
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

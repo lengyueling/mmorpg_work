@@ -29,6 +29,7 @@ namespace GameServer
             MapService.Instance.Init();
             BagService.Instance.Init();
             ItemService.Instance.Init();
+            QuestService.Instance.Init();
 
             thread = new Thread(new ThreadStart(this.Update));
             return true;

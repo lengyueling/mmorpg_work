@@ -2020,16 +2020,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 65081267713489258, guid: ed3d3d5066268fd4184c770e3545a867,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 137286142874991472, guid: ed3d3d5066268fd4184c770e3545a867,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed3d3d5066268fd4184c770e3545a867, type: 2}
   m_IsPrefabAsset: 0

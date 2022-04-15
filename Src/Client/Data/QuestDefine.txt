@@ -23,7 +23,13 @@
     "Target3ID": 0,
     "Target3Num": 0,
     "RewardGold": 1000,
-    "RewardExp": 2000
+    "RewardExp": 2000,
+    "RewardItem1": 1011,
+    "RewardItem1Count": 1,
+    "RewardItem2": 2,
+    "RewardItem2Count": 1,
+    "RewardItem3": 3,
+    "RewardItem3Count": 1
   },
   "1002": {
     "ID": 1002,

@@ -8,9 +8,9 @@ using Models;
 
 public class NpcController : MonoBehaviour {
 
-    public int NpcID;
+    public int npcID;
 
-    SkinnedMeshRenderer renderer;
+    new SkinnedMeshRenderer renderer;
     Animator anim;
     Color orignColor;
 
@@ -20,14 +20,45 @@ public class NpcController : MonoBehaviour {
     private bool inInteractive = false;
 
     NpcDefine npc;
+
+    NpcQuestStatus questStatus;
 	void Start ()
     {
         renderer = this.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
         anim = this.gameObject.GetComponentInChildren<Animator>();
         orignColor = this.renderer.sharedMaterial.color;
-        npc = NpcManager.Instance.GetNpcDefine(this.NpcID);
+        npc = NpcManager.Instance.GetNpcDefine(this.npcID);
         this.StartCoroutine(Actions());
-	}
+        RefreshNpcStatus();
+        QuestManager.Instance.onQuestStatusChanged += OnQuestStatusChanged;
+    }
+
+    /// <summary>
+    /// 当任务状态改变
+    /// </summary>
+    /// <param name="quest"></param>
+    void OnQuestStatusChanged(Quest quest)
+    {
+        this.RefreshNpcStatus();
+    }
+
+    /// <summary>
+    /// 刷新npc状态
+    /// </summary>
+    void RefreshNpcStatus()
+    {
+        questStatus = QuestManager.Instance.GetQuestStatusByNpc(this.npcID);
+        UIWorldElementManager.Instance.AddNpcQuestStatus(this.transform, questStatus);
+    }
+
+    private void OnDestroy()
+    {
+        QuestManager.Instance.onQuestStatusChanged -= OnQuestStatusChanged;
+        if (UIWorldElementManager.Instance != null)
+        {
+            UIWorldElementManager.Instance.RemoveNpcQuestStatus(this.transform);
+        }
+    }
 
     IEnumerator Actions()
     {
