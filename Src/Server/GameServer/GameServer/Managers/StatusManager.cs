@@ -12,9 +12,11 @@ namespace GameServer.Managers
     class StatusManager
     {
         Character Owner;
+
         /// <summary>
         /// 状态列表
         /// 记录一个会话中的多个状态
+        /// 合并发送减少SendResponse的次数
         /// </summary>
         private List<NStatus> Status { get; set; }
 
@@ -80,6 +82,7 @@ namespace GameServer.Managers
 
         /// <summary>
         /// 应用当前会话的状态
+        /// 追加新的传输请求
         /// </summary>
         /// <param name="message"></param>
         public void ApplyResponse(NetMessageResponse message)
