@@ -50,13 +50,20 @@ namespace GameServer
             thread.Join();
         }
 
+        /// <summary>
+        /// 通过线程模拟一秒执行十次的功能
+        /// </summary>
         public void Update()
         {
+            var mapManager = MapManager.Instance;
             while (running)
             {
                 Time.Tick();
                 Thread.Sleep(100);
                 //Console.WriteLine("{0} {1} {2} {3} {4}", Time.deltaTime, Time.frameCount, Time.ticks, Time.time, Time.realtimeSinceStartup);
+
+                //怪物生成有bug，之后改
+                //mapManager.Update();
             }
         }
     }
