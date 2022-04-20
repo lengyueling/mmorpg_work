@@ -16,15 +16,18 @@ public class UIMessageBox : MonoBehaviour {
 
     public UnityAction OnYes;
     public UnityAction OnNo;
+    
 
-    /// <summary>
-    /// 信息框初始化
-    /// </summary>
-    /// <param name="title"></param>
-    /// <param name="message"></param>
-    /// <param name="type"></param>
-    /// <param name="btnOK"></param>
-    /// <param name="btnCancel"></param>
+    // Use this for initialization
+    void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
     public void Init(string title, string message, MessageBoxType type = MessageBoxType.Information, string btnOK = "", string btnCancel = "")
     {
         if (!string.IsNullOrEmpty(title)) this.title.text = title;
@@ -33,8 +36,8 @@ public class UIMessageBox : MonoBehaviour {
         this.icons[1].enabled = type == MessageBoxType.Confirm;
         this.icons[2].enabled = type == MessageBoxType.Error;
 
-        if (!string.IsNullOrEmpty(btnOK)) this.buttonYesTitle.text = title;
-        if (!string.IsNullOrEmpty(btnCancel)) this.buttonNoTitle.text = title;
+        if (!string.IsNullOrEmpty(btnOK)) this.buttonYesTitle.text = btnOK;
+        if (!string.IsNullOrEmpty(btnCancel)) this.buttonNoTitle.text = btnCancel;
 
         this.buttonYes.onClick.AddListener(OnClickYes);
         this.buttonNo.onClick.AddListener(OnClickNo);

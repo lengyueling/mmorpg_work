@@ -70,10 +70,10 @@ namespace GameServer.Services
                 {
                     NCharacterInfo info = new NCharacterInfo();
                     info.Id = c.ID;
-                    info.Tid = c.ID;
                     info.Name = c.Name;
                     info.Type = CharacterType.Player;
                     info.Class = (CharacterClass)c.Class;
+                    info.ConfigId = c.TID;
                     sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
                 }
 
@@ -132,6 +132,7 @@ namespace GameServer.Services
                 Class = (int)request.Class,
                 TID = (int)request.Class,
                 MapID = 1,
+                Level = 1,
                 MapPosX = 5000,
                 MapPosY = 4000,
                 MapPosZ = 820,
@@ -169,8 +170,8 @@ namespace GameServer.Services
             foreach (var c in sender.Session.User.Player.Characters)
             {
                 NCharacterInfo info = new NCharacterInfo();
-                info.Id = 0;
-                info.Tid = c.ID;
+                info.Id = c.ID;
+                info.ConfigId = c.ID;
                 info.Name = c.Name;
                 info.Type = CharacterType.Player;
                 info.Class = (CharacterClass)c.Class;
@@ -191,6 +192,7 @@ namespace GameServer.Services
             Character character = CharacterManager.Instance.AddCharacter(dbchar);
 
             //发送用户进入游戏的信息给客户端
+            SessionManager.Instance.AddSession(character.Id, sender);
             sender.Session.Response.gameEnter = new UserGameEnterResponse();
             sender.Session.Response.gameEnter.Result = Result.Success;
             sender.Session.Response.gameEnter.Errormsg = "None";
@@ -201,6 +203,7 @@ namespace GameServer.Services
 
             //发送角色进入地图的信息给客户端
             sender.Session.Character = character;
+            sender.Session.PostResponser = character;
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
 
@@ -214,7 +217,8 @@ namespace GameServer.Services
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
 
-            CharacterLeave(character);
+            SessionManager.Instance.RemoveSession(character.Id);
+            this.CharacterLeave(character);
 
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
             sender.Session.Response.gameLeave.Result = Result.Success;
@@ -227,6 +231,7 @@ namespace GameServer.Services
         {
             CharacterManager.Instance.RemoveCharacter(character.Id);
             MapManager.Instance[character.Info.mapId].CharacterLeave(character);
+            character.Clear();
         }
     }
 }

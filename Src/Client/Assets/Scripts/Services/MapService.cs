@@ -43,11 +43,11 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:Map:{0} Count:{1}", response.mapId, response.Characters.Count);
             foreach (var cha in response.Characters)
             {
-                if (User.Instance.CurrentCharacter == null || User.Instance.CurrentCharacter.Id == cha.Id)
+                if (User.Instance.CurrentCharacter == null || (cha.Type == CharacterType.Player && User.Instance.CurrentCharacter.Id == cha.Id))
                 {//当前角色切换地图
                     User.Instance.CurrentCharacter = cha;
                 }
-                //将地图中的所有角色加入角色管理器
+                //将地图中的所有角色加入角色管理器`
                 CharacterManager.Instance.AddCharacter(cha);
             }
             if (CurrentMapId != response.mapId)
@@ -64,11 +64,11 @@ namespace Services
         /// <param name="response"></param>
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
-            Debug.LogFormat("OnMapCharacterLeave:CharID{0}", response.characterId);
+            Debug.LogFormat("OnMapCharacterLeave:CharID{0}", response.entityId);
             //判断当前离开的角色是否是我自己，如果是自己则清除所有角色，如果是其他人就清除其他人
-            if (response.characterId != User.Instance.CurrentCharacter.Id)
+            if (response.entityId != User.Instance.CurrentCharacter.EntityId)
             {
-                CharacterManager.Instance.RemoveCharacter(response.characterId);
+                CharacterManager.Instance.RemoveCharacter(response.entityId);
             }
             else
             {

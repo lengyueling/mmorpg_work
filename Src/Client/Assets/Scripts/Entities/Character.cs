@@ -13,26 +13,63 @@ namespace Entities
 
         public Common.Data.CharacterDefine Define;
 
+        /// <summary>
+        /// 封装Id
+        /// 简化Info.Id为Id
+        /// </summary>
+        public int Id
+        {
+            get
+            {
+                return this.Info.Id;
+            }
+        }
+
         public string Name
         {
             get
             {
                 if (this.Info.Type == CharacterType.Player)
+                {
                     return this.Info.Name;
+                }
                 else
+                {
                     return this.Define.Name;
+                } 
             }
         }
 
+        /// <summary>
+        /// 只要角色类型是Player就返回true
+        /// </summary>
         public bool IsPlayer
         {
-            get { return this.Info.Id == Models.User.Instance.CurrentCharacter.Id; }
+            get
+            {
+                return this.Info.Type == CharacterType.Player;
+            }
+        }
+
+        /// <summary>
+        /// 是当前的玩家
+        /// </summary>
+        public bool IsCurrentPlayer
+        {
+            get
+            {
+                if (!IsPlayer)
+                {
+                    return false;
+                }
+                return this.Info.Id == Models.User.Instance.CurrentCharacter.Id;
+            }
         }
 
         public Character(NCharacterInfo info) : base(info.Entity)
         {
             this.Info = info;
-            this.Define = DataManager.Instance.Characters[info.Tid];
+            this.Define = DataManager.Instance.Characters[info.ConfigId];
         }
 
         public void MoveForward()

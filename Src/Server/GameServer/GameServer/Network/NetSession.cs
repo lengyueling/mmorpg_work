@@ -25,10 +25,16 @@ namespace Network
         public Character Character { get; set; }
         public NEntity Entity { get; set; }
         /// <summary>
+        /// 相应后处理器
+        /// </summary>
+        public IPostResponser PostResponser { get; set; }
+
+        /// <summary>
         /// 断开连接，删除角色
         /// </summary>
         public void Disconnected()
         {
+            this.PostResponser = null;
             if (Character != null)
             {
                 UserService.Instance.CharacterLeave(Character);
@@ -61,9 +67,9 @@ namespace Network
         {
             if (response != null)
             {
-                if (this.Character != null && this.Character.StatusManager.HasStatus)
+                if (PostResponser != null)
                 {
-                    this.Character.StatusManager.ApplyResponse(Response);
+                    this.PostResponser.PostProcess(Response);
                 }
                 byte[] data = PackageHandler.PackMessage(response);
                 response = null;

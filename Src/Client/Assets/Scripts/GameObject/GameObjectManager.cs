@@ -74,7 +74,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
             }
             //实例化加载到的角色信息，设置角色初始位置，将信息最终赋值给角色管理的字典
             GameObject go = (GameObject)Instantiate(obj, this.transform);
-            go.name = "Character_" + character.Info.Id + "_" + character.Info.Name;
+            go.name = "Character_" + character.Id + "_" + character.Name;
             Characters[character.entityId] = go;
 
             UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, character);
@@ -91,13 +91,13 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         if (ec != null)
         {
             ec.entity = character;
-            ec.isPlayer = character.IsPlayer;
+            ec.isPlayer = character.IsCurrentPlayer;
         }
         //将必要信息给到输入控制器,将当前角色给到相机控制和当前角色物体
         PlayerInputController pc = go.GetComponent<PlayerInputController>();
         if (pc != null)
         {
-            if (character.Info.Id == User.Instance.CurrentCharacter.Id)
+            if (character.IsCurrentPlayer)
             {
                 User.Instance.CurrentCharacterObject = go;
                 MainPlayerCamera.Instance.player = go;

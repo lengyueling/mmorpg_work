@@ -85,7 +85,7 @@ namespace GameServer.Managers
         /// 追加新的传输请求
         /// </summary>
         /// <param name="message"></param>
-        public void ApplyResponse(NetMessageResponse message)
+        public void PostProcess(NetMessageResponse message)
         {
             if (message.StatusNotify == null)
             {

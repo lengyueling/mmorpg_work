@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EquipManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\FriendManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MinimapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Services\FriendService.cs" />
     <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
     <Compile Include="Assets\Scripts\Services\QuestService.cs" />
@@ -102,8 +104,10 @@
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharInfo.cs" />
     <Compile Include="Assets\Scripts\UI\Login\UILogin.cs" />
     <Compile Include="Assets\Scripts\UI\Login\UIRegister.cs" />
-    <Compile Include="Assets\Scripts\UI\MessageBox\MessageBox.cs" />
-    <Compile Include="Assets\Scripts\UI\MessageBox\UIMessageBox.cs" />
+    <Compile Include="Assets\Scripts\UI\UIBox\InputBox.cs" />
+    <Compile Include="Assets\Scripts\UI\UIBox\MessageBox.cs" />
+    <Compile Include="Assets\Scripts\UI\UIBox\UIInputBox.cs" />
+    <Compile Include="Assets\Scripts\UI\UIBox\UIMessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\UIBag.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Bag\UIIconItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\CharEquip\UICharEquip.cs" />
@@ -118,6 +122,8 @@
     <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\TabView\TabButton.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\TabView\TabView.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\UIFriends\UIFriendItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\UIFriends\UIFriends.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIMain.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UITest.cs" />
