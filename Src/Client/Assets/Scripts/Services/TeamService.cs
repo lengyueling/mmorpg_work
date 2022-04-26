@@ -136,6 +136,8 @@ namespace Services
             if (message.Result == Result.Success)
             {
                 TeamManager.Instance.UpdateTeamInfo(null);
+                //User.Instance.TeamInfo = null;
+                //UIMain.Instance.ShowTeamUI(false);
                 MessageBox.Show("退出成功", "退出队伍");
             }
             else

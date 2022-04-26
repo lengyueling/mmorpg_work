@@ -142,20 +142,20 @@ class Time
 
     public static int timestamp
     {
-        get { return GetTimeStamp(DateTime.Now); }
+        get { return GetTimestamp(DateTime.Now); }
     }
 
     public static DateTime GetTime(long timeStamp)
     {
         DateTime dateTimeStart = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
-        long lTime = timestamp * 10000000;
+        long lTime = timeStamp * 10000000;
         TimeSpan toNow = new TimeSpan(lTime);
         return dateTimeStart.Add(toNow);
     }
 
-    public static int GetTimeStamp(DateTime time)
+    public static int GetTimestamp(System.DateTime time)
     {
-        DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
-        return (int)(time - startTime).TotalSeconds; 
+        System.DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
+        return (int)(time - startTime).TotalSeconds;
     }
 }

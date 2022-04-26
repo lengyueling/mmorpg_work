@@ -25,7 +25,7 @@ namespace Network
         public Character Character { get; set; }
         public NEntity Entity { get; set; }
         /// <summary>
-        /// 相应后处理器
+        /// 响应后处理器
         /// </summary>
         public IPostResponser PostResponser { get; set; }
 

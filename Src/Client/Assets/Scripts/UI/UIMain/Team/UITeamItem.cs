@@ -15,7 +15,7 @@ public class UITeamItem : ListView.ListViewItem
 
     public override void onSelected(bool selected)
     {
-        this.background.enabled = selected ? true : false;
+        //this.background.enabled = selected ? true : false;
     }
 
     public int idx;
