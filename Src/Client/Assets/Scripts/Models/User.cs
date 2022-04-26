@@ -27,6 +27,7 @@ namespace Models
         public NCharacterInfo CurrentCharacter { get; set; }
         public MapDefine CurrentMapData { get; set; }
         public GameObject CurrentCharacterObject { get; set; }
+        public NTeamInfo TeamInfo { get; set; }
 
         /// <summary>
         /// 加减金币数量

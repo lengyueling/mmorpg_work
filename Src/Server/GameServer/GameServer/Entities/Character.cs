@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
+using GameServer.Models;
 
 namespace GameServer.Entities
 {
@@ -15,14 +17,15 @@ namespace GameServer.Entities
     /// 玩家角色类
     /// </summary>
     class Character : CharacterBase,IPostResponser
-    {
-       
+    {      
         public TCharacter Data;
 
         public ItemManager ItemManager;
         public QuestManager QuestManager;
         public StatusManager StatusManager;
         public FriendManager FriendManager;
+        public Team Team;
+        public int TeamUpdateTS;
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -77,8 +80,22 @@ namespace GameServer.Entities
         /// <param name="message"></param>
         public void PostProcess(NetMessageResponse message)
         {
+            Log.InfoFormat("PostProcess > Character:characterID{0}:{1}",this.Id,this.Info.Name);
             //好友后处理
             this.FriendManager.PostProcess(message);
+
+            //组队后处理
+            if (this.Team != null)
+            {
+                Log.InfoFormat("PostProcess > Team:characterID:{0}:{1} {2}<{3}", this.Id, this.Info.Name, TeamUpdateTS, this.Team.timestamp);
+                if (TeamUpdateTS < this.Team.timestamp)
+                {
+
+                    TeamUpdateTS = Team.timestamp;
+                    this.Team.PostProcess(message);
+                }
+            }
+            
             //状态后处理
             if (this.StatusManager.HasStatus)
             {
@@ -92,7 +109,18 @@ namespace GameServer.Entities
         /// </summary>
         public void Clear()
         {
-            this.FriendManager.UpdateFriendInfo(this.Info, 0);
+            this.FriendManager.OfflineNotify();
+        }
+
+        public NCharacterInfo GetBasicInfo()
+        {
+            return new NCharacterInfo()
+            {
+                Id = this.Id,
+                Name = this.Info.Name,
+                Class = this.Info.Class,
+                Level = this.Info.Level,
+            };
         }
     }
 }

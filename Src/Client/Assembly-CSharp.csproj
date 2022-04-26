@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\TeamManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
     <Compile Include="Assets\Scripts\Models\BagItem.cs" />
     <Compile Include="Assets\Scripts\Models\item.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
     <Compile Include="Assets\Scripts\Services\QuestService.cs" />
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
+    <Compile Include="Assets\Scripts\Services\TeamService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharacterView.cs" />
@@ -122,6 +124,8 @@
     <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\TabView\TabButton.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\TabView\TabView.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Team\UITeam.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Team\UITeamItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIFriends\UIFriendItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIFriends\UIFriends.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIMain.cs" />
@@ -129,6 +133,7 @@
     <Compile Include="Assets\Scripts\UI\UIMain\UITest.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIWindow.cs" />
     <Compile Include="Assets\Scripts\UI\UIMinimap\UIMinimap.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWorldElement\SpriteManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement\UIWorldElement.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement\UIWorldElementManager.cs" />

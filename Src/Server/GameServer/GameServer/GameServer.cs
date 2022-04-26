@@ -31,6 +31,7 @@ namespace GameServer
             ItemService.Instance.Init();
             QuestService.Instance.Init();
             FriendServiece.Instance.Init();
+            TeamService.Instance.Init();
 
             thread = new Thread(new ThreadStart(this.Update));
             return true;
@@ -63,7 +64,7 @@ namespace GameServer
                 Thread.Sleep(100);
                 //Console.WriteLine("{0} {1} {2} {3} {4}", Time.deltaTime, Time.frameCount, Time.ticks, Time.time, Time.realtimeSinceStartup);
 
-                //怪物生成有bug，之后改
+                //生成怪物
                 mapManager.Update();
             }
         }

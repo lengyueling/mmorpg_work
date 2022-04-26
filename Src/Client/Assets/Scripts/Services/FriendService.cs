@@ -89,7 +89,7 @@ namespace Services
         }
 
         /// <summary>
-        /// 客户端收到好友响应
+        /// 客户端收到服务器反馈的增加好友的响应
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="message"></param>
@@ -136,6 +136,11 @@ namespace Services
             NetClient.Instance.SendMessage(message);
         }
 
+        /// <summary>
+        /// 客户端移除好友响应
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
         private void OnFriendRemove(object sender, FriendRemoveResponse message)
         {
             if (message.Result == Result.Success)
