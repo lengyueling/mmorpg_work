@@ -87,7 +87,7 @@ public class ListView : MonoBehaviour
     }
 
     /// <summary>
-    /// 增加物品（UIQuestItem）
+    /// 增加物品（UIItem）
     /// </summary>
     /// <param name="item"></param>
     public void AddItem(ListViewItem item)
@@ -97,7 +97,7 @@ public class ListView : MonoBehaviour
     }
 
     /// <summary>
-    /// 移除所有物品（UIQuestItem）
+    /// 移除所有物品（UIItem）
     /// </summary>
     public void RemoveAll()
     {

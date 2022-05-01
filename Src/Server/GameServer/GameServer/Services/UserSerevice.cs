@@ -196,14 +196,14 @@ namespace GameServer.Services
             sender.Session.Response.gameEnter = new UserGameEnterResponse();
             sender.Session.Response.gameEnter.Result = Result.Success;
             sender.Session.Response.gameEnter.Errormsg = "None";
+
             //进入成功，发送初始角色信息
-            sender.Session.Response.gameEnter.Character = character.Info;
-
-            sender.SendResponse();
-
-            //发送角色进入地图的信息给客户端
             sender.Session.Character = character;
             sender.Session.PostResponser = character;
+
+            sender.Session.Response.gameEnter.Character = character.Info;
+            sender.SendResponse();
+
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
 
