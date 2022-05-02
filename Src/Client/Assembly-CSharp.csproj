@@ -119,6 +119,8 @@
     <Compile Include="Assets\Scripts\UI\UIMain\Friends\UIFriendItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Friends\UIFriends.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Guild\UIGuild.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Guild\UIGuildApplyItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Guild\UIGuildApplyList.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Guild\UIGuildInfo.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Guild\UIGuildItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Guild\UIGuildList.cs" />

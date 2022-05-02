@@ -76,6 +76,12 @@ public class UIManager : Singleton<UIManager>
             Resources = "UI/Guild/UIGuildPopCreate",
             Cache = false
         });
+
+        this.UIResources.Add(typeof(UIGuildApplyList), new UIElement()
+        {
+            Resources = "UI/Guild/UIGuildApplyList",
+            Cache = false
+        });
     }
 
     ~UIManager()

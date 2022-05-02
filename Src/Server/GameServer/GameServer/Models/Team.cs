@@ -7,6 +7,7 @@ using SkillBridge.Message;
 using GameServer.Services;
 using Common;
 using Common.Data;
+using Common.Utils;
 using Network;
 using GameServer.Managers;
 using GameServer.Entities;
@@ -23,7 +24,7 @@ namespace GameServer.Models
         /// <summary>
         /// 时间戳
         /// </summary>
-        public int timestamp;
+        public double timestamp;
 
         public Team(Character leader)
         {

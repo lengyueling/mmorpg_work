@@ -9,7 +9,15 @@ namespace Managers
 {
     class GuildManager : Singleton<GuildManager>
     {
+        /// <summary>
+        /// 当前公会的信息
+        /// </summary>
         public NGuildInfo guildInfo;
+
+        /// <summary>
+        /// 当前公会成员的信息
+        /// </summary>
+        public NGuildMemberInfo myMemberInfo;
 
         /// <summary>
         /// 是否加入了公会
@@ -22,6 +30,19 @@ namespace Managers
         public void Init(NGuildInfo guild)
         {
             this.guildInfo = guild;
+            if (guild == null)
+            {
+                myMemberInfo = null;
+                return;
+            }
+            foreach (var men in guild.Members)
+            {
+                if (men.characterId == User.Instance.CurrentCharacter.Id)
+                {
+                    myMemberInfo = men;
+                    break;
+                }
+            }
         }
 
         /// <summary>

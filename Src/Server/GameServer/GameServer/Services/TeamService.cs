@@ -102,6 +102,5 @@ namespace GameServer.Services
             character.Team.Leave(character);
             sender.SendResponse();
         }
-
     }
 }

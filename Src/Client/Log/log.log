@@ -1,90 +1,140 @@
-2022-05-01 23:41:36,197 [ 1] INFO  Unity: LoadingManager start
-2022-05-01 23:41:39,420 [ 1] INFO  Unity: DataManager > DataManager()
-2022-05-01 23:41:42,315 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-05-01 23:41:42,316 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-05-01 23:41:42,317 [ 1] INFO  Unity: DoConnect
-2022-05-01 23:41:42,319 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-05-01 23:41:42,321 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-05-03 01:27:51,150 [ 1] INFO  Unity: LoadingManager start
+2022-05-03 01:27:54,270 [ 1] INFO  Unity: DataManager > DataManager()
+2022-05-03 01:28:00,039 [ 1] INFO  Unity: UserRegisterRequest::user :123 psw:123
+2022-05-03 01:28:00,041 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-05-03 01:28:00,042 [ 1] INFO  Unity: DoConnect
+2022-05-03 01:28:00,044 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-05-03 01:28:00,046 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-05-01 23:41:42,324 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-05-01 23:41:43,087 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-05-01 23:41:43,091 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-05-01 23:41:43,465 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-05-01 23:41:44,017 [ 1] INFO  Unity: Select Char:[2]fashi[Wizard]
-2022-05-01 23:41:44,625 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-05-01 23:41:44,786 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-05-01 23:41:44,788 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
-2022-05-01 23:41:44,789 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
-2022-05-01 23:41:44,798 [ 1] INFO  Unity: OnGuild:Success1gognhui1
-2022-05-01 23:41:44,799 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-05-01 23:41:44,800 [ 1] INFO  Unity: AddCharacter:2:fashi Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-05-01 23:41:44,803 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-05-01 23:41:45,683 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-05-01 23:41:47,365 [ 1] INFO  Unity: MoveForward
-2022-05-01 23:41:47,366 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
-2022-05-01 23:41:47,988 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2022-05-01 23:41:47,988 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5185,4000,820) DIR:(98,-18,0) SPD:300
-2022-05-01 23:41:48,089 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
-2022-05-01 23:41:48,090 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5215,3994,820) DIR:(93,-36,0) SPD:300
-2022-05-01 23:41:48,141 [ 1] INFO  Unity: Stop
-2022-05-01 23:41:48,141 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5230,3988,820) DIR:(93,-36,0) SPD:0
-2022-05-01 23:41:48,190 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
-2022-05-01 23:41:48,190 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5230,3988,820) DIR:(84,-55,0) SPD:0
-2022-05-01 23:41:48,275 [ 1] INFO  Unity: MoveBack
-2022-05-01 23:41:48,275 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5230,3988,820) DIR:(84,-55,0) SPD:-300
-2022-05-01 23:41:48,291 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
-2022-05-01 23:41:48,292 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5226,3991,820) DIR:(71,-71,0) SPD:-300
-2022-05-01 23:41:48,392 [ 1] INFO  Unity: SetDirection:(56, -83, 0)
-2022-05-01 23:41:48,393 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5202,4015,820) DIR:(56,-83,0) SPD:-300
-2022-05-01 23:41:48,561 [ 1] INFO  Unity: SetDirection:(40, -92, 0)
-2022-05-01 23:41:48,562 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5172,4055,820) DIR:(40,-92,0) SPD:-300
-2022-05-01 23:41:49,640 [ 1] INFO  Unity: SetPosition:(5053, 4335, 799)
-2022-05-01 23:41:49,641 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(5053,4335,799) DIR:(40,-92,0) SPD:-300
-2022-05-01 23:41:50,346 [ 1] INFO  Unity: Stop
-2022-05-01 23:41:50,347 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:1 POS:(4969,4545,799) DIR:(40,-92,0) SPD:0
-2022-05-01 23:42:13,285 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-05-01 23:42:13,287 [ 1] INFO  Unity: UserGameLeave
-2022-05-01 23:42:13,418 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
-2022-05-01 23:42:13,421 [ 1] INFO  Unity: RemoveCharacter:1
-2022-05-01 23:42:13,424 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-05-01 23:42:13,425 [ 1] INFO  Unity: Character_2_fashi OnDestroy :ID:1 POS:(4969, 4545, 799) DIR:(40, -92, 0) SPD:0 
-2022-05-01 23:42:13,558 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-05-01 23:42:14,135 [ 1] INFO  Unity: Select Char:[2]fashi[Wizard]
-2022-05-01 23:42:49,183 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2022-05-01 23:42:49,216 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-05-01 23:42:49,217 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
-2022-05-01 23:42:49,218 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
-2022-05-01 23:42:49,219 [ 1] INFO  Unity: OnGuild:Success1gognhui1
-2022-05-01 23:42:49,219 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-05-01 23:42:49,220 [ 1] INFO  Unity: AddCharacter:2:fashi Map:1 Entity:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-05-01 23:42:49,222 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-05-01 23:42:50,000 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-05-01 23:42:50,708 [ 1] INFO  Unity: MoveForward
-2022-05-01 23:42:50,708 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
-2022-05-01 23:42:51,382 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2022-05-01 23:42:51,382 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5205,4000,820) DIR:(98,-18,0) SPD:300
-2022-05-01 23:42:51,483 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
-2022-05-01 23:42:51,484 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5235,3994,820) DIR:(93,-36,0) SPD:300
-2022-05-01 23:42:51,583 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
-2022-05-01 23:42:51,584 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5265,3982,820) DIR:(84,-55,0) SPD:300
-2022-05-01 23:42:51,685 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
-2022-05-01 23:42:51,686 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5289,3964,820) DIR:(71,-71,0) SPD:300
-2022-05-01 23:42:51,769 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
-2022-05-01 23:42:51,770 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5309,3944,820) DIR:(57,-82,0) SPD:300
-2022-05-01 23:42:51,871 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
-2022-05-01 23:42:51,871 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5327,3920,820) DIR:(39,-92,0) SPD:300
-2022-05-01 23:42:51,955 [ 1] INFO  Unity: SetDirection:(22, -97, 0)
-2022-05-01 23:42:51,955 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5337,3895,820) DIR:(22,-97,0) SPD:300
-2022-05-01 23:42:52,057 [ 1] INFO  Unity: SetDirection:(3, -100, 0)
-2022-05-01 23:42:52,058 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5343,3865,820) DIR:(3,-100,0) SPD:300
-2022-05-01 23:42:52,190 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
-2022-05-01 23:42:52,191 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5343,3825,820) DIR:(-15,-99,0) SPD:300
-2022-05-01 23:42:53,353 [ 1] INFO  Unity: Stop
-2022-05-01 23:42:53,354 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:6 POS:(5273,3475,820) DIR:(-15,-99,0) SPD:0
-2022-05-01 23:42:54,330 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-05-01 23:42:54,331 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-05-03 01:28:00,049 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-05-03 01:28:00,885 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2022-05-03 01:28:07,352 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-05-03 01:28:07,413 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-05-03 01:28:07,416 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-05-03 01:28:07,802 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-03 01:28:16,940 [ 1] INFO  Unity: SendCharecterCreat::charName:zhanshi ClassWarrior
+2022-05-03 01:28:17,066 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-05-03 01:28:17,834 [ 1] INFO  Unity: Select Char:[1]zhanshi[Warrior]
+2022-05-03 01:28:18,307 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-05-03 01:28:18,344 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-05-03 01:28:18,347 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-05-03 01:28:18,348 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-05-03 01:28:18,367 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-05-03 01:28:18,369 [ 1] INFO  Unity: AddCharacter:1:zhanshi Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-05-03 01:28:18,373 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-05-03 01:28:19,262 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-03 01:28:30,465 [ 1] INFO  Unity: SendGuildCreate
+2022-05-03 01:28:30,689 [ 1] INFO  Unity: OnGuildCreateResponse:Success
+2022-05-03 01:28:30,692 [ 1] INFO  Unity: OnGuild:Success1gonghui1
+2022-05-03 01:28:33,467 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-05-03 01:28:33,468 [ 1] INFO  Unity: UserGameLeave
+2022-05-03 01:28:33,501 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
+2022-05-03 01:28:33,503 [ 1] INFO  Unity: RemoveCharacter:1
+2022-05-03 01:28:33,505 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-05-03 01:28:33,506 [ 1] INFO  Unity: Character_1_zhanshi OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-05-03 01:28:33,771 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-03 01:29:14,614 [ 1] INFO  Unity: Select Char:[1]zhanshi[Warrior]
+2022-05-03 01:29:15,220 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-05-03 01:29:15,255 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-05-03 01:29:15,257 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-05-03 01:29:15,258 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-05-03 01:29:15,259 [ 1] INFO  Unity: OnGuild:Success1gonghui1
+2022-05-03 01:29:15,260 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2022-05-03 01:29:15,261 [ 1] INFO  Unity: AddCharacter:2:fashi Map:1 Entity:(6:pos:(5529,4303,799),dir:(-73,-68,0),spd:0
+2022-05-03 01:29:15,264 [ 1] INFO  Unity: AddCharacter:1:zhanshi Map:1 Entity:(7:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-05-03 01:29:15,266 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-05-03 01:29:15,930 [ 1] INFO  Unity: SetPosition:(5000, 4000, 768)
+2022-05-03 01:29:15,931 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(5000,4000,768) DIR:(100,0,0) SPD:0
+2022-05-03 01:29:16,099 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-03 01:29:16,648 [ 1] INFO  Unity: MoveForward
+2022-05-03 01:29:16,649 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(5000,4000,768) DIR:(100,0,0) SPD:300
+2022-05-03 01:29:17,086 [ 1] INFO  Unity: Stop
+2022-05-03 01:29:17,087 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(5130,4000,768) DIR:(100,0,0) SPD:0
+2022-05-03 01:29:17,102 [ 1] INFO  Unity: MoveBack
+2022-05-03 01:29:17,103 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(5130,4000,768) DIR:(100,0,0) SPD:-300
+2022-05-03 01:29:17,120 [ 1] INFO  Unity: SetDirection:(98, -17, 0)
+2022-05-03 01:29:17,121 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(5125,4000,768) DIR:(98,-17,0) SPD:-300
+2022-05-03 01:29:17,659 [ 1] INFO  Unity: SetDirection:(100, 3, 0)
+2022-05-03 01:29:17,660 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(4960,4033,768) DIR:(100,3,0) SPD:-300
+2022-05-03 01:29:17,765 [ 1] INFO  Unity: SetDirection:(97, 23, 0)
+2022-05-03 01:29:17,766 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(4930,4033,768) DIR:(97,23,0) SPD:-300
+2022-05-03 01:29:17,799 [ 1] INFO  Unity: Stop
+2022-05-03 01:29:17,800 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(4920,4031,768) DIR:(97,23,0) SPD:0
+2022-05-03 01:29:17,917 [ 1] INFO  Unity: SetDirection:(91, 41, 0)
+2022-05-03 01:29:17,917 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:7 POS:(4920,4031,768) DIR:(91,41,0) SPD:0
+2022-05-03 01:29:19,244 [ 1] INFO  Unity: SendGuildLeaveRequest
+2022-05-03 01:29:26,412 [ 1] INFO  Unity: SendGuildJoinResponse
+2022-05-03 01:29:31,401 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5529, 4303, 799) DIR:(-73, -68, 0) SPD:300
+2022-05-03 01:29:31,403 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:MoveFwd entity:(6:pos:(5529,4303,799),dir:(-73,-68,0),spd:300
+
+2022-05-03 01:29:31,404 [ 1] INFO  Unity: OnGuild:Success1gonghui1
+2022-05-03 01:29:31,969 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5389, 4198, 799) DIR:(-84, -54, 0) SPD:300
+2022-05-03 01:29:31,970 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:None entity:(6:pos:(5389,4198,799),dir:(-84,-54,0),spd:300
+
+2022-05-03 01:29:32,003 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5381, 4192, 799) DIR:(-84, -54, 0) SPD:0
+2022-05-03 01:29:32,004 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:Idle entity:(6:pos:(5381,4192,799),dir:(-84,-54,0),spd:0
+
+2022-05-03 01:29:32,036 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5381, 4192, 799) DIR:(-84, -54, 0) SPD:-300
+2022-05-03 01:29:32,037 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:MoveBack entity:(6:pos:(5381,4192,799),dir:(-84,-54,0),spd:-300
+
+2022-05-03 01:29:32,087 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5397, 4204, 799) DIR:(-93, -38, 0) SPD:-300
+2022-05-03 01:29:32,088 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:None entity:(6:pos:(5397,4204,799),dir:(-93,-38,0),spd:-300
+
+2022-05-03 01:29:32,811 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5617, 4292, 799) DIR:(-93, -38, 0) SPD:0
+2022-05-03 01:29:32,812 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:Idle entity:(6:pos:(5617,4292,799),dir:(-93,-38,0),spd:0
+
+2022-05-03 01:29:32,845 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5617, 4292, 799) DIR:(-83, -55, 0) SPD:0
+2022-05-03 01:29:32,846 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:None entity:(6:pos:(5617,4292,799),dir:(-83,-55,0),spd:0
+
+2022-05-03 01:29:32,879 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5617, 4292, 799) DIR:(-83, -55, 0) SPD:300
+2022-05-03 01:29:32,880 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:MoveFwd entity:(6:pos:(5617,4292,799),dir:(-83,-55,0),spd:300
+
+2022-05-03 01:29:32,930 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5601, 4280, 799) DIR:(-71, -70, 0) SPD:300
+2022-05-03 01:29:32,931 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:None entity:(6:pos:(5601,4280,799),dir:(-71,-70,0),spd:300
+
+2022-05-03 01:29:33,098 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5561, 4240, 799) DIR:(-57, -82, 0) SPD:300
+2022-05-03 01:29:33,100 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:None entity:(6:pos:(5561,4240,799),dir:(-57,-82,0),spd:300
+
+2022-05-03 01:29:33,637 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5465, 4112, 799) DIR:(-40, -92, 0) SPD:300
+2022-05-03 01:29:33,637 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:None entity:(6:pos:(5465,4112,799),dir:(-40,-92,0),spd:300
+
+2022-05-03 01:29:33,789 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5445, 4062, 799) DIR:(-23, -97, 0) SPD:300
+2022-05-03 01:29:33,790 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:None entity:(6:pos:(5445,4062,799),dir:(-23,-97,0),spd:300
+
+2022-05-03 01:29:34,581 [ 1] INFO  Unity: OnEntityChanged :ID:6 POS:(5398, 3827, 799) DIR:(-23, -97, 0) SPD:0
+2022-05-03 01:29:34,582 [ 1] INFO  Unity: MapEntityUpdateResponse: Entities:1
+    [6]evt:Idle entity:(6:pos:(5398,3827,799),dir:(-23,-97,0),spd:0
+
+2022-05-03 01:29:37,282 [ 1] INFO  Unity: SendGuildLeaveRequest
+2022-05-03 01:29:42,658 [ 1] INFO  Unity: SendGuildLeaveRequest
+2022-05-03 01:29:42,660 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIGuildApplyList.InitItems () (at Assets/Scripts/UI/UIMain/Guild/UIGuildApplyList.cs:39)
+UIGuildApplyList.UpdateList () (at Assets/Scripts/UI/UIMain/Guild/UIGuildApplyList.cs:31)
+UIGuildApplyList.Start () (at Assets/Scripts/UI/UIMain/Guild/UIGuildApplyList.cs:20)
+}</args></log4net.Error>
+2022-05-03 01:31:26,636 [ 1] INFO  Unity: SendGuildLeaveRequest
+2022-05-03 01:31:26,636 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIGuildApplyList.InitItems () (at Assets/Scripts/UI/UIMain/Guild/UIGuildApplyList.cs:39)
+UIGuildApplyList.UpdateList () (at Assets/Scripts/UI/UIMain/Guild/UIGuildApplyList.cs:31)
+UIGuildApplyList.Start () (at Assets/Scripts/UI/UIMain/Guild/UIGuildApplyList.cs:20)
+}</args></log4net.Error>
+2022-05-03 01:33:08,789 [ 1] INFO  Unity: Character_2_fashi OnDestroy :ID:6 POS:(5398, 3827, 799) DIR:(-23, -97, 0) SPD:0 
+2022-05-03 01:33:08,789 [ 1] INFO  Unity: Character_1_zhanshi OnDestroy :ID:7 POS:(4920, 4031, 768) DIR:(91, 41, 0) SPD:0 
+2022-05-03 01:33:08,793 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-05-03 01:33:08,795 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)
 
-2022-05-01 23:42:54,336 [ 1] INFO  Unity: Character_2_fashi OnDestroy :ID:6 POS:(5273, 3475, 820) DIR:(-15, -99, 0) SPD:0 

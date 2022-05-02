@@ -22,7 +22,7 @@ namespace GameServer.Services
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<GuildJoinRequest>(this.OnGuildJoinRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<GuildJoinResponse>(this.OnGuildJoinResponse);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<GuildLeaveRequest>(this.OnGuildLeave);
-
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<GuildAdminRequest>(this.OnGuildAdmin);
         }
 
         public void Init()
@@ -146,9 +146,6 @@ namespace GameServer.Services
                 requester.Session.Response.guildJoinRes.Result = Result.Success;
                 requester.Session.Response.guildJoinRes.Errormsg = "加入公会成功";
                 requester.SendResponse();
-                //设定加入公会角色的公会id
-                requester.Session.Character.Data.GuildId = response.Apply.GuildId;
-                DBService.Instance.Save();
             }
         }
 
@@ -169,5 +166,48 @@ namespace GameServer.Services
             sender.SendResponse();
         }
 
+        /// <summary>
+        /// 服务器收到公会管理员操作请求
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
+        private void OnGuildAdmin(NetConnection<NetSession> sender, GuildAdminRequest message)
+        {
+            Character character = sender.Session.Character;
+            Log.InfoFormat("OnGuildAdmin::character{0}", character.Id);
+            sender.Session.Response.guildAdmin = new GuildAdminResponse();
+            //使用非法手段让服务器接收到这些消息，返回
+            if (character.Guild == null)
+            {
+                sender.Session.Response.guildAdmin.Result = Result.Failed;
+                sender.Session.Response.guildAdmin.Errormsg = "你没有公会，无法进行相应操作";
+                sender.SendResponse();
+                return;
+            }
+            
+            TGuildMember currentMember = character.Guild.GetDBMember(character.Id);
+            if (currentMember.Title == (int)GuildTitle.None )
+            {
+                sender.Session.Response.guildAdmin.Result = Result.Failed;
+                sender.Session.Response.guildAdmin.Errormsg = "你不是会长或副会长，无法进行相应操作";
+                sender.SendResponse();
+                return;
+            }
+            character.Guild.ExecuteAdmin(message.Command, message.Target, character.Id);
+            //获取被操作请求的对象（被升职、解雇、踢出的人）并对其进行相应操作返回给他的客户端
+            var target = SessionManager.Instance.GetSession(message.Target);
+            if (target != null)
+            {
+                target.Session.Response.guildAdmin = new GuildAdminResponse();
+                target.Session.Response.guildAdmin.Result = Result.Success;
+                target.Session.Response.guildAdmin.Command = message;
+                target.SendResponse();
+            }
+
+            //将成功信息返回给发出请求的公会管理员
+            sender.Session.Response.guildAdmin.Result = Result.Success;
+            sender.Session.Response.guildAdmin.Command = message;
+            sender.SendResponse();
+        }
     }
 }

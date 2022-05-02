@@ -34,6 +34,11 @@ namespace GameServer.Managers
             guild.timestamp = TimeUtil.timestamp;
         }
 
+        /// <summary>
+        /// 检查公会名是否存在
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public bool CheckNameExisted(string name)
         {
             return GuildNames.Contains(name);
@@ -67,7 +72,7 @@ namespace GameServer.Managers
 
         }
 
-        internal Guild GetGuild(int guildId)
+        public Guild GetGuild(int guildId)
         {
             if (guildId == 0)
             {
@@ -82,7 +87,7 @@ namespace GameServer.Managers
         /// 获取公会清单
         /// </summary>
         /// <returns></returns>
-        internal List<NGuildInfo> GetGuildsInfo()
+        public List<NGuildInfo> GetGuildsInfo()
         {
             List<NGuildInfo> result = new List<NGuildInfo>();
             foreach (var kv in this.Guilds)
@@ -91,7 +96,5 @@ namespace GameServer.Managers
             }
             return result;
         }
-
-
     }
 }
