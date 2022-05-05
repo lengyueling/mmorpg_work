@@ -16,9 +16,9 @@ public class UIManager : Singleton<UIManager>
 
     public UIManager()
     {
-        this.UIResources.Add(typeof(UITest), new UIElement()
+        this.UIResources.Add(typeof(UISetting), new UIElement()
         {
-            Resources = "UI/UITest",
+            Resources = "UI/UISetting",
             Cache = true
         });
         this.UIResources.Add(typeof(UIBag), new UIElement()
@@ -80,6 +80,12 @@ public class UIManager : Singleton<UIManager>
         this.UIResources.Add(typeof(UIGuildApplyList), new UIElement()
         {
             Resources = "UI/Guild/UIGuildApplyList",
+            Cache = false
+        });
+
+        this.UIResources.Add(typeof(UIPopCharMenu), new UIElement()
+        {
+            Resources = "UI/UIPopCharMenu",
             Cache = false
         });
     }

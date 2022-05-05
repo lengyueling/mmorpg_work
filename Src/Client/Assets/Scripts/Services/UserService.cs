@@ -23,6 +23,8 @@ namespace Services
         NetMessage pendingMessage = null;
         bool connected = false;
 
+        bool isQuitGame = false;
+
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -311,8 +313,9 @@ namespace Services
         /// 客户端把发送离开游戏消息给服务端
         /// </summary>
         /// <param name="characterIdx"></param>
-        public void SendGameLeave()
+        public void SendGameLeave(bool isQuitGame = false)
         {
+            this.isQuitGame = isQuitGame;
             Debug.Log("UserGameLeave");
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
@@ -330,6 +333,15 @@ namespace Services
             MapService.Instance.CurrentMapId = 0;
             User.Instance.CurrentCharacter = null;
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (this.isQuitGame)
+            {
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#else
+                Application.Quit();
+#endif
+            }
         }
     }
 }

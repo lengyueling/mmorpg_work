@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIWindow : MonoBehaviour {
-    
+public class UIWindow : MonoBehaviour
+{
     public delegate void CloseHandler(UIWindow sender, WindowResult result);
     public event CloseHandler OnClose;
     public virtual Type Type
@@ -14,6 +14,9 @@ public class UIWindow : MonoBehaviour {
             return this.GetType();
         }
     }
+
+    public GameObject Root;
+
     public enum WindowResult
     {
         None = 0,

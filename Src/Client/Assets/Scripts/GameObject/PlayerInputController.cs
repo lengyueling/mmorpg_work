@@ -5,6 +5,7 @@ using UnityEngine;
 using Entities;
 using SkillBridge.Message;
 using Services;
+using Managers;
 
 public class PlayerInputController : MonoBehaviour {
 
@@ -50,6 +51,11 @@ public class PlayerInputController : MonoBehaviour {
     {
         if (character == null)
             return;
+
+        if (InputManager.Instance.IsInputMode)
+        {
+            return;
+        }
 
         float v = 0f;
         if (SceneManager.Instance.NowLevelName() != "CharSelect")
