@@ -92,11 +92,12 @@
     <Compile Include="Assets\Scripts\Managers\TeamManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TestManager.cs" />
     <Compile Include="Assets\Scripts\Models\BagItem.cs" />
-    <Compile Include="Assets\Scripts\Models\item.cs" />
+    <Compile Include="Assets\Scripts\Models\Item.cs" />
     <Compile Include="Assets\Scripts\Models\Quest.cs" />
     <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Services\ChatService.cs" />
     <Compile Include="Assets\Scripts\Services\FriendService.cs" />
     <Compile Include="Assets\Scripts\Services\GuildService.cs" />
     <Compile Include="Assets\Scripts\Services\ItemService.cs" />

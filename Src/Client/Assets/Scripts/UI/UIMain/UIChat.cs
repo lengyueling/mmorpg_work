@@ -6,6 +6,7 @@ using Managers;
 using Candlelight.UI;
 using System;
 using SkillBridge.Message;
+using Models;
 
 public class UIChat : MonoBehaviour
 {
@@ -42,6 +43,11 @@ public class UIChat : MonoBehaviour
 
     public void RefreshUI()
     {
+        //TODO 临时措施 离开时候CurrentCharacter = null，会导致AddMessages空引用
+        if (User.Instance.CurrentCharacter == null)
+        {
+            return;
+        }
         this.textArea.text = ChatManager.Instance.GetCurrentMessages();
         this.channelSelect.value = (int)ChatManager.Instance.sendChannel - 1;
         if (ChatManager.Instance.SendChannel == ChatChannel.Private)

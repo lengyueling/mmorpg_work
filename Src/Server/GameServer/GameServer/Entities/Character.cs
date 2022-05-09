@@ -25,10 +25,14 @@ namespace GameServer.Entities
         public QuestManager QuestManager;
         public StatusManager StatusManager;
         public FriendManager FriendManager;
+
         public Team Team;
         public double TeamUpdateTS;
+
         public Guild  Guild;
         public double GuildUpdateTS;
+
+        public Chat Chat;
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -59,6 +63,7 @@ namespace GameServer.Entities
             this.FriendManager = new FriendManager(this);
             this.FriendManager.GetFriendInfos(this.Info.Friends);
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
+            this.Chat = new Chat(this);
         }
 
         public long Gold
@@ -123,6 +128,8 @@ namespace GameServer.Entities
             {
                 this.StatusManager.PostProcess(message);
             }
+
+            this.Chat.PostProcess(message);
         }
 
         /// <summary>

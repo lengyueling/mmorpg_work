@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Models;
+using Services;
 using SkillBridge.Message;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Managers
     class ChatManager : Singleton<ChatManager>
     {
         /// <summary>
-        /// 显示频道
+        /// 当前显示频道
         /// </summary>
         public LocalChannel displayChannel;
 
@@ -52,7 +53,10 @@ namespace Managers
 
         public void Init()
         {
-
+            foreach (var message in this.Messages)
+            {
+                message.Clear();
+            }
         }
 
         /// <summary>
@@ -100,9 +104,17 @@ namespace Managers
             }
         }
         /// <summary>
-        /// 管理要发送的信息
+        /// 分频道管理要发送的信息
         /// </summary>
-        public List<ChatMessage> Messages = new List<ChatMessage>();
+        public List<ChatMessage>[] Messages = new List<ChatMessage>[6]
+        {
+            new List<ChatMessage>(),
+            new List<ChatMessage>(),
+            new List<ChatMessage>(),
+            new List<ChatMessage>(),
+            new List<ChatMessage>(),
+            new List<ChatMessage>(),
+        };
 
         /// <summary>
         /// 发送聊天
@@ -112,17 +124,11 @@ namespace Managers
         /// <param name="toName"></param>
         public void SendChat(string content, int toId = 0, string toName = "")
         {
-            this.Messages.Add(new ChatMessage()
-            {
-                Channel = ChatChannel.Local,
-                Message = content,
-                FromId = User.Instance.CurrentCharacter.Id,
-                FromName = User.Instance.CurrentCharacter.Name
-            });
+            ChatService.Instance.SendChat(this.SendChannel, content, toId, toName);
         }
 
         /// <summary>
-        /// 是否能够使用该频道
+        /// 返回是否能够使用该频道
         /// </summary>
         /// <param name="channel"></param>
         /// <returns></returns>
@@ -147,7 +153,27 @@ namespace Managers
             this.sendChannel = channel;
             Debug.LogFormat("Set Channel:{0}", this.sendChannel);
             return true;
+        }
 
+        /// <summary>
+        /// 从服务器返回到的消息各频道中增加消息
+        /// </summary>
+        /// <param name="channel"></param>
+        /// <param name="messages"></param>
+        public void AddMessages(ChatChannel channel, List<ChatMessage> messages)
+        {
+            for (int ch = 0; ch < 6; ch++)
+            {
+                ///&:按位与,仅当左右为1是值为1,否则为0
+                if ((this.ChannelFilter[ch] & channel) == channel)
+                {
+                    this.Messages[ch].AddRange(messages);
+                }
+            }
+            if (this.OnChat != null)
+            {
+                this.OnChat();
+            }
         }
 
         /// <summary>
@@ -157,7 +183,7 @@ namespace Managers
         /// <param name="from"></param>
         public void AddSystemMessage(string message, string from = "")
         {
-            this.Messages.Add(new ChatMessage()
+            this.Messages[(int)LocalChannel.ALL].Add(new ChatMessage()
             {
                 Channel = ChatChannel.System,
                 Message = message,
@@ -176,7 +202,7 @@ namespace Managers
         public string GetCurrentMessages()
         {
             StringBuilder sb = new StringBuilder();
-            foreach (var message in this.Messages)
+            foreach (var message in this.Messages[(int)displayChannel])
             {
                 sb.AppendLine(FormatMessage(message));
             }
@@ -203,7 +229,7 @@ namespace Managers
                 case ChatChannel.Team:
                     return string.Format("<color=green>[队伍]{0}{1}</color>", FormatFromPlayer(message), message.Message);
                 case ChatChannel.Guild:
-                    return string.Format("<color=blue>[工会]{0}{1}</color>", FormatFromPlayer(message), message.Message);
+                    return string.Format("<color=blue>[公会]{0}{1}</color>", FormatFromPlayer(message), message.Message);
             }
             return "";
         }

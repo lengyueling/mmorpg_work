@@ -122,9 +122,11 @@
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\SessionManager.cs" />
     <Compile Include="Managers\GuildManager.cs" />
+    <Compile Include="Managers\ChatManager.cs" />
     <Compile Include="Managers\TeamManager.cs" />
     <Compile Include="Managers\SpawnManager.cs" />
     <Compile Include="Managers\StatusManager.cs" />
+    <Compile Include="Models\Chat.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Guild.cs" />
     <Compile Include="Models\Team.cs" />
@@ -145,6 +147,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Services\GuildService.cs" />
+    <Compile Include="Services\ChatService.cs" />
     <Compile Include="Services\TeamService.cs" />
     <Compile Include="Services\FriendService.cs" />
     <Compile Include="Services\BagService.cs" />

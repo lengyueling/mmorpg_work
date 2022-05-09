@@ -16,7 +16,7 @@ namespace Models
 
         /// <summary>
         /// 构造函数
-        /// this重载了Item类的构造函数
+        /// this重载了Item类的构造函数 
         /// </summary>
         /// <param name="item"></param>
         public Item(NItemInfo item) : this(item.Id, item.Count)

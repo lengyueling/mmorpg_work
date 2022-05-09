@@ -277,6 +277,9 @@ namespace Services
         public void SendGameEnter(int characterIdx)
         {
             Debug.LogFormat("UserGameEnterRequest::characterId:{0}", characterIdx);
+
+            CharacterManager.Instance.Init();
+
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.gameEnter = new UserGameEnterRequest();
