@@ -34,6 +34,26 @@
 *.modelproj merge=binary
 *.sqlproj   merge=binary
 *.wwaproj   merge=binary
+*.anim                merge=binary
+*.asset               merge=binary
+*.bytes               merge=binary
+*.controller          merge=binary
+*.cubemap             merge=binary
+*.flare               merge=binary
+*.fontsettings        merge=binary
+*.giparams            merge=binary
+*.guiskin             merge=binary
+*.mask                merge=binary
+*.mat                 merge=binary
+*.meta                merge=binary
+*.mixer               merge=binary
+*.overrideController  merge=binary
+*.physicMaterial      merge=binary
+*.physicsMaterial2D   merge=binary
+*.prefab              merge=binary
+*.renderTexture       merge=binary
+*.shadervariants      merge=binary
+*.unity               merge=binar
 
 ###############################################################################
 # behavior for image files
