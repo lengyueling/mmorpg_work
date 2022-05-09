@@ -1,6 +1,30 @@
-2022-05-09 14:04:43,157 [ 1] INFO  Unity: LoadingManager start
-2022-05-09 14:04:45,913 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-05-09 14:04:45,916 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-05-09 21:40:10,091 [ 1] INFO  Unity: LoadingManager start
+2022-05-09 21:40:13,494 [ 1] INFO  Unity: DataManager > DataManager()
+2022-05-09 21:40:17,147 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-05-09 21:40:17,148 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-05-09 21:40:17,149 [ 1] INFO  Unity: DoConnect
+2022-05-09 21:40:17,151 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-05-09 21:40:17,154 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-05-09 21:40:17,156 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-05-09 21:40:17,289 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-05-09 21:40:17,307 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-05-09 21:40:17,630 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-09 21:40:18,182 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-09 21:40:18,537 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
+2022-05-09 21:40:18,839 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-09 21:40:19,127 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
+2022-05-09 21:40:19,396 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-09 21:40:19,665 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
+2022-05-09 21:40:19,951 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-09 21:40:20,321 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
+2022-05-09 21:40:20,625 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-09 21:40:20,980 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
+2022-05-09 21:40:21,266 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-09 21:40:22,951 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
+2022-05-09 21:40:23,304 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-09 21:40:24,786 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-05-09 21:40:24,787 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)
