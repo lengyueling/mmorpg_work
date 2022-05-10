@@ -29,6 +29,7 @@
 x64/
 [Bb]in/
 [Oo]bj/
+Log/
 
 # Visual C++ cache files
 ipch/
