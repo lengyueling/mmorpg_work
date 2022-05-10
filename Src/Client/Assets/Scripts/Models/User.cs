@@ -5,6 +5,7 @@ using System.Text;
 using SkillBridge.Message;
 using Common.Data;
 using UnityEngine;
+using Services;
 
 namespace Models
 {
@@ -26,7 +27,7 @@ namespace Models
 
         public NCharacterInfo CurrentCharacter { get; set; }
         public MapDefine CurrentMapData { get; set; }
-        public GameObject CurrentCharacterObject { get; set; }
+        public PlayerInputController CurrentCharacterObject { get; set; }
         public NTeamInfo TeamInfo { get; set; }
 
         /// <summary>
@@ -36,6 +37,26 @@ namespace Models
         public void AddGold(int gold)
         {
             this.CurrentCharacter.Gold += gold;
+        }
+
+        public int CurrentRide = 0;
+
+        /// <summary>
+        /// 骑乘坐骑
+        /// </summary>
+        /// <param name="id"></param>
+        internal void Ride(int id)
+        {
+            if (CurrentRide != id)
+            {
+                CurrentRide = id;
+                CurrentCharacterObject.SendEntityEvent(EntityEvent.Ride, CurrentRide);
+            }
+            else
+            {
+                CurrentRide = 0;
+                CurrentCharacterObject.SendEntityEvent(EntityEvent.Ride, 0);
+            }
         }
     }
 }

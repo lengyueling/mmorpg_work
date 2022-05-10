@@ -1,30 +1,42 @@
-2022-05-09 21:24:07,806 [ 1] INFO  Unity: LoadingManager start
-2022-05-09 21:24:11,241 [ 1] INFO  Unity: DataManager > DataManager()
-2022-05-09 21:24:13,914 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-05-09 21:24:13,915 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-05-09 21:24:13,916 [ 1] INFO  Unity: DoConnect
-2022-05-09 21:24:13,918 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-05-09 21:24:13,920 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-05-11 01:01:37,422 [ 1] INFO  Unity: LoadingManager start
+2022-05-11 01:01:40,626 [ 1] INFO  Unity: DataManager > DataManager()
+2022-05-11 01:01:43,590 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-05-11 01:01:43,592 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-05-11 01:01:43,593 [ 1] INFO  Unity: DoConnect
+2022-05-11 01:01:43,595 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-05-11 01:01:43,597 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-05-09 21:24:13,923 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-05-09 21:24:14,050 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-05-09 21:24:14,053 [ 1] ERROR Unity: Message handler exception:, The Object you want to instantiate is null., UnityEngine.CoreModule,   at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00008] in D:\unity\Runtime\Export\UnityEngineObject.bindings.cs:381 
-  at UnityEngine.Object.Instantiate (UnityEngine.Object original) [0x00007] in D:\unity\Runtime\Export\UnityEngineObject.bindings.cs:240 
-  at MessageBox.Show (System.String message, System.String title, MessageBoxType type, System.String btnOK, System.String btnCancel) [0x00027] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\UIBox\MessageBox.cs:15 
-  at UILogin.OnLogin (Result result, System.String msg) [0x00022] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\UI\Login\UILogin.cs:22 
-  at Services.UserService.OnUserLogin (System.Object sender, SkillBridge.Message.UserLoginResponse response) [0x00063] in E:\mmorpg_warehouse\mmorpg_work\Src\Client\Assets\Scripts\Services\UserService.cs:223 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserLoginResponse] (System.Object sender, SkillBridge.Message.UserLoginResponse msg) [0x00044] in E:\mmorpg_warehouse\mmorpg_work\Src\Lib\Common\Network\MessageDistributer.cs:116 
-2022-05-09 21:24:14,057 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{ArgumentException: The Object you want to instantiate is null., UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:381)
-UnityEngine.Object.Instantiate (UnityEngine.Object original) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:240)
-MessageBox.Show (System.String message, System.String title, MessageBoxType type, System.String btnOK, System.String btnCancel) (at Assets/Scripts/UI/UIBox/MessageBox.cs:15)
-UILogin.OnLogin (Result result, System.String msg) (at Assets/Scripts/UI/Login/UILogin.cs:22)
-Services.UserService.OnUserLogin (System.Object sender, SkillBridge.Message.UserLoginResponse response) (at Assets/Scripts/Services/UserService.cs:223)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserLoginResponse] (System.Object sender, SkillBridge.Message.UserLoginResponse msg) (at E:/mmorpg_warehouse/mmorpg_work/Src/Lib/Common/Network/MessageDistributer.cs:116)
+2022-05-11 01:01:43,600 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-05-11 01:01:43,735 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-05-11 01:01:43,741 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-05-11 01:01:44,036 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-11 01:01:44,565 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
+2022-05-11 01:01:45,188 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2022-05-11 01:01:45,237 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-05-11 01:01:45,239 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-05-11 01:01:45,240 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-05-11 01:01:45,241 [ 1] INFO  Unity: ItemManager:InitId:8001,Count:1
+2022-05-11 01:01:45,242 [ 1] INFO  Unity: ItemManager:InitId:8002,Count:1
+2022-05-11 01:01:45,251 [ 1] INFO  Unity: OnGuild:Success1≤‚ ‘π§ªÿ
+2022-05-11 01:01:45,253 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-05-11 01:01:45,254 [ 1] INFO  Unity: AddCharacter:1:111 Map:1 Entity:(19:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-05-11 01:01:45,256 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-05-11 01:01:46,058 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2022-05-11 01:01:46,191 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-11 01:01:46,258 [ 1] INFO  Unity: Set Channel:Local
+2022-05-11 01:01:48,702 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestInfo.SetQuestInfo (Models.Quest quest) (at Assets/Scripts/UI/UIMain/QuestSystem/UIQuestInfo.cs:59)
+UIQuestSystem.OnQuestSelected (.ListViewItem item) (at Assets/Scripts/UI/UIMain/QuestSystem/UIQuestSystem.cs:117)
+ListView.set_SelectedItem (.ListViewItem value) (at Assets/Scripts/UI/UIMain/ListView.cs:83)
+ListView+ListViewItem.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/Scripts/UI/UIMain/ListView.cs:57)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
 }</args></log4net.Error>
-2022-05-09 21:24:19,726 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-05-09 21:24:19,727 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-05-11 01:10:14,205 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-05-11 01:10:14,207 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)
 
+2022-05-11 01:10:14,214 [ 1] INFO  Unity: Character_1_111 OnDestroy :ID:19 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

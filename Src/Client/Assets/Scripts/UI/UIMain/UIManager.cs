@@ -39,12 +39,12 @@ public class UIManager : Singleton<UIManager>
         });
         this.UIResources.Add(typeof(UIQuestSystem), new UIElement()
         {
-            Resources = "UI/UIQuestSystem",
+            Resources = "UI/Quest/UIQuestSystem",
             Cache = false
         });
         this.UIResources.Add(typeof(UIQuestDialog), new UIElement()
         {
-            Resources = "UI/UIQuestDialog",
+            Resources = "UI/Quest/UIQuestDialog",
             Cache = false
         });
         this.UIResources.Add(typeof(UIFriends), new UIElement()
@@ -86,6 +86,12 @@ public class UIManager : Singleton<UIManager>
         this.UIResources.Add(typeof(UIPopCharMenu), new UIElement()
         {
             Resources = "UI/UIPopCharMenu",
+            Cache = false
+        });
+
+        this.UIResources.Add(typeof(UIRide), new UIElement()
+        {
+            Resources = "UI/UIRide",
             Cache = false
         });
     }

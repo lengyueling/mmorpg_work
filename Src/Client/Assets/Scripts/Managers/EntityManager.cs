@@ -18,12 +18,12 @@ namespace Managers
         /// 设置实体数据变化
         /// </summary>
         /// <param name="entity"></param>
-        void OnEntityChange(Entity entity);
+        void OnEntityChange(Entity entityEvent);
         /// <summary>
         /// 设置实体状态变化
         /// </summary>
         /// <param name="event"></param>
-        void OnEntityEvent(EntityEvent @event);
+        void OnEntityEvent(EntityEvent entityEvent, int param);
     }
     class EntityManager : Singleton<EntityManager>
     {
@@ -75,7 +75,7 @@ namespace Managers
                 if (notifiers.ContainsKey(data.Id))
                 {
                     notifiers[entity.entityId].OnEntityChange(entity);
-                    notifiers[entity.entityId].OnEntityEvent(data.Event);
+                    notifiers[entity.entityId].OnEntityEvent(data.Event, data.Param);
                 }
             }
         }

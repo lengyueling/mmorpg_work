@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BufferUtility.cs" />
+    <Compile Include="Data\RideDefine.cs" />
     <Compile Include="Data\EquipDefine.cs" />
     <Compile Include="Data\ShopItemDefine.cs" />
     <Compile Include="Data\ShopDefine.cs" />

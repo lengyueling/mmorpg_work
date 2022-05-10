@@ -82,6 +82,8 @@ ModelImporter:
     100152: Bone008
     100154: treasure_huntergirl
     100156: "\u5BF9\u8C61001"
+    100158: Archer
+    100160: Archer_Bow
     400000: //RootNode
     400002: Bip001
     400004: Bip001 Footsteps
@@ -161,12 +163,18 @@ ModelImporter:
     400152: Bone008
     400154: treasure_huntergirl
     400156: "\u5BF9\u8C61001"
+    400158: Archer
+    400160: Archer_Bow
     2100000: 'Material #25'
     4300000: treasure_huntergirl
     4300002: "\u5BF9\u8C61001"
+    4300004: Archer
+    4300006: Archer_Bow
     9500000: //RootNode
     13700000: treasure_huntergirl
     13700002: "\u5BF9\u8C61001"
+    13700004: Archer
+    13700006: Archer_Bow
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -240,7 +248,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

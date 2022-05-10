@@ -162,6 +162,11 @@ namespace GameServer.Models
                     kv.Value.character.Position = entity.Entity.Position;
                     kv.Value.character.Direction = entity.Entity.Direction;
                     kv.Value.character.Speed = entity.Entity.Speed;
+                    //如果当前的事件为
+                    if (entity.Event == EntityEvent.Ride)
+                    {
+                        kv.Value.character.Ride = entity.Param;
+                    }
                 }
                 //如果是其他角色在移动
                 else

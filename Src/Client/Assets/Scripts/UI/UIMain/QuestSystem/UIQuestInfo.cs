@@ -15,6 +15,8 @@ public class UIQuestInfo : MonoBehaviour
 
     public Text description;
 
+    public Text overview;
+
     public UIIconItem rewardItems;
 
     public Text rewardMoney;
@@ -24,6 +26,8 @@ public class UIQuestInfo : MonoBehaviour
 
     public GameObject[] goalItemTarget;
 
+    private GameObject[] goalItemTargetSlot = new GameObject[3];
+
     /// <summary>
     /// 设置任务信息
     /// </summary>
@@ -31,15 +35,25 @@ public class UIQuestInfo : MonoBehaviour
     public void SetQuestInfo(Quest quest)
     {
         this.title.text = string.Format("[{0}]{1}", quest.Define.Type, quest.Define.Name);
-        if (quest.Info == null)
+
+        //任务概况
+        if (this.overview != null)
         {
-            this.description.text = quest.Define.Dialog;
+            this.overview.text = quest.Define.Overview;
         }
-        else
+
+        if (this.description != null)
         {
-            if (quest.Info.Status == QuestStatus.Complated)
+            if (quest.Info == null)
             {
-                this.description.text = quest.Define.DialogFinish;
+                this.description.text = quest.Define.Dialog;
+            }
+            else
+            {
+                if (quest.Info.Status == QuestStatus.Complated)
+                {
+                    this.description.text = quest.Define.DialogFinish;
+                }
             }
         }
         this.rewardMoney.text = quest.Define.RewardGold.ToString();
@@ -51,6 +65,14 @@ public class UIQuestInfo : MonoBehaviour
             fitter.SetLayoutVertical();
         }
 
+        for (int i = 0; i < 3; i++)
+        {
+            if (goalItemTargetSlot[i] != null)
+            {
+                Destroy(goalItemTargetSlot[i]);
+            }
+        }
+
         //设置目标道具
         if (quest.Define.RewardItem1 <= 0)
         {
@@ -58,9 +80,10 @@ public class UIQuestInfo : MonoBehaviour
         }
         else
         {
-            GameObject go = Instantiate(goalItem, goalItemTarget[0].transform);
+
+            goalItemTargetSlot[0] = Instantiate(goalItem, goalItemTarget[0].transform);
             var def = DataManager.Instance.Items[quest.Define.RewardItem1];
-            var ui = go.GetComponent<UIIconItem>();
+            var ui = goalItemTargetSlot[0].GetComponent<UIIconItem>();
             ui.SetMainIcon(def.Icon, quest.Define.RewardItem1Count.ToString());
         }
         
@@ -71,9 +94,9 @@ public class UIQuestInfo : MonoBehaviour
         }
         else
         {
-            GameObject go = Instantiate(goalItem, goalItemTarget[1].transform);
+            goalItemTargetSlot[1] = Instantiate(goalItem, goalItemTarget[1].transform);
             var def = DataManager.Instance.Items[quest.Define.RewardItem2];
-            var ui = go.GetComponent<UIIconItem>();
+            var ui = goalItemTargetSlot[1].GetComponent<UIIconItem>();
             ui.SetMainIcon(def.Icon, quest.Define.RewardItem2Count.ToString());
         }
         
@@ -84,13 +107,11 @@ public class UIQuestInfo : MonoBehaviour
         }
         else
         {
-            GameObject go = Instantiate(goalItem, goalItemTarget[2].transform);
+            goalItemTargetSlot[2] = Instantiate(goalItem, goalItemTarget[2].transform);
             var def = DataManager.Instance.Items[quest.Define.RewardItem3];
-            var ui = go.GetComponent<UIIconItem>();
-            ui = go.GetComponent<UIIconItem>();
+            var ui = goalItemTargetSlot[2].GetComponent<UIIconItem>();
             ui.SetMainIcon(def.Icon, quest.Define.RewardItem3Count.ToString());
         }
-
     }
 
     /// <summary>

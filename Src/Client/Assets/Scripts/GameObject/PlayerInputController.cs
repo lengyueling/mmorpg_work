@@ -42,7 +42,10 @@ public class PlayerInputController : MonoBehaviour {
             cinfo.Entity.Direction.Z = 0;
             this.character = new Character(cinfo);
 
-            if (entityController != null) entityController.entity = this.character;
+            if (entityController != null)
+            {
+                entityController.entity = this.character;
+            }
         }
     }
 
@@ -52,7 +55,7 @@ public class PlayerInputController : MonoBehaviour {
         if (character == null)
             return;
 
-        if (InputManager.Instance.IsInputMode)
+        if (InputManager.Instance != null && InputManager.Instance.IsInputMode)
         {
             return;
         }
@@ -138,13 +141,13 @@ public class PlayerInputController : MonoBehaviour {
     /// 客户端发送当前实体状态信息
     /// </summary>
     /// <param name="entityEvent"></param>
-    void SendEntityEvent(EntityEvent entityEvent)
+    public void SendEntityEvent(EntityEvent entityEvent, int param = 0)
     {
         if (entityController != null)
         {
-            entityController.OnEntityEvent(entityEvent);
+            entityController.OnEntityEvent(entityEvent,param);
         }
-        MapService.Instance.SendMapEntitySync(entityEvent, this.character.EntityData);
+        MapService.Instance.SendMapEntitySync(entityEvent, this.character.EntityData,param);
 
     }
 }

@@ -1,30 +1,52 @@
-2022-05-09 21:40:10,091 [ 1] INFO  Unity: LoadingManager start
-2022-05-09 21:40:13,494 [ 1] INFO  Unity: DataManager > DataManager()
-2022-05-09 21:40:17,147 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-05-09 21:40:17,148 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-05-09 21:40:17,149 [ 1] INFO  Unity: DoConnect
-2022-05-09 21:40:17,151 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-05-09 21:40:17,154 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-05-11 01:29:07,818 [ 1] INFO  Unity: LoadingManager start
+2022-05-11 01:29:11,006 [ 1] INFO  Unity: DataManager > DataManager()
+2022-05-11 01:29:13,803 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-05-11 01:29:13,804 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-05-11 01:29:13,805 [ 1] INFO  Unity: DoConnect
+2022-05-11 01:29:13,807 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-05-11 01:29:13,810 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-05-09 21:40:17,156 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-05-09 21:40:17,289 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-05-09 21:40:17,307 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-05-09 21:40:17,630 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-05-09 21:40:18,182 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
-2022-05-09 21:40:18,537 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
-2022-05-09 21:40:18,839 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
-2022-05-09 21:40:19,127 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
-2022-05-09 21:40:19,396 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
-2022-05-09 21:40:19,665 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
-2022-05-09 21:40:19,951 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
-2022-05-09 21:40:20,321 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
-2022-05-09 21:40:20,625 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
-2022-05-09 21:40:20,980 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
-2022-05-09 21:40:21,266 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
-2022-05-09 21:40:22,951 [ 1] INFO  Unity: Select Char:[1]111[Warrior]
-2022-05-09 21:40:23,304 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
-2022-05-09 21:40:24,786 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-05-09 21:40:24,787 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-05-11 01:29:13,813 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-05-11 01:29:13,968 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-05-11 01:29:13,973 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-05-11 01:29:14,285 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-11 01:29:15,010 [ 1] INFO  Unity: Select Char:[3]长春[Archer]
+2022-05-11 01:29:15,581 [ 1] INFO  Unity: UserGameEnterRequest::characterId:1
+2022-05-11 01:29:15,630 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-05-11 01:29:15,633 [ 1] INFO  Unity: ItemManager:InitId:1,Count:20
+2022-05-11 01:29:15,634 [ 1] INFO  Unity: ItemManager:InitId:2,Count:20
+2022-05-11 01:29:15,634 [ 1] INFO  Unity: ItemManager:InitId:8002,Count:2
+2022-05-11 01:29:15,635 [ 1] INFO  Unity: ItemManager:InitId:8003,Count:1
+2022-05-11 01:29:15,646 [ 1] INFO  Unity: OnGuild:Success1测试工回
+2022-05-11 01:29:15,648 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-05-11 01:29:15,650 [ 1] INFO  Unity: AddCharacter:3:长春 Map:1 Entity:(27:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-05-11 01:29:15,652 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-05-11 01:29:16,448 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2022-05-11 01:29:16,449 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2022-05-11 01:29:16,572 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-11 01:29:16,637 [ 1] INFO  Unity: Set Channel:Local
+2022-05-11 01:29:22,857 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2022-05-11 01:29:23,677 [ 1] INFO  Unity: MoveForward
+2022-05-11 01:29:23,678 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2022-05-11 01:29:24,250 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2022-05-11 01:29:24,251 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5170,4000,820) DIR:(98,18,0) SPD:300
+2022-05-11 01:29:24,351 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
+2022-05-11 01:29:24,352 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5200,4006,820) DIR:(93,36,0) SPD:300
+2022-05-11 01:29:24,435 [ 1] INFO  Unity: Stop
+2022-05-11 01:29:24,436 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5225,4016,820) DIR:(93,36,0) SPD:0
+2022-05-11 01:29:24,452 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
+2022-05-11 01:29:24,453 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5225,4016,820) DIR:(84,55,0) SPD:0
+2022-05-11 01:29:24,553 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
+2022-05-11 01:29:24,554 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5225,4016,820) DIR:(71,71,0) SPD:0
+2022-05-11 01:29:24,637 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2022-05-11 01:29:24,638 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5225,4016,820) DIR:(57,82,0) SPD:0
+2022-05-11 01:29:24,739 [ 1] INFO  Unity: SetDirection:(39, 92, 0)
+2022-05-11 01:29:24,740 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5225,4016,820) DIR:(39,92,0) SPD:0
+2022-05-11 01:29:24,857 [ 1] INFO  Unity: SetDirection:(22, 98, 0)
+2022-05-11 01:29:24,858 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:27 POS:(5225,4016,820) DIR:(22,98,0) SPD:0
+2022-05-11 01:29:27,266 [ 1] INFO  Unity: Character_3_长春 OnDestroy :ID:27 POS:(5225, 4016, 820) DIR:(22, 98, 0) SPD:0 
+2022-05-11 01:29:27,269 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-05-11 01:29:27,271 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:179)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:174)
