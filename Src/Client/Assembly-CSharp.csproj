@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Assets\Resloader.cs" />
+    <Compile Include="Assets\Scripts\Config.cs" />
     <Compile Include="Assets\Scripts\Entities\Character.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\GameObject\EntityController.cs" />
@@ -107,6 +108,8 @@
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\TeamService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundDefine.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundManager.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect\UICharInfo.cs" />
@@ -139,6 +142,8 @@
     <Compile Include="Assets\Scripts\UI\UIMain\QuestSystem\UIQuestSystem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Ride\UIRide.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Ride\UIRideItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Setting\UISetting.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMain\Setting\UISystemConfig.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShop.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\TabView\TabButton.cs" />
@@ -149,7 +154,6 @@
     <Compile Include="Assets\Scripts\UI\UIMain\UIMain.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIPopCharMenu.cs" />
-    <Compile Include="Assets\Scripts\UI\UIMain\UISetting.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UITest.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain\UIWindow.cs" />
     <Compile Include="Assets\Scripts\UI\UIMinimap\UIMinimap.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Managers;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -94,6 +95,12 @@ public class UIManager : Singleton<UIManager>
             Resources = "UI/UIRide",
             Cache = false
         });
+
+        this.UIResources.Add(typeof(UISystemConfig), new UIElement()
+        {
+            Resources = "UI/UISystemConfig",
+            Cache = false
+        });
     }
 
     ~UIManager()
@@ -108,7 +115,7 @@ public class UIManager : Singleton<UIManager>
     /// <returns></returns>
     public T Show<T>()
     {
-        //SoundManager.Instance.PlaySound("ui_open");
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Open);
         Type type = typeof(T);
         if (this.UIResources.ContainsKey(type))
         {
@@ -137,7 +144,7 @@ public class UIManager : Singleton<UIManager>
     /// <param name="type"></param>
     public void Close(Type type)
     {
-        //SoundManager.Instance.PlaySound("ui_close");
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Close);
         if (this.UIResources.ContainsKey(type))
         {
             UIElement info = this.UIResources[type];

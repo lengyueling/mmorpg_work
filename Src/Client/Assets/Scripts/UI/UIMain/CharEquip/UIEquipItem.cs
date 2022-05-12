@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Models;
+using Managers;
 
 public class UIEquipItem : MonoBehaviour, IPointerClickHandler
 {

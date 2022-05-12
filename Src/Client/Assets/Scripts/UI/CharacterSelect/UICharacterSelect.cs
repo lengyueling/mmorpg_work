@@ -97,6 +97,7 @@ public class UICharacterSelect : MonoBehaviour {
             MessageBox.Show("请选择职业");
             return;
         }
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         UserService.Instance.SendCharacterCreate(this.charName.text, this.charClass);
     }
 
@@ -116,7 +117,7 @@ public class UICharacterSelect : MonoBehaviour {
             names[i].text = DataManager.Instance.Characters[i + 1].Name;
         }
         descs.text = DataManager.Instance.Characters[charClass].Description;
-
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
     }
 
     /// <summary>
@@ -151,6 +152,7 @@ public class UICharacterSelect : MonoBehaviour {
             UICharInfo ci = this.uiChars[i].GetComponent<UICharInfo>();
             ci.Selected = idx == i;
         }
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
     }
 
     /// <summary>
@@ -158,6 +160,7 @@ public class UICharacterSelect : MonoBehaviour {
     /// </summary>
     public void OnClickPlay()
     {
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         if (selectCharacterIdx >= 0)
         {
             //MessageBox.Show("进入游戏", "进入游戏", MessageBoxType.Confirm);
