@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Common.Data;
+using UnityEngine;
 
 namespace Managers
 {
@@ -11,6 +12,7 @@ namespace Managers
         public delegate bool NpcActionHandler(NpcDefine npc);
 
         Dictionary<NpcFunction, NpcActionHandler> eventMap = new Dictionary<NpcFunction, NpcActionHandler>();
+        Dictionary<int, Vector3> npcPosition = new Dictionary<int, Vector3>();
 
         /// <summary>
         /// 注册Npc事件
@@ -97,7 +99,6 @@ namespace Managers
             return eventMap[npc.Function](npc);
         }
 
-
         /// <summary>
         /// 任务Npc交互
         /// </summary>
@@ -111,6 +112,26 @@ namespace Managers
                 return false;
             }
             return QuestManager.Instance.OpenNpcQuest(npc.ID);
+        }
+
+        /// <summary>
+        /// 设置npc位置
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="pos"></param>
+        public void UpdateNpcPosition(int npc,Vector3 pos)
+        {
+            this.npcPosition[npc] = pos;
+        }
+
+        /// <summary>
+        /// 获取npc位置
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <returns></returns>
+        public Vector3 GetNpcPosition(int npc)
+        {
+            return this.npcPosition[npc];
         }
     }
 }

@@ -28,6 +28,9 @@ public class UIQuestInfo : MonoBehaviour
 
     private GameObject[] goalItemTargetSlot = new GameObject[3];
 
+    public Button navButton;
+    private int npc = 0;
+
     /// <summary>
     /// 设置任务信息
     /// </summary>
@@ -58,6 +61,16 @@ public class UIQuestInfo : MonoBehaviour
         }
         this.rewardMoney.text = quest.Define.RewardGold.ToString();
         this.rewardExp.text = quest.Define.RewardExp.ToString();
+
+        if (quest.Info == null)
+        {
+            this.npc = quest.Define.AcceptNPC;
+        }
+        else if(quest.Info.Status == QuestStatus.Complated)
+        {
+            this.npc = quest.Define.SubmitNPC;
+        }
+        this.navButton.gameObject.SetActive(this.npc > 0);
 
         //强制将布局刷新一次，防止内容变了不刷新
         foreach (var fitter in this.GetComponentsInChildren<ContentSizeFitter>())
@@ -120,5 +133,12 @@ public class UIQuestInfo : MonoBehaviour
     public void OnClickAbandon()
     {
 
+    }
+
+    public void OnClickNav()
+    {
+        Vector3 pos = NpcManager.Instance.GetNpcPosition(this.npc);
+        User.Instance.CurrentCharacterObject.StartNav(pos);
+        UIManager.Instance.Close<UIQuestSystem>();
     }
 }

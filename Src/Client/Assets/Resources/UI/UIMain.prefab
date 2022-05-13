@@ -2291,7 +2291,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114520431354037844}
   m_HandleRect: {fileID: 224534727008146110}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_Text: 
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
-  m_Interactable: 0
+  m_Interactable: 1
   m_LinkHitboxPadding:
     m_Left: 0
     m_Right: 0
@@ -7379,7 +7379,7 @@ RectTransform:
   m_Father: {fileID: 224876069931535102}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.00000011920929}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -7586,8 +7586,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 0, y: 26.391752}
+  m_AnchoredPosition: {x: 0.000030517578, y: -0.000030517578}
+  m_SizeDelta: {x: 0, y: 25.987263}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224678936278044568
 RectTransform:
