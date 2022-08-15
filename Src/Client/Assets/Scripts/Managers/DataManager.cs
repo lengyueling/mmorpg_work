@@ -30,7 +30,7 @@ public class DataManager : Singleton<DataManager>
     }
 
     /// <summary>
-    /// ·şÎñ¶Ë¼ÓÔØÊı¾İ
+    /// æœåŠ¡ç«¯åŠ è½½æ•°æ®
     /// </summary>
     public void Load()
     {
@@ -66,7 +66,7 @@ public class DataManager : Singleton<DataManager>
     }
 
     /// <summary>
-    /// ¿Í»§¶Ë¼ÓÔØÊı¾İ
+    /// å®¢æˆ·ç«¯åŠ è½½Jsonæ•°æ®
     /// </summary>
     /// <returns></returns>
     public IEnumerator LoadData()

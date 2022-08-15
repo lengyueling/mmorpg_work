@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +7,6 @@ using Services;
 
 public class UILogin : MonoBehaviour
 {
-
     public InputField username;
     public InputField password;
     public Button buttonEnter;
@@ -17,6 +16,7 @@ public class UILogin : MonoBehaviour
         UserService.Instance.OnLogin += OnLogin;
     }
 
+    //如果完成登录，执行的函数
     void OnLogin(Result result, string msg)
     {
         MessageBox.Show(string.Format("结果：{0} msg:{1}", result, msg));

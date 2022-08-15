@@ -17917,17 +17917,17 @@ Prefab:
     - target: {fileID: 224670205788229800, guid: 38436f08791e172419684b6e6ce2ade7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000045587978
+      value: -0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 224670205788229800, guid: 38436f08791e172419684b6e6ce2ade7,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 25.472637
+      value: 25.159704
       objectReference: {fileID: 0}
     - target: {fileID: 224534727008146110, guid: 38436f08791e172419684b6e6ce2ade7,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.000000059604645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114193707594526456, guid: 38436f08791e172419684b6e6ce2ade7,
         type: 2}

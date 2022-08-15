@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +14,7 @@ namespace Services
 {
     class UserService : Singleton<UserService>, IDisposable
     {
+        //完成注册后的响应，写委托是为了service层和ui层分离
         public UnityAction<Result, string> OnRegister;
         public UnityAction<Result, string> OnLogin;
         public UnityAction<Result, string> OnCharacterCreate;
@@ -151,7 +152,7 @@ namespace Services
             message.Request.userRegister = new UserRegisterRequest();
             message.Request.userRegister.User = user;
             message.Request.userRegister.Passward = psw;
-
+            //断线重连
             if (this.connected && NetClient.Instance.Connected)
             {
                 this.pendingMessage = null;

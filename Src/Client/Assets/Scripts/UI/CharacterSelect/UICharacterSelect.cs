@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Models;
@@ -121,7 +121,7 @@ public class UICharacterSelect : MonoBehaviour {
     }
 
     /// <summary>
-    /// 委托函数
+    /// 服务器完成角色创建后的回调
     /// </summary>
     /// <param name="result"></param>
     /// <param name="message"></param>
