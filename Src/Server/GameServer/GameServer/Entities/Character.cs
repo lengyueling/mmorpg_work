@@ -1,4 +1,4 @@
-﻿using Common.Data;
+using Common.Data;
 using GameServer.Core;
 using GameServer.Managers;
 using SkillBridge.Message;
@@ -15,7 +15,7 @@ using GameServer.Models;
 namespace GameServer.Entities
 {
     /// <summary>
-    /// 玩家角色类
+    /// 玩家角色实体类
     /// </summary>
     class Character : CharacterBase,IPostResponser
     {      

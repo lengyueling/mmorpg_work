@@ -1,4 +1,4 @@
-﻿using Common;
+using Common;
 using GameServer.Entities;
 using GameServer.Models;
 using GameServer.Services;
@@ -54,7 +54,7 @@ namespace GameServer.Managers
                 {
                     return false;
                 }
-                //还没加使用的逻辑
+                //TODO:使用道具
                 item.Remove(count);
                 return true;
             }

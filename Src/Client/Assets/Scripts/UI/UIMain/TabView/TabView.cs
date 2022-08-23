@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +12,7 @@ public class TabView : MonoBehaviour
     public TabButton[] tabButtons;
     /// <summary>
     /// 几号的物体
+    /// ScrollView_page
     /// </summary>
     public GameObject[] tabPages;
     public int index = -1;

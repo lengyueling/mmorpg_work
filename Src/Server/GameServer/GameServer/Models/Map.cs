@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -96,7 +96,7 @@ namespace GameServer.Models
                     this.AddCharacterEnterMap(kv.Value.connection, character.Info);
                 }
             }
-            //通知服务器当前角色进入了地图
+            //通知客户端怪物进入了地图
             foreach (var kv in this.MonsterManager.Monsters)
             {
                 conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);

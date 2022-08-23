@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Common.Data;
@@ -18,7 +18,9 @@ public class NpcController : MonoBehaviour {
     /// 正在进行交互,防止重复点击
     /// </summary>
     private bool inInteractive = false;
-
+    /// <summary>
+    /// npc的配置表
+    /// </summary>
     NpcDefine npc;
 
     NpcQuestStatus questStatus;

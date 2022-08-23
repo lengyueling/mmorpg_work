@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -75,6 +75,7 @@ namespace Managers
 
         /// <summary>
         /// 背包整理
+        /// 将道具系统中的物品放到背包中
         /// </summary>
         public void Reset()
         {
