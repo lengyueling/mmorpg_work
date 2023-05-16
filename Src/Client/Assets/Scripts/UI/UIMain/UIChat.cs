@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -69,7 +69,8 @@ public class UIChat : MonoBehaviour
     }
 
     /// <summary>
-    /// 点击发送按钮
+    /// 点击超链接字体
+    /// 触发选择私聊等功能
     /// </summary>
     /// <param name="text"></param>
     /// <param name="link"></param>

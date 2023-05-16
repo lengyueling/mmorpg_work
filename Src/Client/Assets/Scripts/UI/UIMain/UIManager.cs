@@ -19,8 +19,8 @@ public class UIManager : Singleton<UIManager>
     {
         this.UIResources.Add(typeof(UISetting), new UIElement()
         {
-            Resources = "UI/UISetting",
-            Cache = true
+            Resources = "UI/Setting/UISetting",
+            Cache = false
         });
         this.UIResources.Add(typeof(UIBag), new UIElement()
         {
@@ -98,7 +98,7 @@ public class UIManager : Singleton<UIManager>
 
         this.UIResources.Add(typeof(UISystemConfig), new UIElement()
         {
-            Resources = "UI/UISystemConfig",
+            Resources = "UI/Setting/UISystemConfig",
             Cache = false
         });
     }

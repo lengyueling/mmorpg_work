@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,6 +37,9 @@ namespace Managers
         /// 管理所有可用任务(可接和已接)
         /// </summary>
         public Dictionary<int, Quest> allQuests = new Dictionary<int, Quest>();
+        /// <summary>
+        /// 网络协议传过来的任务列表
+        /// </summary>
         public List<NQuestInfo> questInfos;
 
         /// <summary>
@@ -78,7 +81,7 @@ namespace Managers
             }
         }
         /// <summary>
-        /// 初始化可用任务
+        /// 初始化可接任务
         /// </summary>
         void CheckAvailableQuests()
         {

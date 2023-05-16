@@ -1,4 +1,4 @@
-﻿using Common;
+using Common;
 using Common.Data;
 using GameServer.Entities;
 using GameServer.Services;
@@ -22,7 +22,7 @@ namespace GameServer.Managers
         }
 
         /// <summary>
-        /// 获取通过协议获取配置表中所有的任务信息
+        /// 获取通过db中所有的任务信息
         /// </summary>
         /// <param name="list"></param>
         public void GetQuestsInfos(List<NQuestInfo> list)
